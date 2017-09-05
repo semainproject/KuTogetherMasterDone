@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/build/intermediates/res/merged/debug/menu/menu_mypost.xml",
+        "source": "/Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/res/menu/menu_mypost.xml"
+    },
+    {
+        "merged": "/Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/build/intermediates/res/merged/debug/menu/new_board.xml",
+        "source": "/Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/res/menu/new_board.xml"
+    },
+    {
+        "merged": "/Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/build/intermediates/res/merged/debug/menu/activity_new_board_drawer.xml",
+        "source": "/Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/res/menu/activity_new_board_drawer.xml"
+    }
+]

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    tools:layout_editor_absoluteY="25dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <TextView
+        android:id="@+id/start"
+        android:layout_width="193dp"
+        android:layout_height="29dp"
+        android:text="TextView"
+        android:textColor="@color/bg_login"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/nickname"
+        android:layout_marginTop="37dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/nickname"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.775"
+        tools:layout_editor_absoluteX="179dp" />
+
+    <TextView
+        android:id="@+id/destination"
+        android:layout_width="0dp"
+        android:layout_height="27dp"
+        android:text="TextView"
+        android:textColor="@color/bg_login"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/start"
+        app:layout_constraintTop_toBottomOf="@+id/start"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/start"
+        android:layout_marginTop="-1dp"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:text="TextView"
+        android:textStyle="bold"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/nickname"
+        android:layout_marginTop="55dp"
+        app:layout_constraintTop_toBottomOf="@+id/nickname"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/nickname" />
+
+    <TextView
+        android:id="@+id/nickname"
+        android:layout_width="192dp"
+        android:layout_height="29dp"
+        android:text="TextView"
+        android:textColor="@color/line"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="25dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/start"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="6dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/imageBoard"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="25dp"
+        app:layout_constraintHorizontal_bias="0.568"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageBoard"
+        android:layout_width="93dp"
+        android:layout_height="89dp"
+
+
+        android:layout_marginStart="16dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/time"
+        android:layout_marginTop="10dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="27dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/nickname"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintVertical_bias="0.0" />
+</android.support.constraint.ConstraintLayout>

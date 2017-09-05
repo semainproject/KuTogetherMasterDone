@@ -1,0 +1,46 @@
+[
+    {
+        "merged": "/Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/build/intermediates/res/merged/debug/color/abc_primary_text_material_dark.xml",
+        "source": "/Users/narathorn/.android/build-cache/82e43e44789af66cad4a8cea0201d88facca6dd5/output/res/color/abc_primary_text_material_dark.xml"
+    },
+    {
+        "merged": "/Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/build/intermediates/res/merged/debug/color/abc_search_url_text.xml",
+        "source": "/Users/narathorn/.android/build-cache/82e43e44789af66cad4a8cea0201d88facca6dd5/output/res/color/abc_search_url_text.xml"
+    },
+    {
+        "merged": "/Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_dark.xml",
+        "source": "/Users/narathorn/.android/build-cache/82e43e44789af66cad4a8cea0201d88facca6dd5/output/res/color/abc_primary_text_disable_only_material_dark.xml"
+    },
+    {
+        "merged": "/Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_light.xml",
+        "source": "/Users/narathorn/.android/build-cache/f7d796147ad72605712b67c67f4ec2038f209ae8/output/res/color/common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "/Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/build/intermediates/res/merged/debug/color/abc_secondary_text_material_light.xml",
+        "source": "/Users/narathorn/.android/build-cache/82e43e44789af66cad4a8cea0201d88facca6dd5/output/res/color/abc_secondary_text_material_light.xml"
+    },
+    {
+        "merged": "/Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/build/intermediates/res/merged/debug/color/abc_secondary_text_material_dark.xml",
+        "source": "/Users/narathorn/.android/build-cache/82e43e44789af66cad4a8cea0201d88facca6dd5/output/res/color/abc_secondary_text_material_dark.xml"
+    },
+    {
+        "merged": "/Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/build/intermediates/res/merged/debug/color/switch_thumb_material_dark.xml",
+        "source": "/Users/narathorn/.android/build-cache/82e43e44789af66cad4a8cea0201d88facca6dd5/output/res/color/switch_thumb_material_dark.xml"
+    },
+    {
+        "merged": "/Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_dark.xml",
+        "source": "/Users/narathorn/.android/build-cache/f7d796147ad72605712b67c67f4ec2038f209ae8/output/res/color/common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "/Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_light.xml",
+        "source": "/Users/narathorn/.android/build-cache/82e43e44789af66cad4a8cea0201d88facca6dd5/output/res/color/abc_primary_text_disable_only_material_light.xml"
+    },
+    {
+        "merged": "/Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/build/intermediates/res/merged/debug/color/abc_primary_text_material_light.xml",
+        "source": "/Users/narathorn/.android/build-cache/82e43e44789af66cad4a8cea0201d88facca6dd5/output/res/color/abc_primary_text_material_light.xml"
+    },
+    {
+        "merged": "/Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/build/intermediates/res/merged/debug/color/switch_thumb_material_light.xml",
+        "source": "/Users/narathorn/.android/build-cache/82e43e44789af66cad4a8cea0201d88facca6dd5/output/res/color/switch_thumb_material_light.xml"
+    }
+]

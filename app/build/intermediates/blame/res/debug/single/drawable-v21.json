@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "/Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/build/intermediates/res/merged/debug/drawable-v21/ic_menu_slideshow.xml",
+        "source": "/Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/res/drawable-v21/ic_menu_slideshow.xml"
+    },
+    {
+        "merged": "/Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/build/intermediates/res/merged/debug/drawable-v21/abc_btn_colored_material.xml",
+        "source": "/Users/narathorn/.android/build-cache/82e43e44789af66cad4a8cea0201d88facca6dd5/output/res/drawable-v21/abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "/Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/build/intermediates/res/merged/debug/drawable-v21/abc_edit_text_material.xml",
+        "source": "/Users/narathorn/.android/build-cache/82e43e44789af66cad4a8cea0201d88facca6dd5/output/res/drawable-v21/abc_edit_text_material.xml"
+    },
+    {
+        "merged": "/Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/build/intermediates/res/merged/debug/drawable-v21/abc_action_bar_item_background_material.xml",
+        "source": "/Users/narathorn/.android/build-cache/82e43e44789af66cad4a8cea0201d88facca6dd5/output/res/drawable-v21/abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "/Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/build/intermediates/res/merged/debug/drawable-v21/ic_menu_manage.xml",
+        "source": "/Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/res/drawable-v21/ic_menu_manage.xml"
+    },
+    {
+        "merged": "/Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/build/intermediates/res/merged/debug/drawable-v21/ic_menu_camera.xml",
+        "source": "/Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/res/drawable-v21/ic_menu_camera.xml"
+    },
+    {
+        "merged": "/Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/build/intermediates/res/merged/debug/drawable-v21/ic_menu_gallery.xml",
+        "source": "/Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/res/drawable-v21/ic_menu_gallery.xml"
+    },
+    {
+        "merged": "/Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/build/intermediates/res/merged/debug/drawable-v21/ic_menu_send.xml",
+        "source": "/Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/res/drawable-v21/ic_menu_send.xml"
+    },
+    {
+        "merged": "/Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/build/intermediates/res/merged/debug/drawable-v21/ic_menu_share.xml",
+        "source": "/Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/res/drawable-v21/ic_menu_share.xml"
+    }
+]
