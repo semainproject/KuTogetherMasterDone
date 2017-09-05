@@ -307,7 +307,7 @@ public class NewBoard extends AppCompatActivity implements NavigationView.OnNavi
                                         Intent intent = new Intent(NewBoard.this, Connected.class);
                                         startActivity(intent);
                                     } else {
-                                        Toast.makeText(NewBoard.this , "You are Driver" , Toast.LENGTH_LONG).show();
+                                        Toast.makeText(NewBoard.this , "ํYou don't have a passenger yet" , Toast.LENGTH_LONG).show();
                                     }
                                 }
 

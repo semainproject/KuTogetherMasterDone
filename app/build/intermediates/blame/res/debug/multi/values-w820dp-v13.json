@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w820dp-v13/values-w820dp-v13.xml",
+        "outputFile": "C:\\Users\\narathorn\\Downloads\\FirebaseAuthImproveToThebest\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w820dp-v13\\values-w820dp-v13.xml",
         "map": [
             {
                 "to": {
@@ -11,13 +11,37 @@
                     "endOffset": 108
                 },
                 "from": {
-                    "file": "/Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/res/values-w820dp/dimens.xml",
+                    "file": "C:\\Users\\narathorn\\Downloads\\FirebaseAuthImproveToThebest\\app\\src\\main\\res\\values-w820dp\\dimens.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
                         "startOffset": 291,
                         "endColumn": 57,
                         "endOffset": 344
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "C:\\Users\\KITTAPORN\\Desktop\\newporject\\KUtogetherFromPOTE\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w820dp-v13\\values-w820dp-v13.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 57,
+                    "endOffset": 108
+                },
+                "from": {
+                    "file": "C:\\Users\\KITTAPORN\\Desktop\\newporject\\KUtogetherFromPOTE\\app\\src\\main\\res\\values-w820dp\\dimens.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 295,
+                        "endColumn": 57,
+                        "endOffset": 348
                     }
                 }
             }

@@ -1,397 +1,397 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:2:1-113:12
+ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:2:1-113:12
 	package
-		ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:3:5-40
-		INJECTED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:3:5-40
+		INJECTED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml
+		INJECTED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:2:11-69
 	android:versionCode
-		INJECTED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml
+		INJECTED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.INTERNET
-ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:5:5-67
-MERGED from [com.google.firebase:firebase-analytics:10.0.1] /Users/narathorn/.android/build-cache/db83f0298a2598fc2dc4f974872cc9c48cdf7172/output/AndroidManifest.xml:20:5-66
-MERGED from [com.google.firebase:firebase-analytics-impl:10.0.1] /Users/narathorn/.android/build-cache/84b0725728cd18b43a8fbf7259c011a48a4f7435/output/AndroidManifest.xml:20:5-66
-MERGED from [com.google.firebase:firebase-iid:10.0.1] /Users/narathorn/.android/build-cache/dacb7a509334c5370cc9f817e3f01e2f8eaaf6df/output/AndroidManifest.xml:20:5-66
-MERGED from [com.akexorcist:googledirectionlibrary:1.0.5] /Users/narathorn/.android/build-cache/d338760aeb3c799d564e5420813255105c8bad34/output/AndroidManifest.xml:11:5-67
-MERGED from [com.google.android.gms:play-services-maps:10.0.1] /Users/narathorn/.android/build-cache/6760d07aa009065869f2d28fc329fd34268c316a/output/AndroidManifest.xml:20:5-66
+ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:5:5-67
+MERGED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\KITTAPORN\.android\build-cache\34be71c2218f49e895b144fec5cf1a49f945cb11\output\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-analytics-impl:10.0.1] C:\Users\KITTAPORN\.android\build-cache\35e8c9eee7f8d0460d6509cd067537d5563bc961\output\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\KITTAPORN\.android\build-cache\0b8fed2b7c605bff5a7b8d36390b0fa9442cc58c\output\AndroidManifest.xml:20:5-66
+MERGED from [com.akexorcist:googledirectionlibrary:1.0.5] C:\Users\KITTAPORN\.android\build-cache\e1234eff446f751ff2283b5e429b362bacdbea07\output\AndroidManifest.xml:11:5-67
+MERGED from [com.google.android.gms:play-services-maps:10.0.1] C:\Users\KITTAPORN\.android\build-cache\be6df68b284a142a3dd44f1e716cc1dcf210a25f\output\AndroidManifest.xml:20:5-66
 	android:name
-		ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:5:22-64
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:5:22-64
 uses-permission#android.permission.GET_ACCOUNTS
-ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:8:5-71
+ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:8:5-71
 	android:name
-		ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:8:22-68
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:8:22-68
 uses-permission#android.permission.READ_PROFILE
-ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:9:5-71
+ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:9:5-71
 	android:name
-		ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:9:22-68
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:9:22-68
 uses-permission#android.permission.READ_CONTACTS
-ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:10:5-72
+ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:10:5-72
 	android:name
-		ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:10:22-69
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:10:22-69
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:11:5-79
+ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:11:5-79
 	android:name
-		ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:11:22-76
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:11:22-76
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:17:5-81
+ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:17:5-81
 	android:name
-		ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:17:22-78
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:17:22-78
 application
-ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:20:5-111:19
-MERGED from [com.google.firebase:firebase-auth:10.0.1] /Users/narathorn/.android/build-cache/5cfe177d9deb5d722aa6cda2543e1af5c6d13a8b/output/AndroidManifest.xml:19:5-20:19
-MERGED from [com.android.support:design:23.4.0] /Users/narathorn/.android/build-cache/7b0d8e94d0413d0e5f09f71d0d5039904ed81033/output/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/narathorn/.android/build-cache/82e43e44789af66cad4a8cea0201d88facca6dd5/output/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/narathorn/.android/build-cache/233d643431db77e1121a7987d52cbaf682a21c5a/output/AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/narathorn/.android/build-cache/75eef9278c9f42db9377e10d627531ec3a1fef5b/output/AndroidManifest.xml:7:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/narathorn/.android/build-cache/4a02478da693152f7825fc0f6503c8bf13bcfaab/output/AndroidManifest.xml:9:5-20
-MERGED from [com.android.support:cardview-v7:23.1.1] /Users/narathorn/.android/build-cache/86290e95e8e9ba1a17a7ff91d25cdc960f3363de/output/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-places:10.0.1] /Users/narathorn/.android/build-cache/9ab64000703481f58e8566375a98225861f53244/output/AndroidManifest.xml:18:5-19
-MERGED from [com.inthecheesefactory.thecheeselibrary:adjustable-imageview:1.0.0] /Users/narathorn/.android/build-cache/c230af4d37577ae7851eeb26c6045c8eee80c9af/output/AndroidManifest.xml:11:5-14:19
-MERGED from [com.google.firebase:firebase-core:10.0.1] /Users/narathorn/.android/build-cache/5c2d0189366f06b7cb393453dfc9ef750fe31a37/output/AndroidManifest.xml:5:5-20
-MERGED from [com.google.firebase:firebase-analytics:10.0.1] /Users/narathorn/.android/build-cache/db83f0298a2598fc2dc4f974872cc9c48cdf7172/output/AndroidManifest.xml:24:5-33:19
-MERGED from [com.google.firebase:firebase-analytics-impl:10.0.1] /Users/narathorn/.android/build-cache/84b0725728cd18b43a8fbf7259c011a48a4f7435/output/AndroidManifest.xml:24:5-28:19
-MERGED from [com.google.firebase:firebase-messaging:10.0.1] /Users/narathorn/.android/build-cache/7ed6ec6e99f37a9eff355496f3db4bc996a812b9/output/AndroidManifest.xml:19:5-29:19
-MERGED from [com.google.firebase:firebase-iid:10.0.1] /Users/narathorn/.android/build-cache/dacb7a509334c5370cc9f817e3f01e2f8eaaf6df/output/AndroidManifest.xml:28:5-50:19
-MERGED from [com.google.firebase:firebase-common:10.0.1] /Users/narathorn/.android/build-cache/87a98227aaada635eb5a4faa8a464fa81066ea46/output/AndroidManifest.xml:4:5-7:19
-MERGED from [com.google.android.gms:play-services-location:10.0.1] /Users/narathorn/.android/build-cache/7847ceed75f7cfecc2f9bc5f225d737aba482470/output/AndroidManifest.xml:4:5-19
-MERGED from [com.google.android.gms:play-services-maps:10.0.1] /Users/narathorn/.android/build-cache/6760d07aa009065869f2d28fc329fd34268c316a/output/AndroidManifest.xml:24:5-19
-MERGED from [com.google.android.gms:play-services-base:10.0.1] /Users/narathorn/.android/build-cache/f7d796147ad72605712b67c67f4ec2038f209ae8/output/AndroidManifest.xml:18:5-20:19
-MERGED from [com.google.android.gms:play-services-tasks:10.0.1] /Users/narathorn/.android/build-cache/63372fbc2772c52dea9d4254a7c90a04fd9efc63/output/AndroidManifest.xml:4:5-19
-MERGED from [com.google.android.gms:play-services-basement:10.0.1] /Users/narathorn/.android/build-cache/da46b50546654dc6eeaef5a166d508d22b4e5adf/output/AndroidManifest.xml:19:5-21:19
-MERGED from [com.android.support:support-v4:24.0.0] /Users/narathorn/.android/build-cache/d68981bb47ee202c45f0f0e998a41c080c2059fc/output/AndroidManifest.xml:25:5-20
+ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:20:5-111:19
+MERGED from [com.google.firebase:firebase-auth:10.0.1] C:\Users\KITTAPORN\.android\build-cache\44a38dfb9b04e03982ec4aa71ceaeab51ed3146d\output\AndroidManifest.xml:19:5-20:19
+MERGED from [com.android.support:design:23.4.0] C:\Users\KITTAPORN\.android\build-cache\f96e9766c50bb3ab8e80da0939d695edb5f5b3a8\output\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:23.4.0] C:\Users\KITTAPORN\.android\build-cache\dceed614bee038db896ca9bb994dc13edaa8dfe9\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] C:\Users\KITTAPORN\.android\build-cache\46c480a62d5d803c0f1fe7c35fe3a0396b11e506\output\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\KITTAPORN\.android\build-cache\f20d93d983e85a34dffa926a49ba720067cb7225\output\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\KITTAPORN\.android\build-cache\44ecaa49b445eb9a8b1b01ab5fddb702a87fd750\output\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:cardview-v7:23.1.1] C:\Users\KITTAPORN\.android\build-cache\5164146b73748d30f57c6afa9258dbf72cfbb085\output\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-places:10.0.1] C:\Users\KITTAPORN\.android\build-cache\6159c868351b1e4967caec77ded0e3169ab5259c\output\AndroidManifest.xml:18:5-19
+MERGED from [com.inthecheesefactory.thecheeselibrary:adjustable-imageview:1.0.0] C:\Users\KITTAPORN\.android\build-cache\1eeb1736faffe4df528489bedbe6ae780f727a02\output\AndroidManifest.xml:11:5-14:19
+MERGED from [com.google.firebase:firebase-core:10.0.1] C:\Users\KITTAPORN\.android\build-cache\2256fee49f966e36189edb077967b438582d3e75\output\AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\KITTAPORN\.android\build-cache\34be71c2218f49e895b144fec5cf1a49f945cb11\output\AndroidManifest.xml:24:5-33:19
+MERGED from [com.google.firebase:firebase-analytics-impl:10.0.1] C:\Users\KITTAPORN\.android\build-cache\35e8c9eee7f8d0460d6509cd067537d5563bc961\output\AndroidManifest.xml:24:5-28:19
+MERGED from [com.google.firebase:firebase-messaging:10.0.1] C:\Users\KITTAPORN\.android\build-cache\c3828c4abe30d20d6a80fdb7ebaae60fd01e3e38\output\AndroidManifest.xml:19:5-29:19
+MERGED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\KITTAPORN\.android\build-cache\0b8fed2b7c605bff5a7b8d36390b0fa9442cc58c\output\AndroidManifest.xml:28:5-50:19
+MERGED from [com.google.firebase:firebase-common:10.0.1] C:\Users\KITTAPORN\.android\build-cache\87d770b93ef6e916a6ff91a23ba29bf2f6a113cf\output\AndroidManifest.xml:4:5-7:19
+MERGED from [com.google.android.gms:play-services-location:10.0.1] C:\Users\KITTAPORN\.android\build-cache\16a1e51cf01fdd38894de8baaaf1b315160d28ae\output\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-maps:10.0.1] C:\Users\KITTAPORN\.android\build-cache\be6df68b284a142a3dd44f1e716cc1dcf210a25f\output\AndroidManifest.xml:24:5-19
+MERGED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\KITTAPORN\.android\build-cache\03bfb0be78a9d233317a1c05bc774332f727a5d2\output\AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-tasks:10.0.1] C:\Users\KITTAPORN\.android\build-cache\2d876df8c3c139d76ab48c793b0bf6fd9d5489c6\output\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-basement:10.0.1] C:\Users\KITTAPORN\.android\build-cache\3df9cd1fc5a2ac3c584c5fa9d292ec50a6921670\output\AndroidManifest.xml:19:5-21:19
+MERGED from [com.android.support:support-v4:24.0.0] C:\Users\KITTAPORN\.android\build-cache\e8ddc63f5ebceb73b7a15ba6f757a7668629abef\output\AndroidManifest.xml:25:5-20
 	android:label
-		ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:23:9-41
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:23:9-41
 	android:supportsRtl
-		ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:24:9-35
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:24:9-35
 	android:allowBackup
-		ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:21:9-35
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:21:9-35
 	android:icon
-		ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:22:9-45
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:22:9-45
 	android:theme
-		ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:25:9-40
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:25:9-40
 activity#info.androidhive.firebase.LoginActivity
-ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:26:9-34:20
+ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:26:9-34:20
 	android:theme
-		ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:28:13-56
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:28:13-56
 	android:name
-		ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:27:13-42
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:27:13-42
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:29:13-33:29
+ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:29:13-33:29
 action#android.intent.action.MAIN
-ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:30:17-69
+ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:30:17-69
 	android:name
-		ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:30:25-66
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:30:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:32:17-77
+ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:32:17-77
 	android:name
-		ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:32:27-74
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:32:27-74
 activity#info.androidhive.firebase.MainActivity
-ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:35:9-38:59
+ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:35:9-38:59
 	android:label
-		ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:37:13-59
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:37:13-59
 	android:theme
-		ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:38:13-56
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:38:13-56
 	android:name
-		ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:36:13-41
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:36:13-41
 activity#info.androidhive.firebase.SignupActivity
-ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:39:9-42:59
+ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:39:9-42:59
 	android:label
-		ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:41:13-57
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:41:13-57
 	android:theme
-		ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:42:13-56
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:42:13-56
 	android:name
-		ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:40:13-43
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:40:13-43
 activity#info.androidhive.firebase.ResetPasswordActivity
-ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:43:9-46:59
+ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:43:9-46:59
 	android:label
-		ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:45:13-66
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:45:13-66
 	android:theme
-		ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:46:13-56
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:46:13-56
 	android:name
-		ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:44:13-50
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:44:13-50
 activity#info.androidhive.firebase.InfoActivity
-ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:47:9-50
+ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:47:9-50
 	android:name
-		ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:47:19-47
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:47:19-47
 activity#info.androidhive.firebase.DestinationActivity
-ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:48:9-56:20
+ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:48:9-56:20
 	android:name
-		ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:48:19-54
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:48:19-54
 activity#info.androidhive.firebase.NewBoard
-ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:57:9-60:47
+ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:57:9-60:47
 	android:label
-		ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:59:13-61
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:59:13-61
 	android:theme
-		ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:60:13-44
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:60:13-44
 	android:name
-		ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:58:13-37
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:58:13-37
 meta-data#com.google.android.geo.API_KEY
-ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:70:9-72:55
+ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:70:9-72:55
 	android:value
-		ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:72:13-52
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:72:13-52
 	android:name
-		ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:71:13-58
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:71:13-58
 activity#info.androidhive.firebase.MapsActivity
-ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:74:9-76:59
+ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:74:9-76:59
 	android:label
-		ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:76:13-56
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:76:13-56
 	android:name
-		ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:75:13-41
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:75:13-41
 activity#info.androidhive.firebase.MapsActivityDes
-ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:77:9-79:63
+ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:77:9-79:63
 	android:label
-		ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:79:13-60
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:79:13-60
 	android:name
-		ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:78:13-44
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:78:13-44
 activity#info.androidhive.firebase.ConnectPassenger
-ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:80:9-54
+ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:80:9-54
 	android:name
-		ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:80:19-51
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:80:19-51
 activity#info.androidhive.firebase.MypostActivity
-ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:81:9-84:47
+ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:81:9-84:47
 	android:label
-		ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:83:13-58
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:83:13-58
 	android:theme
-		ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:84:13-44
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:84:13-44
 	android:name
-		ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:82:13-43
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:82:13-43
 service#info.androidhive.firebase.MyService
-ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:86:9-89:39
+ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:86:9-89:39
 	android:enabled
-		ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:88:13-35
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:88:13-35
 	android:exported
-		ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:89:13-36
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:89:13-36
 	android:name
-		ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:87:13-38
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:87:13-38
 activity#info.androidhive.firebase.Connected
-ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:91:9-47
+ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:91:9-47
 	android:name
-		ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:91:19-44
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:91:19-44
 activity#info.androidhive.firebase.ConnectedMap
-ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:92:9-94:68
+ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:92:9-94:68
 	android:label
-		ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:94:13-65
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:94:13-65
 	android:name
-		ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:93:13-41
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:93:13-41
 activity#info.androidhive.firebase.ServiceLocation
-ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:95:9-53
+ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:95:9-53
 	android:name
-		ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:95:19-50
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:95:19-50
 service#info.androidhive.firebase.ServiceLocation
-ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:97:9-100:39
+ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:97:9-100:39
 	android:enabled
-		ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:99:13-35
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:99:13-35
 	android:exported
-		ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:100:13-36
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:100:13-36
 	android:name
-		ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:98:13-44
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:98:13-44
 service#info.androidhive.firebase.DriverService
-ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:101:9-104:39
+ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:101:9-104:39
 	android:enabled
-		ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:103:13-35
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:103:13-35
 	android:exported
-		ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:104:13-36
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:104:13-36
 	android:name
-		ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:102:13-42
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:102:13-42
 service#info.androidhive.firebase.GpsService
-ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:105:9-108:39
+ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:105:9-108:39
 	android:enabled
-		ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:107:13-35
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:107:13-35
 	android:exported
-		ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:108:13-36
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:108:13-36
 	android:name
-		ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:106:13-39
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:106:13-39
 activity#info.androidhive.firebase.DriverConnected
-ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:110:9-62
+ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:110:9-62
 	android:name
-		ADDED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml:110:19-50
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:110:19-50
 uses-sdk
-INJECTED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.google.firebase:firebase-auth:10.0.1] /Users/narathorn/.android/build-cache/5cfe177d9deb5d722aa6cda2543e1af5c6d13a8b/output/AndroidManifest.xml:17:5-42
-MERGED from [com.android.support:design:23.4.0] /Users/narathorn/.android/build-cache/7b0d8e94d0413d0e5f09f71d0d5039904ed81033/output/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:recyclerview-v7:23.4.0] /Users/narathorn/.android/build-cache/fa01a63506e66cc66c055436689c29dca3e12598/output/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/narathorn/.android/build-cache/82e43e44789af66cad4a8cea0201d88facca6dd5/output/AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/narathorn/.android/build-cache/233d643431db77e1121a7987d52cbaf682a21c5a/output/AndroidManifest.xml:5:5-44
-MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/narathorn/.android/build-cache/75eef9278c9f42db9377e10d627531ec3a1fef5b/output/AndroidManifest.xml:5:5-43
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/narathorn/.android/build-cache/4a02478da693152f7825fc0f6503c8bf13bcfaab/output/AndroidManifest.xml:5:5-7:41
-MERGED from [com.google.firebase:firebase-database:10.0.1] /Users/narathorn/.android/build-cache/b295614505840ff90ca216fa93680fa3435fcb98/output/AndroidManifest.xml:3:5-42
-MERGED from [com.google.firebase:firebase-database-connection:10.0.1] /Users/narathorn/.android/build-cache/ae40c475f7d6f44f031e204adf87da7e9406b941/output/AndroidManifest.xml:3:5-42
-MERGED from [com.google.firebase:firebase-storage:10.0.1] /Users/narathorn/.android/build-cache/dceda4a9cc7fd4bc9fae056017466e25ce939d57/output/AndroidManifest.xml:3:5-42
-MERGED from [com.google.firebase:firebase-storage-common:10.0.1] /Users/narathorn/.android/build-cache/540382bbcd24fd0b71e38d896e3607f927d29f2b/output/AndroidManifest.xml:3:5-42
-MERGED from [com.android.support:cardview-v7:23.1.1] /Users/narathorn/.android/build-cache/86290e95e8e9ba1a17a7ff91d25cdc960f3363de/output/AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-places:10.0.1] /Users/narathorn/.android/build-cache/9ab64000703481f58e8566375a98225861f53244/output/AndroidManifest.xml:17:5-42
-MERGED from [com.inthecheesefactory.thecheeselibrary:adjustable-imageview:1.0.0] /Users/narathorn/.android/build-cache/c230af4d37577ae7851eeb26c6045c8eee80c9af/output/AndroidManifest.xml:7:5-9:41
-MERGED from [com.google.firebase:firebase-core:10.0.1] /Users/narathorn/.android/build-cache/5c2d0189366f06b7cb393453dfc9ef750fe31a37/output/AndroidManifest.xml:4:5-42
-MERGED from [com.google.firebase:firebase-analytics:10.0.1] /Users/narathorn/.android/build-cache/db83f0298a2598fc2dc4f974872cc9c48cdf7172/output/AndroidManifest.xml:17:5-42
-MERGED from [com.google.firebase:firebase-analytics-impl:10.0.1] /Users/narathorn/.android/build-cache/84b0725728cd18b43a8fbf7259c011a48a4f7435/output/AndroidManifest.xml:17:5-42
-MERGED from [com.google.firebase:firebase-messaging:10.0.1] /Users/narathorn/.android/build-cache/7ed6ec6e99f37a9eff355496f3db4bc996a812b9/output/AndroidManifest.xml:17:5-42
-MERGED from [com.google.firebase:firebase-iid:10.0.1] /Users/narathorn/.android/build-cache/dacb7a509334c5370cc9f817e3f01e2f8eaaf6df/output/AndroidManifest.xml:17:5-42
-MERGED from [com.google.firebase:firebase-common:10.0.1] /Users/narathorn/.android/build-cache/87a98227aaada635eb5a4faa8a464fa81066ea46/output/AndroidManifest.xml:3:5-42
-MERGED from [com.makeramen:roundedimageview:2.3.0] /Users/narathorn/.android/build-cache/cadf51ebebd50fb5eb7b06bdda4d2799fcfcbafb/output/AndroidManifest.xml:7:5-43
-MERGED from [pl.droidsonroids.gif:android-gif-drawable:1.2.3] /Users/narathorn/.android/build-cache/72991d92ec4c0ac9b4ef5e783569066ffaef8727/output/AndroidManifest.xml:7:5-9:41
-MERGED from [com.google.android.gms:play-services-location:10.0.1] /Users/narathorn/.android/build-cache/7847ceed75f7cfecc2f9bc5f225d737aba482470/output/AndroidManifest.xml:3:5-42
-MERGED from [com.akexorcist:googledirectionlibrary:1.0.5] /Users/narathorn/.android/build-cache/d338760aeb3c799d564e5420813255105c8bad34/output/AndroidManifest.xml:7:5-9:41
-MERGED from [com.google.android.gms:play-services-maps:10.0.1] /Users/narathorn/.android/build-cache/6760d07aa009065869f2d28fc329fd34268c316a/output/AndroidManifest.xml:23:5-42
-MERGED from [com.google.android.gms:play-services-base:10.0.1] /Users/narathorn/.android/build-cache/f7d796147ad72605712b67c67f4ec2038f209ae8/output/AndroidManifest.xml:17:5-42
-MERGED from [com.google.android.gms:play-services-tasks:10.0.1] /Users/narathorn/.android/build-cache/63372fbc2772c52dea9d4254a7c90a04fd9efc63/output/AndroidManifest.xml:3:5-42
-MERGED from [com.google.android.gms:play-services-basement:10.0.1] /Users/narathorn/.android/build-cache/da46b50546654dc6eeaef5a166d508d22b4e5adf/output/AndroidManifest.xml:17:5-42
-MERGED from [com.android.support:support-v4:24.0.0] /Users/narathorn/.android/build-cache/d68981bb47ee202c45f0f0e998a41c080c2059fc/output/AndroidManifest.xml:21:5-23:54
+INJECTED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.google.firebase:firebase-auth:10.0.1] C:\Users\KITTAPORN\.android\build-cache\44a38dfb9b04e03982ec4aa71ceaeab51ed3146d\output\AndroidManifest.xml:17:5-42
+MERGED from [com.android.support:design:23.4.0] C:\Users\KITTAPORN\.android\build-cache\f96e9766c50bb3ab8e80da0939d695edb5f5b3a8\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:23.4.0] C:\Users\KITTAPORN\.android\build-cache\3547c1507eeeb931073fbf20950d8753c0fbd5e0\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:23.4.0] C:\Users\KITTAPORN\.android\build-cache\dceed614bee038db896ca9bb994dc13edaa8dfe9\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] C:\Users\KITTAPORN\.android\build-cache\46c480a62d5d803c0f1fe7c35fe3a0396b11e506\output\AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\KITTAPORN\.android\build-cache\f20d93d983e85a34dffa926a49ba720067cb7225\output\AndroidManifest.xml:5:5-43
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\KITTAPORN\.android\build-cache\44ecaa49b445eb9a8b1b01ab5fddb702a87fd750\output\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-database:10.0.1] C:\Users\KITTAPORN\.android\build-cache\18c39804fa55716ca55c7c5a7705198bd68f4edf\output\AndroidManifest.xml:3:5-42
+MERGED from [com.google.firebase:firebase-database-connection:10.0.1] C:\Users\KITTAPORN\.android\build-cache\af71eb6f9831015b6f5b8968445e0f6485419e48\output\AndroidManifest.xml:3:5-42
+MERGED from [com.google.firebase:firebase-storage:10.0.1] C:\Users\KITTAPORN\.android\build-cache\6575907e50c07b59e8911a9e217822b44794d0b9\output\AndroidManifest.xml:3:5-42
+MERGED from [com.google.firebase:firebase-storage-common:10.0.1] C:\Users\KITTAPORN\.android\build-cache\c0bd5d9acbddfbd410a33b1288d2b8103a576052\output\AndroidManifest.xml:3:5-42
+MERGED from [com.android.support:cardview-v7:23.1.1] C:\Users\KITTAPORN\.android\build-cache\5164146b73748d30f57c6afa9258dbf72cfbb085\output\AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-places:10.0.1] C:\Users\KITTAPORN\.android\build-cache\6159c868351b1e4967caec77ded0e3169ab5259c\output\AndroidManifest.xml:17:5-42
+MERGED from [com.inthecheesefactory.thecheeselibrary:adjustable-imageview:1.0.0] C:\Users\KITTAPORN\.android\build-cache\1eeb1736faffe4df528489bedbe6ae780f727a02\output\AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:firebase-core:10.0.1] C:\Users\KITTAPORN\.android\build-cache\2256fee49f966e36189edb077967b438582d3e75\output\AndroidManifest.xml:4:5-42
+MERGED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\KITTAPORN\.android\build-cache\34be71c2218f49e895b144fec5cf1a49f945cb11\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.firebase:firebase-analytics-impl:10.0.1] C:\Users\KITTAPORN\.android\build-cache\35e8c9eee7f8d0460d6509cd067537d5563bc961\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.firebase:firebase-messaging:10.0.1] C:\Users\KITTAPORN\.android\build-cache\c3828c4abe30d20d6a80fdb7ebaae60fd01e3e38\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\KITTAPORN\.android\build-cache\0b8fed2b7c605bff5a7b8d36390b0fa9442cc58c\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.firebase:firebase-common:10.0.1] C:\Users\KITTAPORN\.android\build-cache\87d770b93ef6e916a6ff91a23ba29bf2f6a113cf\output\AndroidManifest.xml:3:5-42
+MERGED from [com.makeramen:roundedimageview:2.3.0] C:\Users\KITTAPORN\.android\build-cache\9185a4da0d553fd3b49361e2f1bab685da8dbba0\output\AndroidManifest.xml:7:5-43
+MERGED from [pl.droidsonroids.gif:android-gif-drawable:1.2.3] C:\Users\KITTAPORN\.android\build-cache\2978858749ec51e499e67b0905fa551111b8263e\output\AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.gms:play-services-location:10.0.1] C:\Users\KITTAPORN\.android\build-cache\16a1e51cf01fdd38894de8baaaf1b315160d28ae\output\AndroidManifest.xml:3:5-42
+MERGED from [com.akexorcist:googledirectionlibrary:1.0.5] C:\Users\KITTAPORN\.android\build-cache\e1234eff446f751ff2283b5e429b362bacdbea07\output\AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.gms:play-services-maps:10.0.1] C:\Users\KITTAPORN\.android\build-cache\be6df68b284a142a3dd44f1e716cc1dcf210a25f\output\AndroidManifest.xml:23:5-42
+MERGED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\KITTAPORN\.android\build-cache\03bfb0be78a9d233317a1c05bc774332f727a5d2\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-tasks:10.0.1] C:\Users\KITTAPORN\.android\build-cache\2d876df8c3c139d76ab48c793b0bf6fd9d5489c6\output\AndroidManifest.xml:3:5-42
+MERGED from [com.google.android.gms:play-services-basement:10.0.1] C:\Users\KITTAPORN\.android\build-cache\3df9cd1fc5a2ac3c584c5fa9d292ec50a6921670\output\AndroidManifest.xml:17:5-42
+MERGED from [com.android.support:support-v4:24.0.0] C:\Users\KITTAPORN\.android\build-cache\e8ddc63f5ebceb73b7a15ba6f757a7668629abef\output\AndroidManifest.xml:21:5-23:54
 	tools:overrideLibrary
-		ADDED from [com.android.support:appcompat-v7:23.4.0] /Users/narathorn/.android/build-cache/82e43e44789af66cad4a8cea0201d88facca6dd5/output/AndroidManifest.xml:23:9-75
+		ADDED from [com.android.support:appcompat-v7:23.4.0] C:\Users\KITTAPORN\.android\build-cache\dceed614bee038db896ca9bb994dc13edaa8dfe9\output\AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
-		INJECTED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml
+		INJECTED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/narathorn/Downloads/FirebaseAuthImproveToThebest/app/src/main/AndroidManifest.xml
+		INJECTED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [com.google.firebase:firebase-analytics:10.0.1] /Users/narathorn/.android/build-cache/db83f0298a2598fc2dc4f974872cc9c48cdf7172/output/AndroidManifest.xml:21:5-78
-MERGED from [com.google.firebase:firebase-analytics-impl:10.0.1] /Users/narathorn/.android/build-cache/84b0725728cd18b43a8fbf7259c011a48a4f7435/output/AndroidManifest.xml:21:5-78
-MERGED from [com.google.firebase:firebase-iid:10.0.1] /Users/narathorn/.android/build-cache/dacb7a509334c5370cc9f817e3f01e2f8eaaf6df/output/AndroidManifest.xml:19:5-78
-MERGED from [com.google.android.gms:play-services-maps:10.0.1] /Users/narathorn/.android/build-cache/6760d07aa009065869f2d28fc329fd34268c316a/output/AndroidManifest.xml:19:5-78
+ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\KITTAPORN\.android\build-cache\34be71c2218f49e895b144fec5cf1a49f945cb11\output\AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-analytics-impl:10.0.1] C:\Users\KITTAPORN\.android\build-cache\35e8c9eee7f8d0460d6509cd067537d5563bc961\output\AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\KITTAPORN\.android\build-cache\0b8fed2b7c605bff5a7b8d36390b0fa9442cc58c\output\AndroidManifest.xml:19:5-78
+MERGED from [com.google.android.gms:play-services-maps:10.0.1] C:\Users\KITTAPORN\.android\build-cache\be6df68b284a142a3dd44f1e716cc1dcf210a25f\output\AndroidManifest.xml:19:5-78
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:10.0.1] /Users/narathorn/.android/build-cache/db83f0298a2598fc2dc4f974872cc9c48cdf7172/output/AndroidManifest.xml:21:22-76
+		ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\KITTAPORN\.android\build-cache\34be71c2218f49e895b144fec5cf1a49f945cb11\output\AndroidManifest.xml:21:22-76
 uses-permission#android.permission.WAKE_LOCK
-ADDED from [com.google.firebase:firebase-analytics:10.0.1] /Users/narathorn/.android/build-cache/db83f0298a2598fc2dc4f974872cc9c48cdf7172/output/AndroidManifest.xml:22:5-67
-MERGED from [com.google.firebase:firebase-analytics-impl:10.0.1] /Users/narathorn/.android/build-cache/84b0725728cd18b43a8fbf7259c011a48a4f7435/output/AndroidManifest.xml:22:5-67
-MERGED from [com.google.firebase:firebase-iid:10.0.1] /Users/narathorn/.android/build-cache/dacb7a509334c5370cc9f817e3f01e2f8eaaf6df/output/AndroidManifest.xml:21:5-67
+ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\KITTAPORN\.android\build-cache\34be71c2218f49e895b144fec5cf1a49f945cb11\output\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:10.0.1] C:\Users\KITTAPORN\.android\build-cache\35e8c9eee7f8d0460d6509cd067537d5563bc961\output\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\KITTAPORN\.android\build-cache\0b8fed2b7c605bff5a7b8d36390b0fa9442cc58c\output\AndroidManifest.xml:21:5-67
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:10.0.1] /Users/narathorn/.android/build-cache/db83f0298a2598fc2dc4f974872cc9c48cdf7172/output/AndroidManifest.xml:22:22-65
+		ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\KITTAPORN\.android\build-cache\34be71c2218f49e895b144fec5cf1a49f945cb11\output\AndroidManifest.xml:22:22-65
 receiver#com.google.android.gms.measurement.AppMeasurementReceiver
-ADDED from [com.google.firebase:firebase-analytics:10.0.1] /Users/narathorn/.android/build-cache/db83f0298a2598fc2dc4f974872cc9c48cdf7172/output/AndroidManifest.xml:25:7-26:18
-MERGED from [com.google.firebase:firebase-analytics-impl:10.0.1] /Users/narathorn/.android/build-cache/84b0725728cd18b43a8fbf7259c011a48a4f7435/output/AndroidManifest.xml:25:7-26:18
+ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\KITTAPORN\.android\build-cache\34be71c2218f49e895b144fec5cf1a49f945cb11\output\AndroidManifest.xml:25:7-26:18
+MERGED from [com.google.firebase:firebase-analytics-impl:10.0.1] C:\Users\KITTAPORN\.android\build-cache\35e8c9eee7f8d0460d6509cd067537d5563bc961\output\AndroidManifest.xml:25:7-26:18
 	android:enabled
-		ADDED from [com.google.firebase:firebase-analytics:10.0.1] /Users/narathorn/.android/build-cache/db83f0298a2598fc2dc4f974872cc9c48cdf7172/output/AndroidManifest.xml:25:90-112
+		ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\KITTAPORN\.android\build-cache\34be71c2218f49e895b144fec5cf1a49f945cb11\output\AndroidManifest.xml:25:90-112
 	android:exported
-		ADDED from [com.google.firebase:firebase-analytics:10.0.1] /Users/narathorn/.android/build-cache/db83f0298a2598fc2dc4f974872cc9c48cdf7172/output/AndroidManifest.xml:25:113-137
+		ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\KITTAPORN\.android\build-cache\34be71c2218f49e895b144fec5cf1a49f945cb11\output\AndroidManifest.xml:25:113-137
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:10.0.1] /Users/narathorn/.android/build-cache/db83f0298a2598fc2dc4f974872cc9c48cdf7172/output/AndroidManifest.xml:25:17-89
+		ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\KITTAPORN\.android\build-cache\34be71c2218f49e895b144fec5cf1a49f945cb11\output\AndroidManifest.xml:25:17-89
 receiver#com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver
-ADDED from [com.google.firebase:firebase-analytics:10.0.1] /Users/narathorn/.android/build-cache/db83f0298a2598fc2dc4f974872cc9c48cdf7172/output/AndroidManifest.xml:27:7-31:18
+ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\KITTAPORN\.android\build-cache\34be71c2218f49e895b144fec5cf1a49f945cb11\output\AndroidManifest.xml:27:7-31:18
 	android:enabled
-		ADDED from [com.google.firebase:firebase-analytics:10.0.1] /Users/narathorn/.android/build-cache/db83f0298a2598fc2dc4f974872cc9c48cdf7172/output/AndroidManifest.xml:27:162-184
+		ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\KITTAPORN\.android\build-cache\34be71c2218f49e895b144fec5cf1a49f945cb11\output\AndroidManifest.xml:27:162-184
 	android:permission
-		ADDED from [com.google.firebase:firebase-analytics:10.0.1] /Users/narathorn/.android/build-cache/db83f0298a2598fc2dc4f974872cc9c48cdf7172/output/AndroidManifest.xml:27:105-161
+		ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\KITTAPORN\.android\build-cache\34be71c2218f49e895b144fec5cf1a49f945cb11\output\AndroidManifest.xml:27:105-161
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:10.0.1] /Users/narathorn/.android/build-cache/db83f0298a2598fc2dc4f974872cc9c48cdf7172/output/AndroidManifest.xml:27:17-104
+		ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\KITTAPORN\.android\build-cache\34be71c2218f49e895b144fec5cf1a49f945cb11\output\AndroidManifest.xml:27:17-104
 intent-filter#com.android.vending.INSTALL_REFERRER
-ADDED from [com.google.firebase:firebase-analytics:10.0.1] /Users/narathorn/.android/build-cache/db83f0298a2598fc2dc4f974872cc9c48cdf7172/output/AndroidManifest.xml:28:11-30:27
+ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\KITTAPORN\.android\build-cache\34be71c2218f49e895b144fec5cf1a49f945cb11\output\AndroidManifest.xml:28:11-30:27
 action#com.android.vending.INSTALL_REFERRER
-ADDED from [com.google.firebase:firebase-analytics:10.0.1] /Users/narathorn/.android/build-cache/db83f0298a2598fc2dc4f974872cc9c48cdf7172/output/AndroidManifest.xml:29:15-76
+ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\KITTAPORN\.android\build-cache\34be71c2218f49e895b144fec5cf1a49f945cb11\output\AndroidManifest.xml:29:15-76
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:10.0.1] /Users/narathorn/.android/build-cache/db83f0298a2598fc2dc4f974872cc9c48cdf7172/output/AndroidManifest.xml:29:23-74
+		ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\KITTAPORN\.android\build-cache\34be71c2218f49e895b144fec5cf1a49f945cb11\output\AndroidManifest.xml:29:23-74
 service#com.google.android.gms.measurement.AppMeasurementService
-ADDED from [com.google.firebase:firebase-analytics:10.0.1] /Users/narathorn/.android/build-cache/db83f0298a2598fc2dc4f974872cc9c48cdf7172/output/AndroidManifest.xml:32:7-137
-MERGED from [com.google.firebase:firebase-analytics-impl:10.0.1] /Users/narathorn/.android/build-cache/84b0725728cd18b43a8fbf7259c011a48a4f7435/output/AndroidManifest.xml:27:7-137
+ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\KITTAPORN\.android\build-cache\34be71c2218f49e895b144fec5cf1a49f945cb11\output\AndroidManifest.xml:32:7-137
+MERGED from [com.google.firebase:firebase-analytics-impl:10.0.1] C:\Users\KITTAPORN\.android\build-cache\35e8c9eee7f8d0460d6509cd067537d5563bc961\output\AndroidManifest.xml:27:7-137
 	android:enabled
-		ADDED from [com.google.firebase:firebase-analytics:10.0.1] /Users/narathorn/.android/build-cache/db83f0298a2598fc2dc4f974872cc9c48cdf7172/output/AndroidManifest.xml:32:88-110
+		ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\KITTAPORN\.android\build-cache\34be71c2218f49e895b144fec5cf1a49f945cb11\output\AndroidManifest.xml:32:88-110
 	android:exported
-		ADDED from [com.google.firebase:firebase-analytics:10.0.1] /Users/narathorn/.android/build-cache/db83f0298a2598fc2dc4f974872cc9c48cdf7172/output/AndroidManifest.xml:32:111-135
+		ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\KITTAPORN\.android\build-cache\34be71c2218f49e895b144fec5cf1a49f945cb11\output\AndroidManifest.xml:32:111-135
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:10.0.1] /Users/narathorn/.android/build-cache/db83f0298a2598fc2dc4f974872cc9c48cdf7172/output/AndroidManifest.xml:32:16-87
+		ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\KITTAPORN\.android\build-cache\34be71c2218f49e895b144fec5cf1a49f945cb11\output\AndroidManifest.xml:32:16-87
 service#com.google.firebase.messaging.FirebaseMessagingService
-ADDED from [com.google.firebase:firebase-messaging:10.0.1] /Users/narathorn/.android/build-cache/7ed6ec6e99f37a9eff355496f3db4bc996a812b9/output/AndroidManifest.xml:23:9-27:19
+ADDED from [com.google.firebase:firebase-messaging:10.0.1] C:\Users\KITTAPORN\.android\build-cache\c3828c4abe30d20d6a80fdb7ebaae60fd01e3e38\output\AndroidManifest.xml:23:9-27:19
 	android:exported
-		ADDED from [com.google.firebase:firebase-messaging:10.0.1] /Users/narathorn/.android/build-cache/7ed6ec6e99f37a9eff355496f3db4bc996a812b9/output/AndroidManifest.xml:23:88-111
+		ADDED from [com.google.firebase:firebase-messaging:10.0.1] C:\Users\KITTAPORN\.android\build-cache\c3828c4abe30d20d6a80fdb7ebaae60fd01e3e38\output\AndroidManifest.xml:23:88-111
 	android:name
-		ADDED from [com.google.firebase:firebase-messaging:10.0.1] /Users/narathorn/.android/build-cache/7ed6ec6e99f37a9eff355496f3db4bc996a812b9/output/AndroidManifest.xml:23:18-87
+		ADDED from [com.google.firebase:firebase-messaging:10.0.1] C:\Users\KITTAPORN\.android\build-cache\c3828c4abe30d20d6a80fdb7ebaae60fd01e3e38\output\AndroidManifest.xml:23:18-87
 intent-filter#com.google.firebase.MESSAGING_EVENT
-ADDED from [com.google.firebase:firebase-messaging:10.0.1] /Users/narathorn/.android/build-cache/7ed6ec6e99f37a9eff355496f3db4bc996a812b9/output/AndroidManifest.xml:24:13-26:29
+ADDED from [com.google.firebase:firebase-messaging:10.0.1] C:\Users\KITTAPORN\.android\build-cache\c3828c4abe30d20d6a80fdb7ebaae60fd01e3e38\output\AndroidManifest.xml:24:13-26:29
 	android:priority
-		ADDED from [com.google.firebase:firebase-messaging:10.0.1] /Users/narathorn/.android/build-cache/7ed6ec6e99f37a9eff355496f3db4bc996a812b9/output/AndroidManifest.xml:24:28-51
+		ADDED from [com.google.firebase:firebase-messaging:10.0.1] C:\Users\KITTAPORN\.android\build-cache\c3828c4abe30d20d6a80fdb7ebaae60fd01e3e38\output\AndroidManifest.xml:24:28-51
 action#com.google.firebase.MESSAGING_EVENT
-ADDED from [com.google.firebase:firebase-messaging:10.0.1] /Users/narathorn/.android/build-cache/7ed6ec6e99f37a9eff355496f3db4bc996a812b9/output/AndroidManifest.xml:25:17-77
+ADDED from [com.google.firebase:firebase-messaging:10.0.1] C:\Users\KITTAPORN\.android\build-cache\c3828c4abe30d20d6a80fdb7ebaae60fd01e3e38\output\AndroidManifest.xml:25:17-77
 	android:name
-		ADDED from [com.google.firebase:firebase-messaging:10.0.1] /Users/narathorn/.android/build-cache/7ed6ec6e99f37a9eff355496f3db4bc996a812b9/output/AndroidManifest.xml:25:25-75
+		ADDED from [com.google.firebase:firebase-messaging:10.0.1] C:\Users\KITTAPORN\.android\build-cache\c3828c4abe30d20d6a80fdb7ebaae60fd01e3e38\output\AndroidManifest.xml:25:25-75
 uses-permission#com.google.android.c2dm.permission.RECEIVE
-ADDED from [com.google.firebase:firebase-iid:10.0.1] /Users/narathorn/.android/build-cache/dacb7a509334c5370cc9f817e3f01e2f8eaaf6df/output/AndroidManifest.xml:22:5-81
+ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\KITTAPORN\.android\build-cache\0b8fed2b7c605bff5a7b8d36390b0fa9442cc58c\output\AndroidManifest.xml:22:5-81
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:10.0.1] /Users/narathorn/.android/build-cache/dacb7a509334c5370cc9f817e3f01e2f8eaaf6df/output/AndroidManifest.xml:22:22-79
+		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\KITTAPORN\.android\build-cache\0b8fed2b7c605bff5a7b8d36390b0fa9442cc58c\output\AndroidManifest.xml:22:22-79
 permission#${applicationId}.permission.C2D_MESSAGE
-ADDED from [com.google.firebase:firebase-iid:10.0.1] /Users/narathorn/.android/build-cache/dacb7a509334c5370cc9f817e3f01e2f8eaaf6df/output/AndroidManifest.xml:24:5-109
+ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\KITTAPORN\.android\build-cache\0b8fed2b7c605bff5a7b8d36390b0fa9442cc58c\output\AndroidManifest.xml:24:5-109
 	android:protectionLevel
-		ADDED from [com.google.firebase:firebase-iid:10.0.1] /Users/narathorn/.android/build-cache/dacb7a509334c5370cc9f817e3f01e2f8eaaf6df/output/AndroidManifest.xml:24:72-107
+		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\KITTAPORN\.android\build-cache\0b8fed2b7c605bff5a7b8d36390b0fa9442cc58c\output\AndroidManifest.xml:24:72-107
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:10.0.1] /Users/narathorn/.android/build-cache/dacb7a509334c5370cc9f817e3f01e2f8eaaf6df/output/AndroidManifest.xml:24:17-71
+		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\KITTAPORN\.android\build-cache\0b8fed2b7c605bff5a7b8d36390b0fa9442cc58c\output\AndroidManifest.xml:24:17-71
 uses-permission#${applicationId}.permission.C2D_MESSAGE
-ADDED from [com.google.firebase:firebase-iid:10.0.1] /Users/narathorn/.android/build-cache/dacb7a509334c5370cc9f817e3f01e2f8eaaf6df/output/AndroidManifest.xml:26:5-78
+ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\KITTAPORN\.android\build-cache\0b8fed2b7c605bff5a7b8d36390b0fa9442cc58c\output\AndroidManifest.xml:26:5-78
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:10.0.1] /Users/narathorn/.android/build-cache/dacb7a509334c5370cc9f817e3f01e2f8eaaf6df/output/AndroidManifest.xml:26:22-76
+		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\KITTAPORN\.android\build-cache\0b8fed2b7c605bff5a7b8d36390b0fa9442cc58c\output\AndroidManifest.xml:26:22-76
 receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
-ADDED from [com.google.firebase:firebase-iid:10.0.1] /Users/narathorn/.android/build-cache/dacb7a509334c5370cc9f817e3f01e2f8eaaf6df/output/AndroidManifest.xml:30:9-36:20
+ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\KITTAPORN\.android\build-cache\0b8fed2b7c605bff5a7b8d36390b0fa9442cc58c\output\AndroidManifest.xml:30:9-36:20
 	android:exported
-		ADDED from [com.google.firebase:firebase-iid:10.0.1] /Users/narathorn/.android/build-cache/dacb7a509334c5370cc9f817e3f01e2f8eaaf6df/output/AndroidManifest.xml:30:85-108
+		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\KITTAPORN\.android\build-cache\0b8fed2b7c605bff5a7b8d36390b0fa9442cc58c\output\AndroidManifest.xml:30:85-108
 	android:permission
-		ADDED from [com.google.firebase:firebase-iid:10.0.1] /Users/narathorn/.android/build-cache/dacb7a509334c5370cc9f817e3f01e2f8eaaf6df/output/AndroidManifest.xml:30:109-169
+		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\KITTAPORN\.android\build-cache\0b8fed2b7c605bff5a7b8d36390b0fa9442cc58c\output\AndroidManifest.xml:30:109-169
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:10.0.1] /Users/narathorn/.android/build-cache/dacb7a509334c5370cc9f817e3f01e2f8eaaf6df/output/AndroidManifest.xml:30:19-84
+		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\KITTAPORN\.android\build-cache\0b8fed2b7c605bff5a7b8d36390b0fa9442cc58c\output\AndroidManifest.xml:30:19-84
 intent-filter#${applicationId}+com.google.android.c2dm.intent.RECEIVE+com.google.android.c2dm.intent.REGISTRATION
-ADDED from [com.google.firebase:firebase-iid:10.0.1] /Users/narathorn/.android/build-cache/dacb7a509334c5370cc9f817e3f01e2f8eaaf6df/output/AndroidManifest.xml:31:13-35:29
+ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\KITTAPORN\.android\build-cache\0b8fed2b7c605bff5a7b8d36390b0fa9442cc58c\output\AndroidManifest.xml:31:13-35:29
 action#com.google.android.c2dm.intent.RECEIVE
-ADDED from [com.google.firebase:firebase-iid:10.0.1] /Users/narathorn/.android/build-cache/dacb7a509334c5370cc9f817e3f01e2f8eaaf6df/output/AndroidManifest.xml:32:17-80
+ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\KITTAPORN\.android\build-cache\0b8fed2b7c605bff5a7b8d36390b0fa9442cc58c\output\AndroidManifest.xml:32:17-80
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:10.0.1] /Users/narathorn/.android/build-cache/dacb7a509334c5370cc9f817e3f01e2f8eaaf6df/output/AndroidManifest.xml:32:25-78
+		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\KITTAPORN\.android\build-cache\0b8fed2b7c605bff5a7b8d36390b0fa9442cc58c\output\AndroidManifest.xml:32:25-78
 action#com.google.android.c2dm.intent.REGISTRATION
-ADDED from [com.google.firebase:firebase-iid:10.0.1] /Users/narathorn/.android/build-cache/dacb7a509334c5370cc9f817e3f01e2f8eaaf6df/output/AndroidManifest.xml:33:17-85
+ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\KITTAPORN\.android\build-cache\0b8fed2b7c605bff5a7b8d36390b0fa9442cc58c\output\AndroidManifest.xml:33:17-85
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:10.0.1] /Users/narathorn/.android/build-cache/dacb7a509334c5370cc9f817e3f01e2f8eaaf6df/output/AndroidManifest.xml:33:25-83
+		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\KITTAPORN\.android\build-cache\0b8fed2b7c605bff5a7b8d36390b0fa9442cc58c\output\AndroidManifest.xml:33:25-83
 category#${applicationId}
-ADDED from [com.google.firebase:firebase-iid:10.0.1] /Users/narathorn/.android/build-cache/dacb7a509334c5370cc9f817e3f01e2f8eaaf6df/output/AndroidManifest.xml:34:17-60
+ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\KITTAPORN\.android\build-cache\0b8fed2b7c605bff5a7b8d36390b0fa9442cc58c\output\AndroidManifest.xml:34:17-60
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:10.0.1] /Users/narathorn/.android/build-cache/dacb7a509334c5370cc9f817e3f01e2f8eaaf6df/output/AndroidManifest.xml:34:27-58
+		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\KITTAPORN\.android\build-cache\0b8fed2b7c605bff5a7b8d36390b0fa9442cc58c\output\AndroidManifest.xml:34:27-58
 receiver#com.google.firebase.iid.FirebaseInstanceIdInternalReceiver
-ADDED from [com.google.firebase:firebase-iid:10.0.1] /Users/narathorn/.android/build-cache/dacb7a509334c5370cc9f817e3f01e2f8eaaf6df/output/AndroidManifest.xml:40:9-119
+ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\KITTAPORN\.android\build-cache\0b8fed2b7c605bff5a7b8d36390b0fa9442cc58c\output\AndroidManifest.xml:40:9-119
 	android:exported
-		ADDED from [com.google.firebase:firebase-iid:10.0.1] /Users/narathorn/.android/build-cache/dacb7a509334c5370cc9f817e3f01e2f8eaaf6df/output/AndroidManifest.xml:40:93-117
+		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\KITTAPORN\.android\build-cache\0b8fed2b7c605bff5a7b8d36390b0fa9442cc58c\output\AndroidManifest.xml:40:93-117
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:10.0.1] /Users/narathorn/.android/build-cache/dacb7a509334c5370cc9f817e3f01e2f8eaaf6df/output/AndroidManifest.xml:40:19-92
+		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\KITTAPORN\.android\build-cache\0b8fed2b7c605bff5a7b8d36390b0fa9442cc58c\output\AndroidManifest.xml:40:19-92
 service#com.google.firebase.iid.FirebaseInstanceIdService
-ADDED from [com.google.firebase:firebase-iid:10.0.1] /Users/narathorn/.android/build-cache/dacb7a509334c5370cc9f817e3f01e2f8eaaf6df/output/AndroidManifest.xml:44:9-48:19
+ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\KITTAPORN\.android\build-cache\0b8fed2b7c605bff5a7b8d36390b0fa9442cc58c\output\AndroidManifest.xml:44:9-48:19
 	android:exported
-		ADDED from [com.google.firebase:firebase-iid:10.0.1] /Users/narathorn/.android/build-cache/dacb7a509334c5370cc9f817e3f01e2f8eaaf6df/output/AndroidManifest.xml:44:83-106
+		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\KITTAPORN\.android\build-cache\0b8fed2b7c605bff5a7b8d36390b0fa9442cc58c\output\AndroidManifest.xml:44:83-106
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:10.0.1] /Users/narathorn/.android/build-cache/dacb7a509334c5370cc9f817e3f01e2f8eaaf6df/output/AndroidManifest.xml:44:18-82
+		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\KITTAPORN\.android\build-cache\0b8fed2b7c605bff5a7b8d36390b0fa9442cc58c\output\AndroidManifest.xml:44:18-82
 intent-filter#com.google.firebase.INSTANCE_ID_EVENT
-ADDED from [com.google.firebase:firebase-iid:10.0.1] /Users/narathorn/.android/build-cache/dacb7a509334c5370cc9f817e3f01e2f8eaaf6df/output/AndroidManifest.xml:45:13-47:29
+ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\KITTAPORN\.android\build-cache\0b8fed2b7c605bff5a7b8d36390b0fa9442cc58c\output\AndroidManifest.xml:45:13-47:29
 	android:priority
-		ADDED from [com.google.firebase:firebase-iid:10.0.1] /Users/narathorn/.android/build-cache/dacb7a509334c5370cc9f817e3f01e2f8eaaf6df/output/AndroidManifest.xml:45:28-51
+		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\KITTAPORN\.android\build-cache\0b8fed2b7c605bff5a7b8d36390b0fa9442cc58c\output\AndroidManifest.xml:45:28-51
 action#com.google.firebase.INSTANCE_ID_EVENT
-ADDED from [com.google.firebase:firebase-iid:10.0.1] /Users/narathorn/.android/build-cache/dacb7a509334c5370cc9f817e3f01e2f8eaaf6df/output/AndroidManifest.xml:46:17-79
+ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\KITTAPORN\.android\build-cache\0b8fed2b7c605bff5a7b8d36390b0fa9442cc58c\output\AndroidManifest.xml:46:17-79
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:10.0.1] /Users/narathorn/.android/build-cache/dacb7a509334c5370cc9f817e3f01e2f8eaaf6df/output/AndroidManifest.xml:46:25-77
+		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\KITTAPORN\.android\build-cache\0b8fed2b7c605bff5a7b8d36390b0fa9442cc58c\output\AndroidManifest.xml:46:25-77
 provider#com.google.firebase.provider.FirebaseInitProvider
-ADDED from [com.google.firebase:firebase-common:10.0.1] /Users/narathorn/.android/build-cache/87a98227aaada635eb5a4faa8a464fa81066ea46/output/AndroidManifest.xml:6:9-194
+ADDED from [com.google.firebase:firebase-common:10.0.1] C:\Users\KITTAPORN\.android\build-cache\87d770b93ef6e916a6ff91a23ba29bf2f6a113cf\output\AndroidManifest.xml:6:9-194
 	android:authorities
-		ADDED from [com.google.firebase:firebase-common:10.0.1] /Users/narathorn/.android/build-cache/87a98227aaada635eb5a4faa8a464fa81066ea46/output/AndroidManifest.xml:6:19-78
+		ADDED from [com.google.firebase:firebase-common:10.0.1] C:\Users\KITTAPORN\.android\build-cache\87d770b93ef6e916a6ff91a23ba29bf2f6a113cf\output\AndroidManifest.xml:6:19-78
 	android:exported
-		ADDED from [com.google.firebase:firebase-common:10.0.1] /Users/narathorn/.android/build-cache/87a98227aaada635eb5a4faa8a464fa81066ea46/output/AndroidManifest.xml:6:144-168
+		ADDED from [com.google.firebase:firebase-common:10.0.1] C:\Users\KITTAPORN\.android\build-cache\87d770b93ef6e916a6ff91a23ba29bf2f6a113cf\output\AndroidManifest.xml:6:144-168
 	android:initOrder
-		ADDED from [com.google.firebase:firebase-common:10.0.1] /Users/narathorn/.android/build-cache/87a98227aaada635eb5a4faa8a464fa81066ea46/output/AndroidManifest.xml:6:169-192
+		ADDED from [com.google.firebase:firebase-common:10.0.1] C:\Users\KITTAPORN\.android\build-cache\87d770b93ef6e916a6ff91a23ba29bf2f6a113cf\output\AndroidManifest.xml:6:169-192
 	android:name
-		ADDED from [com.google.firebase:firebase-common:10.0.1] /Users/narathorn/.android/build-cache/87a98227aaada635eb5a4faa8a464fa81066ea46/output/AndroidManifest.xml:6:79-143
+		ADDED from [com.google.firebase:firebase-common:10.0.1] C:\Users\KITTAPORN\.android\build-cache\87d770b93ef6e916a6ff91a23ba29bf2f6a113cf\output\AndroidManifest.xml:6:79-143
 uses-feature#0x00020000
-ADDED from [com.google.android.gms:play-services-maps:10.0.1] /Users/narathorn/.android/build-cache/6760d07aa009065869f2d28fc329fd34268c316a/output/AndroidManifest.xml:21:5-77
+ADDED from [com.google.android.gms:play-services-maps:10.0.1] C:\Users\KITTAPORN\.android\build-cache\be6df68b284a142a3dd44f1e716cc1dcf210a25f\output\AndroidManifest.xml:21:5-77
 	android:glEsVersion
-		ADDED from [com.google.android.gms:play-services-maps:10.0.1] /Users/narathorn/.android/build-cache/6760d07aa009065869f2d28fc329fd34268c316a/output/AndroidManifest.xml:21:19-51
+		ADDED from [com.google.android.gms:play-services-maps:10.0.1] C:\Users\KITTAPORN\.android\build-cache\be6df68b284a142a3dd44f1e716cc1dcf210a25f\output\AndroidManifest.xml:21:19-51
 	android:required
-		ADDED from [com.google.android.gms:play-services-maps:10.0.1] /Users/narathorn/.android/build-cache/6760d07aa009065869f2d28fc329fd34268c316a/output/AndroidManifest.xml:21:52-75
+		ADDED from [com.google.android.gms:play-services-maps:10.0.1] C:\Users\KITTAPORN\.android\build-cache\be6df68b284a142a3dd44f1e716cc1dcf210a25f\output\AndroidManifest.xml:21:52-75
 activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:10.0.1] /Users/narathorn/.android/build-cache/f7d796147ad72605712b67c67f4ec2038f209ae8/output/AndroidManifest.xml:19:9-172
+ADDED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\KITTAPORN\.android\build-cache\03bfb0be78a9d233317a1c05bc774332f727a5d2\output\AndroidManifest.xml:19:9-172
 	android:exported
-		ADDED from [com.google.android.gms:play-services-base:10.0.1] /Users/narathorn/.android/build-cache/f7d796147ad72605712b67c67f4ec2038f209ae8/output/AndroidManifest.xml:19:146-170
+		ADDED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\KITTAPORN\.android\build-cache\03bfb0be78a9d233317a1c05bc774332f727a5d2\output\AndroidManifest.xml:19:146-170
 	android:theme
-		ADDED from [com.google.android.gms:play-services-base:10.0.1] /Users/narathorn/.android/build-cache/f7d796147ad72605712b67c67f4ec2038f209ae8/output/AndroidManifest.xml:19:86-145
+		ADDED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\KITTAPORN\.android\build-cache\03bfb0be78a9d233317a1c05bc774332f727a5d2\output\AndroidManifest.xml:19:86-145
 	android:name
-		ADDED from [com.google.android.gms:play-services-base:10.0.1] /Users/narathorn/.android/build-cache/f7d796147ad72605712b67c67f4ec2038f209ae8/output/AndroidManifest.xml:19:19-85
+		ADDED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\KITTAPORN\.android\build-cache\03bfb0be78a9d233317a1c05bc774332f727a5d2\output\AndroidManifest.xml:19:19-85
 meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:10.0.1] /Users/narathorn/.android/build-cache/da46b50546654dc6eeaef5a166d508d22b4e5adf/output/AndroidManifest.xml:20:9-121
+ADDED from [com.google.android.gms:play-services-basement:10.0.1] C:\Users\KITTAPORN\.android\build-cache\3df9cd1fc5a2ac3c584c5fa9d292ec50a6921670\output\AndroidManifest.xml:20:9-121
 	android:value
-		ADDED from [com.google.android.gms:play-services-basement:10.0.1] /Users/narathorn/.android/build-cache/da46b50546654dc6eeaef5a166d508d22b4e5adf/output/AndroidManifest.xml:20:66-119
+		ADDED from [com.google.android.gms:play-services-basement:10.0.1] C:\Users\KITTAPORN\.android\build-cache\3df9cd1fc5a2ac3c584c5fa9d292ec50a6921670\output\AndroidManifest.xml:20:66-119
 	android:name
-		ADDED from [com.google.android.gms:play-services-basement:10.0.1] /Users/narathorn/.android/build-cache/da46b50546654dc6eeaef5a166d508d22b4e5adf/output/AndroidManifest.xml:20:20-65
+		ADDED from [com.google.android.gms:play-services-basement:10.0.1] C:\Users\KITTAPORN\.android\build-cache\3df9cd1fc5a2ac3c584c5fa9d292ec50a6921670\output\AndroidManifest.xml:20:20-65
