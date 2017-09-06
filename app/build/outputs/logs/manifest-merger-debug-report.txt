@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:2:1-113:12
+ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:2:1-117:12
 	package
 		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:3:5-40
 		INJECTED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml
@@ -38,17 +38,25 @@ uses-permission#android.permission.ACCESS_FINE_LOCATION
 ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:11:5-79
 	android:name
 		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:11:22-76
-uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:17:5-81
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:12:5-79
 	android:name
-		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:17:22-78
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:12:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:13:5-80
+	android:name
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:13:22-78
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:19:5-81
+	android:name
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:19:22-78
 application
-ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:20:5-111:19
+ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:22:5-115:19
 MERGED from [com.google.firebase:firebase-auth:10.0.1] C:\Users\KITTAPORN\.android\build-cache\44a38dfb9b04e03982ec4aa71ceaeab51ed3146d\output\AndroidManifest.xml:19:5-20:19
 MERGED from [com.android.support:design:23.4.0] C:\Users\KITTAPORN\.android\build-cache\f96e9766c50bb3ab8e80da0939d695edb5f5b3a8\output\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:appcompat-v7:23.4.0] C:\Users\KITTAPORN\.android\build-cache\dceed614bee038db896ca9bb994dc13edaa8dfe9\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:animated-vector-drawable:23.4.0] C:\Users\KITTAPORN\.android\build-cache\46c480a62d5d803c0f1fe7c35fe3a0396b11e506\output\AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\KITTAPORN\.android\build-cache\f20d93d983e85a34dffa926a49ba720067cb7225\output\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:appcompat-v7:24.1.1] C:\Users\KITTAPORN\.android\build-cache\357ed509c40beca13d31e6114ae1fb51d1bb093f\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:24.1.1] C:\Users\KITTAPORN\.android\build-cache\fb141f1b63388d5ebba75b648e59e59a7e8c35a9\output\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:24.1.1] C:\Users\KITTAPORN\.android\build-cache\dcd4ca894765a0626be38e7e422332aeb82211c3\output\AndroidManifest.xml:23:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\KITTAPORN\.android\build-cache\44ecaa49b445eb9a8b1b01ab5fddb702a87fd750\output\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support:cardview-v7:23.1.1] C:\Users\KITTAPORN\.android\build-cache\5164146b73748d30f57c6afa9258dbf72cfbb085\output\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-places:10.0.1] C:\Users\KITTAPORN\.android\build-cache\6159c868351b1e4967caec77ded0e3169ab5259c\output\AndroidManifest.xml:18:5-19
@@ -64,161 +72,168 @@ MERGED from [com.google.android.gms:play-services-maps:10.0.1] C:\Users\KITTAPOR
 MERGED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\KITTAPORN\.android\build-cache\03bfb0be78a9d233317a1c05bc774332f727a5d2\output\AndroidManifest.xml:18:5-20:19
 MERGED from [com.google.android.gms:play-services-tasks:10.0.1] C:\Users\KITTAPORN\.android\build-cache\2d876df8c3c139d76ab48c793b0bf6fd9d5489c6\output\AndroidManifest.xml:4:5-19
 MERGED from [com.google.android.gms:play-services-basement:10.0.1] C:\Users\KITTAPORN\.android\build-cache\3df9cd1fc5a2ac3c584c5fa9d292ec50a6921670\output\AndroidManifest.xml:19:5-21:19
-MERGED from [com.android.support:support-v4:24.0.0] C:\Users\KITTAPORN\.android\build-cache\e8ddc63f5ebceb73b7a15ba6f757a7668629abef\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v4:24.1.1] C:\Users\KITTAPORN\.android\build-cache\1a19025ec823240b16a113df0decd47d9b2f5d2f\output\AndroidManifest.xml:25:5-20
 	android:label
-		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:23:9-41
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:25:9-41
 	android:supportsRtl
-		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:24:9-35
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:26:9-35
 	android:allowBackup
-		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:21:9-35
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:23:9-35
 	android:icon
-		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:22:9-45
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:24:9-45
 	android:theme
-		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:25:9-40
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:27:9-40
 activity#info.androidhive.firebase.LoginActivity
-ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:26:9-34:20
+ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:28:9-36:20
 	android:theme
-		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:28:13-56
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:30:13-56
 	android:name
-		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:27:13-42
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:29:13-42
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:29:13-33:29
+ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:31:13-35:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:30:17-69
+ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:32:17-69
 	android:name
-		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:30:25-66
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:32:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:32:17-77
+ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:34:17-77
 	android:name
-		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:32:27-74
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:34:27-74
 activity#info.androidhive.firebase.MainActivity
-ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:35:9-38:59
+ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:37:9-40:59
 	android:label
-		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:37:13-59
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:39:13-59
 	android:theme
-		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:38:13-56
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:40:13-56
 	android:name
-		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:36:13-41
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:38:13-41
 activity#info.androidhive.firebase.SignupActivity
-ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:39:9-42:59
+ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:41:9-44:59
 	android:label
-		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:41:13-57
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:43:13-57
 	android:theme
-		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:42:13-56
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:44:13-56
 	android:name
-		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:40:13-43
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:42:13-43
 activity#info.androidhive.firebase.ResetPasswordActivity
-ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:43:9-46:59
+ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:45:9-48:59
 	android:label
-		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:45:13-66
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:47:13-66
 	android:theme
-		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:46:13-56
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:48:13-56
 	android:name
-		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:44:13-50
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:46:13-50
 activity#info.androidhive.firebase.InfoActivity
-ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:47:9-50
+ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:49:9-50
 	android:name
-		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:47:19-47
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:49:19-47
 activity#info.androidhive.firebase.DestinationActivity
-ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:48:9-56:20
+ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:50:9-58:20
 	android:name
-		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:48:19-54
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:50:19-54
 activity#info.androidhive.firebase.NewBoard
-ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:57:9-60:47
+ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:59:9-62:47
 	android:label
-		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:59:13-61
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:61:13-61
 	android:theme
-		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:60:13-44
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:62:13-44
 	android:name
-		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:58:13-37
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:60:13-37
 meta-data#com.google.android.geo.API_KEY
-ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:70:9-72:55
+ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:72:9-74:55
 	android:value
-		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:72:13-52
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:74:13-52
 	android:name
-		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:71:13-58
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:73:13-58
 activity#info.androidhive.firebase.MapsActivity
-ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:74:9-76:59
+ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:76:9-78:59
 	android:label
-		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:76:13-56
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:78:13-56
 	android:name
-		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:75:13-41
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:77:13-41
 activity#info.androidhive.firebase.MapsActivityDes
-ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:77:9-79:63
+ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:79:9-81:63
 	android:label
-		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:79:13-60
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:81:13-60
 	android:name
-		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:78:13-44
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:80:13-44
 activity#info.androidhive.firebase.ConnectPassenger
-ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:80:9-54
+ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:82:9-54
 	android:name
-		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:80:19-51
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:82:19-51
 activity#info.androidhive.firebase.MypostActivity
-ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:81:9-84:47
+ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:83:9-86:47
 	android:label
-		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:83:13-58
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:85:13-58
 	android:theme
-		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:84:13-44
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:86:13-44
 	android:name
-		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:82:13-43
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:84:13-43
+activity#com.theartofdev.edmodo.cropper.CropImageActivity
+ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:87:9-88:58
+	android:theme
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:88:13-56
+	android:name
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:87:19-82
 service#info.androidhive.firebase.MyService
-ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:86:9-89:39
+ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:90:9-93:39
 	android:enabled
-		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:88:13-35
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:92:13-35
 	android:exported
-		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:89:13-36
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:93:13-36
 	android:name
-		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:87:13-38
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:91:13-38
 activity#info.androidhive.firebase.Connected
-ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:91:9-47
+ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:95:9-47
 	android:name
-		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:91:19-44
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:95:19-44
 activity#info.androidhive.firebase.ConnectedMap
-ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:92:9-94:68
+ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:96:9-98:68
 	android:label
-		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:94:13-65
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:98:13-65
 	android:name
-		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:93:13-41
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:97:13-41
 activity#info.androidhive.firebase.ServiceLocation
-ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:95:9-53
+ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:99:9-53
 	android:name
-		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:95:19-50
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:99:19-50
 service#info.androidhive.firebase.ServiceLocation
-ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:97:9-100:39
-	android:enabled
-		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:99:13-35
-	android:exported
-		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:100:13-36
-	android:name
-		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:98:13-44
-service#info.androidhive.firebase.DriverService
 ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:101:9-104:39
 	android:enabled
 		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:103:13-35
 	android:exported
 		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:104:13-36
 	android:name
-		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:102:13-42
-service#info.androidhive.firebase.GpsService
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:102:13-44
+service#info.androidhive.firebase.DriverService
 ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:105:9-108:39
 	android:enabled
 		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:107:13-35
 	android:exported
 		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:108:13-36
 	android:name
-		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:106:13-39
-activity#info.androidhive.firebase.DriverConnected
-ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:110:9-62
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:106:13-42
+service#info.androidhive.firebase.GpsService
+ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:109:9-112:39
+	android:enabled
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:111:13-35
+	android:exported
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:112:13-36
 	android:name
-		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:110:19-50
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:110:13-39
+activity#info.androidhive.firebase.DriverConnected
+ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:114:9-62
+	android:name
+		ADDED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml:114:19-50
 uses-sdk
 INJECTED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.theartofdev.edmodo:android-image-cropper:2.3.1] C:\Users\KITTAPORN\.android\build-cache\180071c3b55cd99e91f94e2dcf8ac2938a4895f5\output\AndroidManifest.xml:8:5-10:41
 MERGED from [com.google.firebase:firebase-auth:10.0.1] C:\Users\KITTAPORN\.android\build-cache\44a38dfb9b04e03982ec4aa71ceaeab51ed3146d\output\AndroidManifest.xml:17:5-42
 MERGED from [com.android.support:design:23.4.0] C:\Users\KITTAPORN\.android\build-cache\f96e9766c50bb3ab8e80da0939d695edb5f5b3a8\output\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:recyclerview-v7:23.4.0] C:\Users\KITTAPORN\.android\build-cache\3547c1507eeeb931073fbf20950d8753c0fbd5e0\output\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:appcompat-v7:23.4.0] C:\Users\KITTAPORN\.android\build-cache\dceed614bee038db896ca9bb994dc13edaa8dfe9\output\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:animated-vector-drawable:23.4.0] C:\Users\KITTAPORN\.android\build-cache\46c480a62d5d803c0f1fe7c35fe3a0396b11e506\output\AndroidManifest.xml:5:5-44
-MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\KITTAPORN\.android\build-cache\f20d93d983e85a34dffa926a49ba720067cb7225\output\AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:appcompat-v7:24.1.1] C:\Users\KITTAPORN\.android\build-cache\357ed509c40beca13d31e6114ae1fb51d1bb093f\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:24.1.1] C:\Users\KITTAPORN\.android\build-cache\fb141f1b63388d5ebba75b648e59e59a7e8c35a9\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:24.1.1] C:\Users\KITTAPORN\.android\build-cache\dcd4ca894765a0626be38e7e422332aeb82211c3\output\AndroidManifest.xml:21:5-43
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\KITTAPORN\.android\build-cache\44ecaa49b445eb9a8b1b01ab5fddb702a87fd750\output\AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.firebase:firebase-database:10.0.1] C:\Users\KITTAPORN\.android\build-cache\18c39804fa55716ca55c7c5a7705198bd68f4edf\output\AndroidManifest.xml:3:5-42
 MERGED from [com.google.firebase:firebase-database-connection:10.0.1] C:\Users\KITTAPORN\.android\build-cache\af71eb6f9831015b6f5b8968445e0f6485419e48\output\AndroidManifest.xml:3:5-42
@@ -241,9 +256,9 @@ MERGED from [com.google.android.gms:play-services-maps:10.0.1] C:\Users\KITTAPOR
 MERGED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\KITTAPORN\.android\build-cache\03bfb0be78a9d233317a1c05bc774332f727a5d2\output\AndroidManifest.xml:17:5-42
 MERGED from [com.google.android.gms:play-services-tasks:10.0.1] C:\Users\KITTAPORN\.android\build-cache\2d876df8c3c139d76ab48c793b0bf6fd9d5489c6\output\AndroidManifest.xml:3:5-42
 MERGED from [com.google.android.gms:play-services-basement:10.0.1] C:\Users\KITTAPORN\.android\build-cache\3df9cd1fc5a2ac3c584c5fa9d292ec50a6921670\output\AndroidManifest.xml:17:5-42
-MERGED from [com.android.support:support-v4:24.0.0] C:\Users\KITTAPORN\.android\build-cache\e8ddc63f5ebceb73b7a15ba6f757a7668629abef\output\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:24.1.1] C:\Users\KITTAPORN\.android\build-cache\1a19025ec823240b16a113df0decd47d9b2f5d2f\output\AndroidManifest.xml:21:5-23:54
 	tools:overrideLibrary
-		ADDED from [com.android.support:appcompat-v7:23.4.0] C:\Users\KITTAPORN\.android\build-cache\dceed614bee038db896ca9bb994dc13edaa8dfe9\output\AndroidManifest.xml:23:9-75
+		ADDED from [com.android.support:appcompat-v7:24.1.1] C:\Users\KITTAPORN\.android\build-cache\357ed509c40beca13d31e6114ae1fb51d1bb093f\output\AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
 		INJECTED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\KITTAPORN\Desktop\newporject\KUtogetherFromPOTE\app\src\main\AndroidManifest.xml

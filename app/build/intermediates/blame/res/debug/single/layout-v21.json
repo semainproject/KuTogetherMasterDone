@@ -1,10 +1,22 @@
 [
     {
-        "merged": "C:\\Users\\narathorn\\Downloads\\FirebaseAuthImproveToThebest\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\place_autocomplete_fragment.xml",
-        "source": "C:\\Users\\narathorn\\.android\\build-cache\\9ab64000703481f58e8566375a98225861f53244\\output\\res\\layout-v21\\place_autocomplete_fragment.xml"
-    },
-    {
         "merged": "C:\\Users\\KITTAPORN\\Desktop\\newporject\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\place_autocomplete_fragment.xml",
         "source": "C:\\Users\\KITTAPORN\\.android\\build-cache\\6159c868351b1e4967caec77ded0e3169ab5259c\\output\\res\\layout-v21\\place_autocomplete_fragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\KITTAPORN\\Desktop\\newporject\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\KITTAPORN\\.android\\build-cache\\0af740791a09f841a118393c7364d75b1d8a4b32\\output\\res\\layout-v21\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "C:\\Users\\KITTAPORN\\Desktop\\newporject\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_custom_big.xml",
+        "source": "C:\\Users\\KITTAPORN\\.android\\build-cache\\0af740791a09f841a118393c7364d75b1d8a4b32\\output\\res\\layout-v21\\notification_template_custom_big.xml"
+    },
+    {
+        "merged": "C:\\Users\\KITTAPORN\\Desktop\\newporject\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\KITTAPORN\\.android\\build-cache\\0af740791a09f841a118393c7364d75b1d8a4b32\\output\\res\\layout-v21\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "C:\\Users\\KITTAPORN\\Desktop\\newporject\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action.xml",
+        "source": "C:\\Users\\KITTAPORN\\.android\\build-cache\\0af740791a09f841a118393c7364d75b1d8a4b32\\output\\res\\layout-v21\\notification_action.xml"
     }
 ]

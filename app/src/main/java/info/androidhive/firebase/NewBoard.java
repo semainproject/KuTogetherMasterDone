@@ -61,6 +61,7 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.OnProgressListener;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
+import com.theartofdev.edmodo.cropper.CropImage;
 
 import org.w3c.dom.Text;
 
@@ -304,7 +305,7 @@ public class NewBoard extends AppCompatActivity implements NavigationView.OnNavi
                                         Intent intent = new Intent(NewBoard.this, MypostActivity.class);
                                         startActivity(intent);
                                     } else if(infoUser.getTypePassDriv().equals("Passenger") && desInfo.isConnect() == true) {
-                                        Intent intent = new Intent(NewBoard.this, Connected.class);
+                                        Intent intent = new Intent(NewBoard.this, DriverConnected.class);
                                         startActivity(intent);
                                     } else {
                                         Toast.makeText(NewBoard.this , "ํYou don't have a passenger yet" , Toast.LENGTH_LONG).show();
@@ -410,9 +411,19 @@ public class NewBoard extends AppCompatActivity implements NavigationView.OnNavi
             try {
                 Bitmap bitmap = MediaStore.Images.Media.getBitmap(getContentResolver(), filePath);
                 //imageView.setImageBitmap(bitmap);
-                uploadFile();
+                CropImage.activity(filePath)
+                        .setAspectRatio(1,1)
+                        .start(this);
             } catch (IOException e) {
                 e.printStackTrace();
+            }
+        }if (requestCode == CropImage.CROP_IMAGE_ACTIVITY_REQUEST_CODE) {
+            CropImage.ActivityResult result = CropImage.getActivityResult(data);
+            if (resultCode == RESULT_OK) {
+                filePath = result.getUri();
+                uploadFile();
+            } else if (resultCode == CropImage.CROP_IMAGE_ACTIVITY_RESULT_ERROR_CODE) {
+                Exception error = result.getError();
             }
         }
     }
@@ -438,10 +449,27 @@ public class NewBoard extends AppCompatActivity implements NavigationView.OnNavi
                         public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
                             progressDialog.dismiss();
                             Toast.makeText(getApplicationContext(), "File Uploaded ", Toast.LENGTH_LONG).show();
-                            finish();
-                            overridePendingTransition(0, 0);
-                            startActivity(getIntent());
-                            overridePendingTransition(0, 0);
+                            storageReference.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+                                @Override
+                                public void onSuccess(Uri uri) {
+                                    NavigationView navigationView2 = (NavigationView) findViewById(R.id.nav_view);
+                                    View headerView = navigationView2.getHeaderView(0);
+                                    final ImageView drawerImage = (ImageView) headerView.findViewById(imageView);
+                                    Glide.with(getApplicationContext()).load(uri).asBitmap().centerCrop().into(new BitmapImageViewTarget(drawerImage) {
+                                        @Override
+                                        protected void setResource(Bitmap resource) {
+                                            RoundedBitmapDrawable circularBitmapDrawable =
+                                                    RoundedBitmapDrawableFactory.create(getApplicationContext().getResources(), resource);
+                                            circularBitmapDrawable.setCircular(true);
+                                            drawerImage.setImageDrawable(circularBitmapDrawable);
+                                        }
+                                    });
+                                }
+                            });
+                            //finish();
+//                            overridePendingTransition(0, 0);
+//                            startActivity(getIntent());
+//                            overridePendingTransition(0, 0);
                         }
                     })
                     .addOnFailureListener(new OnFailureListener() {

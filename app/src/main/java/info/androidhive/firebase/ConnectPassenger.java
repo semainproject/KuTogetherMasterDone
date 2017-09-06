@@ -129,12 +129,12 @@ public class ConnectPassenger extends AppCompatActivity {
                 String bikeID = infoUser.getBikeID();
                 InfoUser info = new InfoUser(name , gender , bikeBrand , bikeColor , bikeID , uid);
                 dbUpdate.child(uid).setValue(info);
-                Toast.makeText(ConnectPassenger.this , name , Toast.LENGTH_LONG).show();
+                finish();
             }
 
             @Override
             public void onCancelled(DatabaseError databaseError) {
-
+                Toast.makeText(ConnectPassenger.this , "ERROR TO SEND INFORMATION" , Toast.LENGTH_LONG).show();
             }
         });
     }

@@ -1,90 +1,90 @@
 [
     {
         "merged": "C:\\Users\\KITTAPORN\\Desktop\\newporject\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_search_url_text.xml",
-        "source": "C:\\Users\\KITTAPORN\\.android\\build-cache\\dceed614bee038db896ca9bb994dc13edaa8dfe9\\output\\res\\color\\abc_search_url_text.xml"
+        "source": "C:\\Users\\KITTAPORN\\.android\\build-cache\\357ed509c40beca13d31e6114ae1fb51d1bb093f\\output\\res\\color\\abc_search_url_text.xml"
     },
     {
-        "merged": "C:\\Users\\narathorn\\Downloads\\FirebaseAuthImproveToThebest\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_light.xml",
-        "source": "C:\\Users\\narathorn\\.android\\build-cache\\82e43e44789af66cad4a8cea0201d88facca6dd5\\output\\res\\color\\abc_secondary_text_material_light.xml"
+        "merged": "C:\\Users\\KITTAPORN\\Desktop\\newporject\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_seek_thumb.xml",
+        "source": "C:\\Users\\KITTAPORN\\.android\\build-cache\\357ed509c40beca13d31e6114ae1fb51d1bb093f\\output\\res\\color\\abc_tint_seek_thumb.xml"
     },
     {
-        "merged": "C:\\Users\\narathorn\\Downloads\\FirebaseAuthImproveToThebest\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_light.xml",
-        "source": "C:\\Users\\narathorn\\.android\\build-cache\\82e43e44789af66cad4a8cea0201d88facca6dd5\\output\\res\\color\\abc_primary_text_disable_only_material_light.xml"
+        "merged": "C:\\Users\\KITTAPORN\\Desktop\\newporject\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_switch_thumb.xml",
+        "source": "C:\\Users\\KITTAPORN\\.android\\build-cache\\357ed509c40beca13d31e6114ae1fb51d1bb093f\\output\\res\\color\\abc_tint_switch_thumb.xml"
+    },
+    {
+        "merged": "C:\\Users\\KITTAPORN\\Desktop\\newporject\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_default.xml",
+        "source": "C:\\Users\\KITTAPORN\\.android\\build-cache\\357ed509c40beca13d31e6114ae1fb51d1bb093f\\output\\res\\color\\abc_tint_default.xml"
+    },
+    {
+        "merged": "C:\\Users\\KITTAPORN\\Desktop\\newporject\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_btn_colored_borderless_text_material.xml",
+        "source": "C:\\Users\\KITTAPORN\\.android\\build-cache\\357ed509c40beca13d31e6114ae1fb51d1bb093f\\output\\res\\color\\abc_btn_colored_borderless_text_material.xml"
     },
     {
         "merged": "C:\\Users\\KITTAPORN\\Desktop\\newporject\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_light.xml",
-        "source": "C:\\Users\\KITTAPORN\\.android\\build-cache\\dceed614bee038db896ca9bb994dc13edaa8dfe9\\output\\res\\color\\abc_primary_text_material_light.xml"
-    },
-    {
-        "merged": "C:\\Users\\narathorn\\Downloads\\FirebaseAuthImproveToThebest\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_text_dark.xml",
-        "source": "C:\\Users\\narathorn\\.android\\build-cache\\f7d796147ad72605712b67c67f4ec2038f209ae8\\output\\res\\color\\common_google_signin_btn_text_dark.xml"
-    },
-    {
-        "merged": "C:\\Users\\narathorn\\Downloads\\FirebaseAuthImproveToThebest\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_light.xml",
-        "source": "C:\\Users\\narathorn\\.android\\build-cache\\82e43e44789af66cad4a8cea0201d88facca6dd5\\output\\res\\color\\abc_primary_text_material_light.xml"
+        "source": "C:\\Users\\KITTAPORN\\.android\\build-cache\\357ed509c40beca13d31e6114ae1fb51d1bb093f\\output\\res\\color\\abc_primary_text_material_light.xml"
     },
     {
         "merged": "C:\\Users\\KITTAPORN\\Desktop\\newporject\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_text_dark.xml",
         "source": "C:\\Users\\KITTAPORN\\.android\\build-cache\\03bfb0be78a9d233317a1c05bc774332f727a5d2\\output\\res\\color\\common_google_signin_btn_text_dark.xml"
     },
     {
+        "merged": "C:\\Users\\KITTAPORN\\Desktop\\newporject\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_switch_track.xml",
+        "source": "C:\\Users\\KITTAPORN\\.android\\build-cache\\357ed509c40beca13d31e6114ae1fb51d1bb093f\\output\\res\\color\\abc_tint_switch_track.xml"
+    },
+    {
         "merged": "C:\\Users\\KITTAPORN\\Desktop\\newporject\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_light.xml",
-        "source": "C:\\Users\\KITTAPORN\\.android\\build-cache\\dceed614bee038db896ca9bb994dc13edaa8dfe9\\output\\res\\color\\abc_primary_text_disable_only_material_light.xml"
+        "source": "C:\\Users\\KITTAPORN\\.android\\build-cache\\357ed509c40beca13d31e6114ae1fb51d1bb093f\\output\\res\\color\\abc_primary_text_disable_only_material_light.xml"
     },
     {
         "merged": "C:\\Users\\KITTAPORN\\Desktop\\newporject\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_text_light.xml",
         "source": "C:\\Users\\KITTAPORN\\.android\\build-cache\\03bfb0be78a9d233317a1c05bc774332f727a5d2\\output\\res\\color\\common_google_signin_btn_text_light.xml"
     },
     {
-        "merged": "C:\\Users\\narathorn\\Downloads\\FirebaseAuthImproveToThebest\\app\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_light.xml",
-        "source": "C:\\Users\\narathorn\\.android\\build-cache\\82e43e44789af66cad4a8cea0201d88facca6dd5\\output\\res\\color\\switch_thumb_material_light.xml"
-    },
-    {
         "merged": "C:\\Users\\KITTAPORN\\Desktop\\newporject\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_dark.xml",
-        "source": "C:\\Users\\KITTAPORN\\.android\\build-cache\\dceed614bee038db896ca9bb994dc13edaa8dfe9\\output\\res\\color\\abc_primary_text_material_dark.xml"
+        "source": "C:\\Users\\KITTAPORN\\.android\\build-cache\\357ed509c40beca13d31e6114ae1fb51d1bb093f\\output\\res\\color\\abc_primary_text_material_dark.xml"
     },
     {
-        "merged": "C:\\Users\\narathorn\\Downloads\\FirebaseAuthImproveToThebest\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_dark.xml",
-        "source": "C:\\Users\\narathorn\\.android\\build-cache\\82e43e44789af66cad4a8cea0201d88facca6dd5\\output\\res\\color\\abc_primary_text_material_dark.xml"
+        "merged": "C:\\Users\\KITTAPORN\\Desktop\\newporject\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_hint_foreground_material_dark.xml",
+        "source": "C:\\Users\\KITTAPORN\\.android\\build-cache\\0af740791a09f841a118393c7364d75b1d8a4b32\\output\\res\\color\\abc_hint_foreground_material_dark.xml"
     },
     {
-        "merged": "C:\\Users\\narathorn\\Downloads\\FirebaseAuthImproveToThebest\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_dark.xml",
-        "source": "C:\\Users\\narathorn\\.android\\build-cache\\82e43e44789af66cad4a8cea0201d88facca6dd5\\output\\res\\color\\abc_primary_text_disable_only_material_dark.xml"
+        "merged": "C:\\Users\\KITTAPORN\\Desktop\\newporject\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_spinner.xml",
+        "source": "C:\\Users\\KITTAPORN\\.android\\build-cache\\357ed509c40beca13d31e6114ae1fb51d1bb093f\\output\\res\\color\\abc_tint_spinner.xml"
     },
     {
         "merged": "C:\\Users\\KITTAPORN\\Desktop\\newporject\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_light.xml",
-        "source": "C:\\Users\\KITTAPORN\\.android\\build-cache\\dceed614bee038db896ca9bb994dc13edaa8dfe9\\output\\res\\color\\abc_secondary_text_material_light.xml"
+        "source": "C:\\Users\\KITTAPORN\\.android\\build-cache\\357ed509c40beca13d31e6114ae1fb51d1bb093f\\output\\res\\color\\abc_secondary_text_material_light.xml"
     },
     {
         "merged": "C:\\Users\\KITTAPORN\\Desktop\\newporject\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_light.xml",
-        "source": "C:\\Users\\KITTAPORN\\.android\\build-cache\\dceed614bee038db896ca9bb994dc13edaa8dfe9\\output\\res\\color\\switch_thumb_material_light.xml"
+        "source": "C:\\Users\\KITTAPORN\\.android\\build-cache\\357ed509c40beca13d31e6114ae1fb51d1bb093f\\output\\res\\color\\switch_thumb_material_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\KITTAPORN\\Desktop\\newporject\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_hint_foreground_material_light.xml",
+        "source": "C:\\Users\\KITTAPORN\\.android\\build-cache\\0af740791a09f841a118393c7364d75b1d8a4b32\\output\\res\\color\\abc_hint_foreground_material_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\KITTAPORN\\Desktop\\newporject\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_edittext.xml",
+        "source": "C:\\Users\\KITTAPORN\\.android\\build-cache\\357ed509c40beca13d31e6114ae1fb51d1bb093f\\output\\res\\color\\abc_tint_edittext.xml"
     },
     {
         "merged": "C:\\Users\\KITTAPORN\\Desktop\\newporject\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_dark.xml",
-        "source": "C:\\Users\\KITTAPORN\\.android\\build-cache\\dceed614bee038db896ca9bb994dc13edaa8dfe9\\output\\res\\color\\switch_thumb_material_dark.xml"
+        "source": "C:\\Users\\KITTAPORN\\.android\\build-cache\\357ed509c40beca13d31e6114ae1fb51d1bb093f\\output\\res\\color\\switch_thumb_material_dark.xml"
     },
     {
-        "merged": "C:\\Users\\narathorn\\Downloads\\FirebaseAuthImproveToThebest\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_text_light.xml",
-        "source": "C:\\Users\\narathorn\\.android\\build-cache\\f7d796147ad72605712b67c67f4ec2038f209ae8\\output\\res\\color\\common_google_signin_btn_text_light.xml"
+        "merged": "C:\\Users\\KITTAPORN\\Desktop\\newporject\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_btn_checkable.xml",
+        "source": "C:\\Users\\KITTAPORN\\.android\\build-cache\\357ed509c40beca13d31e6114ae1fb51d1bb093f\\output\\res\\color\\abc_tint_btn_checkable.xml"
     },
     {
-        "merged": "C:\\Users\\narathorn\\Downloads\\FirebaseAuthImproveToThebest\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_dark.xml",
-        "source": "C:\\Users\\narathorn\\.android\\build-cache\\82e43e44789af66cad4a8cea0201d88facca6dd5\\output\\res\\color\\abc_secondary_text_material_dark.xml"
-    },
-    {
-        "merged": "C:\\Users\\narathorn\\Downloads\\FirebaseAuthImproveToThebest\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_search_url_text.xml",
-        "source": "C:\\Users\\narathorn\\.android\\build-cache\\82e43e44789af66cad4a8cea0201d88facca6dd5\\output\\res\\color\\abc_search_url_text.xml"
+        "merged": "C:\\Users\\KITTAPORN\\Desktop\\newporject\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_btn_colored_text_material.xml",
+        "source": "C:\\Users\\KITTAPORN\\.android\\build-cache\\0af740791a09f841a118393c7364d75b1d8a4b32\\output\\res\\color\\abc_btn_colored_text_material.xml"
     },
     {
         "merged": "C:\\Users\\KITTAPORN\\Desktop\\newporject\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_dark.xml",
-        "source": "C:\\Users\\KITTAPORN\\.android\\build-cache\\dceed614bee038db896ca9bb994dc13edaa8dfe9\\output\\res\\color\\abc_primary_text_disable_only_material_dark.xml"
-    },
-    {
-        "merged": "C:\\Users\\narathorn\\Downloads\\FirebaseAuthImproveToThebest\\app\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_dark.xml",
-        "source": "C:\\Users\\narathorn\\.android\\build-cache\\82e43e44789af66cad4a8cea0201d88facca6dd5\\output\\res\\color\\switch_thumb_material_dark.xml"
+        "source": "C:\\Users\\KITTAPORN\\.android\\build-cache\\357ed509c40beca13d31e6114ae1fb51d1bb093f\\output\\res\\color\\abc_primary_text_disable_only_material_dark.xml"
     },
     {
         "merged": "C:\\Users\\KITTAPORN\\Desktop\\newporject\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_dark.xml",
-        "source": "C:\\Users\\KITTAPORN\\.android\\build-cache\\dceed614bee038db896ca9bb994dc13edaa8dfe9\\output\\res\\color\\abc_secondary_text_material_dark.xml"
+        "source": "C:\\Users\\KITTAPORN\\.android\\build-cache\\357ed509c40beca13d31e6114ae1fb51d1bb093f\\output\\res\\color\\abc_secondary_text_material_dark.xml"
     }
 ]

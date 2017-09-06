@@ -22,8 +22,8 @@ public class ServiceLocation extends Service
 {
     private static final String TAG = "BOOMBOOMTESTGPS";
     private LocationManager mLocationManager = null;
-    private static final int LOCATION_INTERVAL = 1500;
-    private static final float LOCATION_DISTANCE = 15f;
+    private static final int LOCATION_INTERVAL = 5000;
+    private static final float LOCATION_DISTANCE = 20f;
     DatabaseReference db;
     private FirebaseAuth auth;
     String uid;

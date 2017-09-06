@@ -3,16 +3,21 @@ package info.androidhive.firebase;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.graphics.drawable.RoundedBitmapDrawable;
 import android.support.v4.graphics.drawable.RoundedBitmapDrawableFactory;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
+import com.bumptech.glide.request.animation.GlideAnimation;
 import com.bumptech.glide.request.target.BitmapImageViewTarget;
+import com.bumptech.glide.request.target.SimpleTarget;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -26,15 +31,15 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 
 public class DriverConnected extends AppCompatActivity {
-    Button proButton;
     ImageView myPic,passPic;
+    FloatingActionButton mapBtn;
     DatabaseReference db,db2;
     public void setVal(final String id){
         final StorageReference myPicStoreage2 = FirebaseStorage.getInstance().getReference("USERPICTURE").child(id+"_PIC");
         myPicStoreage2.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
             @Override
-            public void onSuccess(Uri uri) {
-                Glide.with(getApplicationContext()).load(uri).asBitmap().centerCrop().into(new BitmapImageViewTarget(passPic) {
+            public void onSuccess(final Uri uri) {
+                Glide.with(getApplicationContext()).load(uri).asBitmap().diskCacheStrategy(DiskCacheStrategy.ALL).centerCrop().into(new BitmapImageViewTarget(passPic) {
                     @Override
                     protected void setResource(Bitmap resource) {
                         RoundedBitmapDrawable circularBitmapDrawable =
@@ -45,7 +50,7 @@ public class DriverConnected extends AppCompatActivity {
                 });
             }
         });
-        proButton.setOnClickListener(new View.OnClickListener() {
+        mapBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(DriverConnected.this, ConnectedMap.class);
@@ -60,7 +65,7 @@ public class DriverConnected extends AppCompatActivity {
         setContentView(R.layout.activity_driver_connected);
         myPic = (ImageView) findViewById(R.id.driverPic);
         passPic = (ImageView) findViewById(R.id.passPic);
-        proButton = (Button) findViewById(R.id.button3);
+        mapBtn = (FloatingActionButton) findViewById(R.id.tripmap);
         final FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         String uid = user.getUid();
         db = FirebaseDatabase.getInstance().getReference("USER").child(uid).child("ConnectID");
@@ -68,7 +73,7 @@ public class DriverConnected extends AppCompatActivity {
         myPicStoreage.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
             @Override
             public void onSuccess(Uri uri) {
-                Glide.with(getApplicationContext()).load(uri).asBitmap().centerCrop().into(new BitmapImageViewTarget(myPic) {
+                Glide.with(getApplicationContext()).load(uri).asBitmap().diskCacheStrategy(DiskCacheStrategy.ALL).centerCrop().into(new BitmapImageViewTarget(myPic) {
                     @Override
                     protected void setResource(Bitmap resource) {
                         RoundedBitmapDrawable circularBitmapDrawable =

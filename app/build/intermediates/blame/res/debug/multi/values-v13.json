@@ -1,29 +1,5 @@
 [
     {
-        "outputFile": "C:\\Users\\narathorn\\Downloads\\FirebaseAuthImproveToThebest\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v13\\values-v13.xml",
-        "map": [
-            {
-                "to": {
-                    "startLine": 2,
-                    "startColumn": 4,
-                    "startOffset": 55,
-                    "endColumn": 58,
-                    "endOffset": 109
-                },
-                "from": {
-                    "file": "C:\\Users\\narathorn\\.android\\build-cache\\82e43e44789af66cad4a8cea0201d88facca6dd5\\output\\res\\values-v13\\values-v13.xml",
-                    "position": {
-                        "startLine": 2,
-                        "startColumn": 4,
-                        "startOffset": 55,
-                        "endColumn": 58,
-                        "endOffset": 109
-                    }
-                }
-            }
-        ]
-    },
-    {
         "outputFile": "C:\\Users\\KITTAPORN\\Desktop\\newporject\\KUtogetherFromPOTE\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v13\\values-v13.xml",
         "map": [
             {
@@ -35,7 +11,7 @@
                     "endOffset": 109
                 },
                 "from": {
-                    "file": "C:\\Users\\KITTAPORN\\.android\\build-cache\\dceed614bee038db896ca9bb994dc13edaa8dfe9\\output\\res\\values-v13\\values-v13.xml",
+                    "file": "C:\\Users\\KITTAPORN\\.android\\build-cache\\357ed509c40beca13d31e6114ae1fb51d1bb093f\\output\\res\\values-v13\\values-v13.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,

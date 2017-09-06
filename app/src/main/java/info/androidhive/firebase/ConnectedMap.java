@@ -4,12 +4,14 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.akexorcist.googledirection.DirectionCallback;
 import com.akexorcist.googledirection.GoogleDirection;
 import com.akexorcist.googledirection.constant.TransportMode;
 import com.akexorcist.googledirection.model.Direction;
+import com.akexorcist.googledirection.model.Info;
 import com.akexorcist.googledirection.model.Leg;
 import com.akexorcist.googledirection.model.Route;
 import com.akexorcist.googledirection.util.DirectionConverter;
@@ -30,6 +32,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class ConnectedMap extends FragmentActivity implements OnMapReadyCallback {
 
@@ -42,12 +45,15 @@ public class ConnectedMap extends FragmentActivity implements OnMapReadyCallback
     Marker marker;
     Marker myMarker;
     Marker friendMarker;
+    TextView distanceTX,dura;
 //    ArrayList<LatLng> latList = new ArrayList<>();
     DatabaseReference db = FirebaseDatabase.getInstance().getReference("Location");
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_connected_map);
+        distanceTX = (TextView) findViewById(R.id.distanceText);
+        dura = (TextView) findViewById(R.id.distanceText);
         final FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         uid = user.getUid();
         Intent iin= getIntent();
@@ -76,9 +82,9 @@ public class ConnectedMap extends FragmentActivity implements OnMapReadyCallback
         // Add a marker in Sydney and move the camera
 
         LatLng kasert = new LatLng(13.121457, 100.919846);
-        mMap.addMarker(new MarkerOptions().position(kasert).title("Marker in Kasert"));
+        //mMap.addMarker(new MarkerOptions().position(kasert).title("Marker in Kasert"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(kasert));
-        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(kasert, 17));
+        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(kasert, 15));
         //final Marker marker = mMap.addMarker(new MarkerOptions().position(kasert).title("your position"));
         //Toast.makeText(ConnectedMap.this, partnerid, Toast.LENGTH_LONG).show();
 //        db.child(partnerid).addListenerForSingleValueEvent(new ValueEventListener() {
@@ -120,6 +126,12 @@ public class ConnectedMap extends FragmentActivity implements OnMapReadyCallback
                                             // Do something
                                             Route route = direction.getRouteList().get(0);
                                             Leg leg = route.getLegList().get(0);
+                                            Info distanceInfo = leg.getDistance();
+                                            Info durationInfo = leg.getDuration();
+                                            String distance = distanceInfo.getText();
+                                            String duration = durationInfo.getText();
+                                            distanceTX.setText("Distance is :" +distance);
+                                            dura.setText("Duration is : "+duration);
                                             ArrayList<LatLng> directionPositionList = leg.getDirectionPoint();
                                             PolylineOptions polylineOptions = DirectionConverter.createPolyline(ConnectedMap.this, directionPositionList, 5, Color.RED);
                                             mMap.addPolyline(polylineOptions);
