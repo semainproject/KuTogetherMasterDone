@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Wed Oct 04 23:07:00 ICT 2017
+#Thu Oct 05 01:40:46 ICT 2017
 210.set=ANDROID_RESOURCE
 282.file=C\:\\Users\\KITTAPORN\\Desktop\\5555\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\mipmap-mdpi-v4\\ic_denined.png
 14.set=ANDROID_RESOURCE

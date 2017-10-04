@@ -77,7 +77,7 @@ public class Connected extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_connected);
         driverLocation = (Button) findViewById(R.id.driverLocation);
-        final FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         String uid = user.getUid();
         db = FirebaseDatabase.getInstance().getReference("Destination Data").child(uid);
         final StorageReference myPicStoreage = FirebaseStorage.getInstance().getReference("USERPICTURE").child(uid+"_PIC");

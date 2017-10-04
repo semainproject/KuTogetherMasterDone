@@ -561,7 +561,7 @@
     <integer name="bottom_sheet_slide_duration">150</integer>
     <integer name="cancel_button_image_alpha">127</integer>
     <integer name="design_snackbar_text_max_lines">2</integer>
-    <integer name="google_play_services_version">11011000</integer>
+    <integer name="google_play_services_version">10084000</integer>
     <integer name="status_bar_notification_info_maxnum">999</integer>
     <string name="abc_action_bar_home_description">Navigate home</string>
     <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
@@ -637,7 +637,6 @@
     <string name="default_web_client_id" translatable="false">291598242266-02v13ojsgu4nnebldnd73fsin7spktba.apps.googleusercontent.com</string>
     <string name="define_roundedimageview"/>
     <string name="email">Email</string>
-    <string name="fcm_fallback_notification_channel_label">Miscellaneous</string>
     <string name="firebase_database_url" translatable="false">https://fir-auth-3fe01.firebaseio.com</string>
     <string name="forgot_password_msg">We just need your registered Email Id to sent you password reset instructions.</string>
     <string name="gcm_defaultSenderId" translatable="false">291598242266</string>

@@ -727,7 +727,7 @@ public final class R {
         public static final int crop_image_menu_crop = 0x7f060047;
         public static final int crop_image_menu_rotate_left = 0x7f060048;
         public static final int crop_image_menu_rotate_right = 0x7f060049;
-        public static final int pick_image_intent_chooser_title = 0x7f060069;
+        public static final int pick_image_intent_chooser_title = 0x7f060068;
         public static final int status_bar_notification_info_overflow = 0x7f060026;
     }
     public static final class style {

@@ -57,6 +57,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.iid.FirebaseInstanceId;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.OnProgressListener;
 import com.google.firebase.storage.StorageReference;
@@ -78,6 +79,7 @@ public class NewBoard extends AppCompatActivity implements NavigationView.OnNavi
     DatabaseReference db;
     DatabaseReference dbforinfo;
     DatabaseReference dbConnect;
+    DatabaseReference dbToken;
     ListView listViewDestination;
     List<DesInfo> desList;
     private FirebaseAuth auth;
@@ -100,8 +102,21 @@ public class NewBoard extends AppCompatActivity implements NavigationView.OnNavi
         db = FirebaseDatabase.getInstance().getReference("Destination Data");
         dbConnect = FirebaseDatabase.getInstance().getReference("USER").child(uid).child("ConnectID");
         dbforinfo = FirebaseDatabase.getInstance().getReference("USER").child(uid).child("INFORMATION");
+        dbToken = FirebaseDatabase.getInstance().getReference("USER").child(uid);
         final StorageReference storageReference = FirebaseStorage.getInstance().getReference("USERPICTURE").child(uid+"_PIC");
+        ////////////////////FCM start /////////////////////////////////
+        dbToken.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                dbToken.child("Token").setValue(FirebaseInstanceId.getInstance().getToken());
+            }
 
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+        //////////////////////////////////////////////////////////////
         listViewDestination = (ListView) findViewById(R.id.listViewDestination);
         desList = new ArrayList<>();
         final FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
@@ -298,14 +313,14 @@ public class NewBoard extends AppCompatActivity implements NavigationView.OnNavi
                                     DesInfo desInfo = passConnect.getValue(DesInfo.class);
                                     InfoUser infoUser = type.getValue(InfoUser.class);
                                     String connect = drivConnect.getValue(String.class);
-                                    if(infoUser.getTypePassDriv().equals("Driver")) {
+                                    if(infoUser.getTypePassDriv().equals("Driver") && drivConnect != null) {
                                         Intent intent = new Intent(NewBoard.this, DriverConnected.class);
                                         startActivity(intent);
                                     } else if(infoUser.getTypePassDriv().equals("Passenger") && desInfo.isConnect() == false) {
                                         Intent intent = new Intent(NewBoard.this, MypostActivity.class);
                                         startActivity(intent);
                                     } else if(infoUser.getTypePassDriv().equals("Passenger") && desInfo.isConnect() == true) {
-                                        Intent intent = new Intent(NewBoard.this, DriverConnected.class);
+                                        Intent intent = new Intent(NewBoard.this, Connected.class);
                                         startActivity(intent);
                                     } else {
                                         Toast.makeText(NewBoard.this , "ํYou don't have a passenger yet" , Toast.LENGTH_LONG).show();
