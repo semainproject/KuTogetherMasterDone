@@ -47,6 +47,7 @@ import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.target.BitmapImageViewTarget;
+import com.firebase.client.Firebase;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
@@ -58,6 +59,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.iid.FirebaseInstanceId;
+import com.google.firebase.messaging.FirebaseMessaging;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.OnProgressListener;
 import com.google.firebase.storage.StorageReference;
@@ -68,7 +70,9 @@ import org.w3c.dom.Text;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import static info.androidhive.firebase.R.id.image;
 import static info.androidhive.firebase.R.id.imageView;
@@ -105,6 +109,8 @@ public class NewBoard extends AppCompatActivity implements NavigationView.OnNavi
         dbToken = FirebaseDatabase.getInstance().getReference("USER").child(uid);
         final StorageReference storageReference = FirebaseStorage.getInstance().getReference("USERPICTURE").child(uid+"_PIC");
         ////////////////////FCM start /////////////////////////////////
+        FirebaseMessaging.getInstance().subscribeToTopic("notifications");
+        //////////////////////////////////////////////////////////
         dbToken.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
@@ -293,11 +299,6 @@ public class NewBoard extends AppCompatActivity implements NavigationView.OnNavi
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
-//        if (id == R.id.action_driver) {
-//            Intent intent = new Intent(NewBoard.this, DriverConnected.class);
-//            startActivity(intent);
-//            //finish();
-//        }
         if(id == R.id.action_favorite){
             dbforinfo.addValueEventListener(new ValueEventListener() {
                 @Override
@@ -396,7 +397,8 @@ public class NewBoard extends AppCompatActivity implements NavigationView.OnNavi
         int id = item.getItemId();
 
         if (id == R.id.nav_camera) {
-
+            PostTask gun = new PostTask();
+            gun.doInBackground();
         } else if (id == R.id.nav_gallery) {
 
             auth.signOut();
@@ -539,6 +541,18 @@ public class NewBoard extends AppCompatActivity implements NavigationView.OnNavi
 
 
     }
+    public static void sendNotificationToUser(String user, final String message) {
+        Firebase ref = new Firebase("https://fir-auth-3fe01.firebaseio.com/");
+        final Firebase notifications = ref.child("notificationRequests");
+
+        Map notification = new HashMap<>();
+        notification.put("username", user);
+        notification.put("message", message);
+
+        notifications.push().setValue(notification);
+    }
+
+
 
 
 
