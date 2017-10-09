@@ -1,5 +1,13 @@
 [
     {
+        "merged": "C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_accept.png",
+        "source": "C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_accept.png"
+    },
+    {
+        "merged": "C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_riding.png",
+        "source": "C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_riding.png"
+    },
+    {
         "merged": "C:\\Users\\KITTAPORN\\Desktop\\5555\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_megaphone.png",
         "source": "C:\\Users\\KITTAPORN\\Desktop\\5555\\KUtogetherFromPOTE\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_megaphone.png"
     },
@@ -12,8 +20,24 @@
         "source": "C:\\Users\\KITTAPORN\\Desktop\\5555\\KUtogetherFromPOTE\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_newsfeed.png"
     },
     {
+        "merged": "C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_megaphone.png",
+        "source": "C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_megaphone.png"
+    },
+    {
+        "merged": "C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_denined.png",
+        "source": "C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_denined.png"
+    },
+    {
         "merged": "C:\\Users\\KITTAPORN\\Desktop\\5555\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_accept.png",
         "source": "C:\\Users\\KITTAPORN\\Desktop\\5555\\KUtogetherFromPOTE\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_accept.png"
+    },
+    {
+        "merged": "C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_location.png",
+        "source": "C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_location.png"
+    },
+    {
+        "merged": "C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_maplocation.png",
+        "source": "C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_maplocation.png"
     },
     {
         "merged": "C:\\Users\\KITTAPORN\\Desktop\\5555\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_driver.png",
@@ -22,6 +46,14 @@
     {
         "merged": "C:\\Users\\KITTAPORN\\Desktop\\5555\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_maplocation.png",
         "source": "C:\\Users\\KITTAPORN\\Desktop\\5555\\KUtogetherFromPOTE\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_maplocation.png"
+    },
+    {
+        "merged": "C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_passenger.png",
+        "source": "C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_passenger.png"
+    },
+    {
+        "merged": "C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_newsfeed.png",
+        "source": "C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_newsfeed.png"
     },
     {
         "merged": "C:\\Users\\KITTAPORN\\Desktop\\5555\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_passenger.png",
@@ -36,7 +68,15 @@
         "source": "C:\\Users\\KITTAPORN\\Desktop\\5555\\KUtogetherFromPOTE\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_riding.png"
     },
     {
+        "merged": "C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_launcher.png",
+        "source": "C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
         "merged": "C:\\Users\\KITTAPORN\\Desktop\\5555\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_launcher.png",
         "source": "C:\\Users\\KITTAPORN\\Desktop\\5555\\KUtogetherFromPOTE\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_driver.png",
+        "source": "C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_driver.png"
     }
 ]
