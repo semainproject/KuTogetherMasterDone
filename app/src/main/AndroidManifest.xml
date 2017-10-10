@@ -90,7 +90,6 @@
             android:enabled="true"
             android:exported="true" />
 
-        <activity android:name=".Connected" />
         <activity
             android:name=".ConnectedMap"
             android:label="@string/title_activity_connected_map" />

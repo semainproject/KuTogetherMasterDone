@@ -232,7 +232,7 @@ public class DriverConnected extends AppCompatActivity {
                         @Override
                         public void onChildAdded(DataSnapshot dataSnapshot, String s) {
                             final String idd = dataSnapshot.getValue(String.class);
-                            Toast.makeText(DriverConnected.this,idd,Toast.LENGTH_LONG).show();
+                            //Toast.makeText(DriverConnected.this,idd,Toast.LENGTH_LONG).show();
                             setVal(idd);
 
                             finishBtn.setOnClickListener(new View.OnClickListener() {
