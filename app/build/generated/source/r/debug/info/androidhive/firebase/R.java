@@ -3786,6 +3786,7 @@ containing a value of this type.
         public static final int btn_signup=0x7f0c00c5;
         public static final int button2=0x7f0c008a;
         public static final int buttonPanel=0x7f0c0063;
+        public static final int cancelBtn=0x7f0c00ab;
         public static final int cancel_action=0x7f0c00f7;
         public static final int center=0x7f0c002c;
         public static final int centerCrop=0x7f0c003c;
@@ -3845,10 +3846,9 @@ containing a value of this type.
         public static final int fill=0x7f0c0037;
         public static final int fill_horizontal=0x7f0c0038;
         public static final int fill_vertical=0x7f0c0030;
+        public static final int finishBtn=0x7f0c00aa;
         public static final int fitCenter=0x7f0c003e;
         public static final int fixed=0x7f0c0057;
-        public static final int floatingActionButton2=0x7f0c00aa;
-        public static final int floatingActionButton3=0x7f0c00ab;
         public static final int fullname=0x7f0c00f3;
         public static final int genderText=0x7f0c010c;
         public static final int home=0x7f0c0004;
@@ -3885,6 +3885,7 @@ containing a value of this type.
         public static final int login=0x7f0c00cd;
         public static final int maleCHK=0x7f0c0092;
         public static final int map=0x7f0c009e;
+        public static final int mapBtn=0x7f0c00a9;
         public static final int media_actions=0x7f0c00f9;
         public static final int middle=0x7f0c0043;
         public static final int mini=0x7f0c0041;
@@ -4009,7 +4010,6 @@ containing a value of this type.
         public static final int top=0x7f0c0034;
         public static final int topPanel=0x7f0c0066;
         public static final int touch_outside=0x7f0c00ea;
-        public static final int tripmap=0x7f0c00a9;
         public static final int up=0x7f0c0009;
         public static final int useLogo=0x7f0c001c;
         public static final int view_offset_helper=0x7f0c000a;

@@ -8,16 +8,13 @@ import android.support.v4.graphics.drawable.RoundedBitmapDrawable;
 import android.support.v4.graphics.drawable.RoundedBitmapDrawableFactory;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
-import com.bumptech.glide.request.animation.GlideAnimation;
 import com.bumptech.glide.request.target.BitmapImageViewTarget;
-import com.bumptech.glide.request.target.SimpleTarget;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -32,8 +29,9 @@ import com.google.firebase.storage.StorageReference;
 
 public class DriverConnected extends AppCompatActivity {
     ImageView myPic,passPic;
-    FloatingActionButton mapBtn;
-    DatabaseReference db,db2;
+    FloatingActionButton mapBtn , finishBtn , cancelBtn;
+    DatabaseReference db , dbDelDes , dbDelConnectID , dbDelLocation , dbUser , dbDes , dbLog;
+    String uid;
     public void setVal(final String id){
         final StorageReference myPicStoreage2 = FirebaseStorage.getInstance().getReference("USERPICTURE").child(id+"_PIC");
         myPicStoreage2.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
@@ -65,10 +63,18 @@ public class DriverConnected extends AppCompatActivity {
         setContentView(R.layout.activity_driver_connected);
         myPic = (ImageView) findViewById(R.id.driverPic);
         passPic = (ImageView) findViewById(R.id.passPic);
-        mapBtn = (FloatingActionButton) findViewById(R.id.tripmap);
+        mapBtn = (FloatingActionButton) findViewById(R.id.mapBtn);
+        finishBtn = (FloatingActionButton) findViewById(R.id.finishBtn);
+        cancelBtn = (FloatingActionButton) findViewById(R.id.cancelBtn);
         final FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
-        String uid = user.getUid();
+        uid = user.getUid();
         db = FirebaseDatabase.getInstance().getReference("USER").child(uid).child("ConnectID");
+        dbDelConnectID = FirebaseDatabase.getInstance().getReference("USER").child(uid).child("ConnectID");
+        dbDelDes = FirebaseDatabase.getInstance().getReference("Destination Data");
+        dbDelLocation = FirebaseDatabase.getInstance().getReference("Location");
+        dbUser = FirebaseDatabase.getInstance().getReference("USER").child(uid);
+        dbDes = FirebaseDatabase.getInstance().getReference("Destination Data");
+        dbLog = FirebaseDatabase.getInstance().getReference("Log").child(uid);
         final StorageReference myPicStoreage = FirebaseStorage.getInstance().getReference("USERPICTURE").child(uid+"_PIC");
         myPicStoreage.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
             @Override
@@ -84,26 +90,238 @@ public class DriverConnected extends AppCompatActivity {
                 });
             }
         });
-        db.addChildEventListener(new ChildEventListener() {
+
+//        dbUser.addChildEventListener(new ChildEventListener() {
+//            @Override
+//            public void onChildAdded(DataSnapshot dataSnapshot, String s) {
+//                InfoUser infoUser = dataSnapshot.getValue(InfoUser.class);
+//                String type = infoUser.getTypePassDriv().toString();
+//
+//                //DRIVER PART//
+//
+//                if(type.equals("Driver")) {
+//                    db.addChildEventListener(new ChildEventListener() {
+//                        @Override
+//                        public void onChildAdded(DataSnapshot dataSnapshot, String s) {
+//                            final String idd = dataSnapshot.getValue(String.class);
+//                            setVal(idd);
+//
+//                            finishBtn.setOnClickListener(new View.OnClickListener() {
+//                                @Override
+//                                public void onClick(View v) {
+//                                    deleteData(idd);
+//                                    finish();
+//                                }
+//                            });
+//
+//                            cancelBtn.setOnClickListener(new View.OnClickListener() {
+//                                @Override
+//                                public void onClick(View v) {
+//                                    deleteData(idd);
+//                                    finish();
+//                                }
+//                            });
+//
+//                        }
+//
+//                        @Override
+//                        public void onChildChanged(DataSnapshot dataSnapshot, String s) {
+//
+//                        }
+//
+//                        @Override
+//                        public void onChildRemoved(DataSnapshot dataSnapshot) {
+//
+//                        }
+//
+//                        @Override
+//                        public void onChildMoved(DataSnapshot dataSnapshot, String s) {
+//
+//                        }
+//
+//                        @Override
+//                        public void onCancelled(DatabaseError databaseError) {
+//
+//                        }
+//                    });
+//                    //PASSENGER PART//
+//
+//                } else if(type.equals("Passenger")) {
+//                    dbDes.child(uid).child("ConnectedID").addChildEventListener(new ChildEventListener() {
+//                        @Override
+//                        public void onChildAdded(DataSnapshot dataSnapshot, String s) {
+//                            final String id = dataSnapshot.getValue(String.class);
+//                            setVal(id);
+//
+//                            finishBtn.setOnClickListener(new View.OnClickListener() {
+//                                @Override
+//                                public void onClick(View v) {
+//                                    deleteData(id);
+//                                    finish();
+//                                }
+//                            });
+//
+//                            cancelBtn.setOnClickListener(new View.OnClickListener() {
+//                                @Override
+//                                public void onClick(View v) {
+//                                    deleteData(id);
+//                                    finish();
+//                                }
+//                            });
+//                        }
+//
+//                        @Override
+//                        public void onChildChanged(DataSnapshot dataSnapshot, String s) {
+//
+//                        }
+//
+//                        @Override
+//                        public void onChildRemoved(DataSnapshot dataSnapshot) {
+//
+//                        }
+//
+//                        @Override
+//                        public void onChildMoved(DataSnapshot dataSnapshot, String s) {
+//
+//                        }
+//
+//                        @Override
+//                        public void onCancelled(DatabaseError databaseError) {
+//
+//                        }
+//                    });
+//                }
+//            }
+//
+//            @Override
+//            public void onChildChanged(DataSnapshot dataSnapshot, String s) {
+//
+//            }
+//
+//            @Override
+//            public void onChildRemoved(DataSnapshot dataSnapshot) {
+//
+//            }
+//
+//            @Override
+//            public void onChildMoved(DataSnapshot dataSnapshot, String s) {
+//
+//            }
+//
+//            @Override
+//            public void onCancelled(DatabaseError databaseError) {
+//
+//            }
+//        });
+
+
+
+
+
+        dbUser.child("INFORMATION").addValueEventListener(new ValueEventListener() {
             @Override
-            public void onChildAdded(DataSnapshot dataSnapshot, String s) {
-                String idd = dataSnapshot.getValue(String.class);
-                setVal(idd);
-            }
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                InfoUser infoUser = dataSnapshot.getValue(InfoUser.class);
+                String type = infoUser.getTypePassDriv().toString();
+                Toast.makeText(DriverConnected.this , type , Toast.LENGTH_LONG).show();
 
-            @Override
-            public void onChildChanged(DataSnapshot dataSnapshot, String s) {
+                //DRIVER PART//
 
-            }
+                if(type.equals("Driver")) {
+                    db.addChildEventListener(new ChildEventListener() {
+                        @Override
+                        public void onChildAdded(DataSnapshot dataSnapshot, String s) {
+                            final String idd = dataSnapshot.getValue(String.class);
+                            Toast.makeText(DriverConnected.this,idd,Toast.LENGTH_LONG).show();
+                            setVal(idd);
 
-            @Override
-            public void onChildRemoved(DataSnapshot dataSnapshot) {
+                            finishBtn.setOnClickListener(new View.OnClickListener() {
+                                @Override
+                                public void onClick(View v) {
+                                    deleteData(idd);
+                                    finish();
+                                }
+                            });
 
-            }
+                            cancelBtn.setOnClickListener(new View.OnClickListener() {
+                                @Override
+                                public void onClick(View v) {
+                                    deleteData(idd);
+                                    finish();
+                                }
+                            });
 
-            @Override
-            public void onChildMoved(DataSnapshot dataSnapshot, String s) {
+                        }
 
+                        @Override
+                        public void onChildChanged(DataSnapshot dataSnapshot, String s) {
+
+                        }
+
+                        @Override
+                        public void onChildRemoved(DataSnapshot dataSnapshot) {
+
+                        }
+
+                        @Override
+                        public void onChildMoved(DataSnapshot dataSnapshot, String s) {
+
+                        }
+
+                        @Override
+                        public void onCancelled(DatabaseError databaseError) {
+
+                        }
+                    });
+
+                //PASSENGER PART//
+
+                } else if(type.equals("Passenger")) {
+                    dbDes.child(uid).child("ConnectedID").addChildEventListener(new ChildEventListener() {
+                        @Override
+                        public void onChildAdded(DataSnapshot dataSnapshot, String s) {
+                            final String id = dataSnapshot.getValue(String.class);
+                            Toast.makeText(DriverConnected.this,id,Toast.LENGTH_LONG).show();
+                            setVal(id);
+
+                            finishBtn.setOnClickListener(new View.OnClickListener() {
+                                @Override
+                                public void onClick(View v) {
+                                    deleteData(id);
+                                    finish();
+                                }
+                            });
+
+                            cancelBtn.setOnClickListener(new View.OnClickListener() {
+                                @Override
+                                public void onClick(View v) {
+                                    deleteData(id);
+                                    finish();
+                                }
+                            });
+                        }
+
+                        @Override
+                        public void onChildChanged(DataSnapshot dataSnapshot, String s) {
+
+                        }
+
+                        @Override
+                        public void onChildRemoved(DataSnapshot dataSnapshot) {
+
+                        }
+
+                        @Override
+                        public void onChildMoved(DataSnapshot dataSnapshot, String s) {
+
+                        }
+
+                        @Override
+                        public void onCancelled(DatabaseError databaseError) {
+
+                        }
+                    });
+                }
             }
 
             @Override
@@ -112,5 +330,43 @@ public class DriverConnected extends AppCompatActivity {
             }
         });
 
+
+    }
+
+    public void deleteData(final String id) {
+        dbDelDes.child(id).removeValue();
+        dbDelConnectID.removeValue();
+        dbDelLocation.child(uid).removeValue();
+        dbDelLocation.child(id).removeValue();
+    }
+
+    public void log(final String id) {
+        dbDes.child(uid).addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                DesInfo desInfo = dataSnapshot.getValue(DesInfo.class);
+                final String start = desInfo.getStart().toString();
+                final String des = desInfo.getDestination().toString();
+                final String time = desInfo.getTime().toString();
+                dbDes.child(uid).child("ConnectedID").addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(DataSnapshot connectedID) {
+                        final String connectID = connectedID.getValue(String.class);
+                        LogData logData = new LogData(start , des , time , connectID);
+                        dbLog.setValue(logData);
+                    }
+
+                    @Override
+                    public void onCancelled(DatabaseError databaseError) {
+
+                    }
+                });
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
     }
 }

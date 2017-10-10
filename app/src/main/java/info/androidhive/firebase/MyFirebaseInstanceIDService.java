@@ -56,6 +56,7 @@ public class MyFirebaseInstanceIDService extends FirebaseInstanceIdService {
      * @param token The new token.
      */
     private void sendRegistrationToServer(final String token) {
+        if (FirebaseAuth.getInstance().getCurrentUser() != null) {
         final FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         String uid = user.getUid();
         dbConnect = FirebaseDatabase.getInstance().getReference("USER").child(uid);
@@ -64,7 +65,7 @@ public class MyFirebaseInstanceIDService extends FirebaseInstanceIdService {
             dbConnect.addListenerForSingleValueEvent(new ValueEventListener() {
                 @Override
                 public void onDataChange(DataSnapshot dataSnapshot) {
-                        dbConnect.child("FCMTOKEN").setValue(token);
+                    dbConnect.child("FCMTOKEN").setValue(token);
 
                 }
 
@@ -73,6 +74,9 @@ public class MyFirebaseInstanceIDService extends FirebaseInstanceIdService {
 
                 }
             });
+        }
+        }else{
+            return;
         }
     }
 }

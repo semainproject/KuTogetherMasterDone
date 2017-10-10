@@ -17,11 +17,14 @@ import android.provider.MediaStore;
 import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.graphics.drawable.RoundedBitmapDrawable;
 import android.support.v4.graphics.drawable.RoundedBitmapDrawableFactory;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.NotificationCompat;
 import android.support.v7.view.ContextThemeWrapper;
+import android.test.mock.MockPackageManager;
 import android.text.Html;
 import android.transition.Slide;
 import android.transition.TransitionInflater;
@@ -43,7 +46,7 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
-
+import android.Manifest;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.target.BitmapImageViewTarget;
@@ -92,7 +95,8 @@ public class NewBoard extends AppCompatActivity implements NavigationView.OnNavi
     public Uri filePath;
     public static final String passengerID = "id";
     private static final int PICK_IMAGE_REQUEST = 234;
-
+    private static final int REQUEST_CODE_PERMISSION = 2;
+    String mPermission = Manifest.permission.ACCESS_FINE_LOCATION;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -111,6 +115,7 @@ public class NewBoard extends AppCompatActivity implements NavigationView.OnNavi
         ////////////////////FCM start /////////////////////////////////
         FirebaseMessaging.getInstance().subscribeToTopic("notifications");
         //////////////////////////////////////////////////////////
+       ActivityCompat.requestPermissions(NewBoard.this, new String[]{android.Manifest.permission.ACCESS_FINE_LOCATION}, 1);
         dbToken.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
@@ -132,7 +137,6 @@ public class NewBoard extends AppCompatActivity implements NavigationView.OnNavi
                 InfoUser infoUser = dataSnapshot.getValue(InfoUser.class);
                 String driver = infoUser.getTypePassDriv();
                 if(driver.equals("Driver")){
-                    fab.setVisibility(View.INVISIBLE);
                     NavigationView navigationView2 = (NavigationView) findViewById(R.id.nav_view);
                     View headerView = navigationView2.getHeaderView(0);
                     status = (ImageView) headerView.findViewById(imageView5);
@@ -146,6 +150,7 @@ public class NewBoard extends AppCompatActivity implements NavigationView.OnNavi
                     status.setImageResource(R.mipmap.ic_passenger);
                     Intent i = new Intent(NewBoard.this, MyService.class);
                     startService(i);
+                    Toast.makeText(NewBoard.this, "service starting from newboard", Toast.LENGTH_SHORT).show();
                 }
             }
 
@@ -233,20 +238,72 @@ public class NewBoard extends AppCompatActivity implements NavigationView.OnNavi
                 //throw databaseError.toException();
             }
         });
-        listViewDestination.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//        listViewDestination.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//            @Override
+//            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+//                DesInfo desInfo = desList.get(position);
+//                dbforinfo.addListenerForSingleValueEvent(new ValueEventListener() {
+//                    @Override
+//                    public void onDataChange(DataSnapshot dataSnapshot) {
+//                        InfoUser infoUser =
+//                        if(desInfo.getId().toString() == uid) {
+//                            Snackbar.make(findViewById(android.R.id.content), Html.fromHtml("<font color=\"#CB4335\"><font size=\"7\">It's You!</font size></font>"), Snackbar.LENGTH_LONG)
+//                                    //.setAction("Undo", mOnClickListener)
+//                                    .setActionTextColor(Color.RED)
+//                                    .show();
+//                        } else if() {
+//                            Intent intent = new Intent(NewBoard.this, ConnectPassenger.class);
+//                            intent.putExtra(passengerID, desInfo.getId());
+//                            startActivity(intent);
+//                        }
+//                    }
+//
+//                    @Override
+//                    public void onCancelled(DatabaseError databaseError) {
+//
+//                    }
+//                });
+//            }
+//        });
+
+        dbforinfo.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                DesInfo desInfo = desList.get(position);
-                if(desInfo.getId().toString() == uid){
-                    Snackbar.make(findViewById(android.R.id.content), Html.fromHtml("<font color=\"#CB4335\"><font size=\"7\">It's You!</font size></font>"), Snackbar.LENGTH_LONG)
-                            //.setAction("Undo", mOnClickListener)
-                            .setActionTextColor(Color.RED)
-                            .show();
-                }else {
-                    Intent intent = new Intent(NewBoard.this, ConnectPassenger.class);
-                    intent.putExtra(passengerID, desInfo.getId());
-                    startActivity(intent);
-                }
+            public void onDataChange(final DataSnapshot dataSnapshot) {
+                listViewDestination.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                        InfoUser infoUser = dataSnapshot.getValue(InfoUser.class);
+                        String type = infoUser.getTypePassDriv().toString();
+                        DesInfo desInfo = desList.get(position);
+                        if(desInfo.getId().toString() == uid) {
+                            Snackbar.make(findViewById(android.R.id.content), Html.fromHtml("<font color=\"#CB4335\"><font size=\"7\">It's You!</font size></font>"), Snackbar.LENGTH_LONG)
+                                    //.setAction("Undo", mOnClickListener)
+                                    .setActionTextColor(Color.RED)
+                                    .show();
+                        } else if(type.equals("Driver")) {
+                            Intent intent = new Intent(NewBoard.this, ConnectPassenger.class);
+                            intent.putExtra(passengerID, desInfo.getId());
+                            startActivity(intent);
+                        } else {
+                            AlertDialog.Builder alert = new AlertDialog.Builder(NewBoard.this);
+                            alert.setMessage("You don't have bike.")
+                                    .setCancelable(false)
+                                    .setPositiveButton("Cancel", new DialogInterface.OnClickListener() {
+                                        @Override
+                                        public void onClick(DialogInterface dialog, int which) {
+                                            dialog.cancel();
+                                        }
+                                    });
+                            AlertDialog alertDialog = alert.create();
+                            alertDialog.show();
+                        }
+                    }
+                });
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
             }
         });
 
@@ -282,6 +339,7 @@ public class NewBoard extends AppCompatActivity implements NavigationView.OnNavi
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
                             finish();
+                            onDestroy();
                         }
                     });
             AlertDialog alertDialog = alertExit.create();
@@ -314,14 +372,14 @@ public class NewBoard extends AppCompatActivity implements NavigationView.OnNavi
                                     DesInfo desInfo = passConnect.getValue(DesInfo.class);
                                     InfoUser infoUser = type.getValue(InfoUser.class);
                                     String connect = drivConnect.getValue(String.class);
-                                    if(infoUser.getTypePassDriv().equals("Driver") && drivConnect != null) {
+                                    if(infoUser.getTypePassDriv().equals("Driver") && connect != null) {
                                         Intent intent = new Intent(NewBoard.this, DriverConnected.class);
                                         startActivity(intent);
                                     } else if(infoUser.getTypePassDriv().equals("Passenger") && desInfo.isConnect() == false) {
                                         Intent intent = new Intent(NewBoard.this, MypostActivity.class);
                                         startActivity(intent);
                                     } else if(infoUser.getTypePassDriv().equals("Passenger") && desInfo.isConnect() == true) {
-                                        Intent intent = new Intent(NewBoard.this, Connected.class);
+                                        Intent intent = new Intent(NewBoard.this, DriverConnected.class);
                                         startActivity(intent);
                                     } else {
                                         Toast.makeText(NewBoard.this , "ํYou don't have a passenger yet" , Toast.LENGTH_LONG).show();
@@ -397,8 +455,6 @@ public class NewBoard extends AppCompatActivity implements NavigationView.OnNavi
         int id = item.getItemId();
 
         if (id == R.id.nav_camera) {
-            PostTask gun = new PostTask();
-            gun.doInBackground();
         } else if (id == R.id.nav_gallery) {
 
             auth.signOut();
@@ -541,6 +597,15 @@ public class NewBoard extends AppCompatActivity implements NavigationView.OnNavi
 
 
     }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        stopService(new Intent(this, ServiceLocation.class));
+        stopService(new Intent(this, MyService.class));
+        stopService(new Intent(this, GpsService.class));
+    }
+
     public static void sendNotificationToUser(String user, final String message) {
         Firebase ref = new Firebase("https://fir-auth-3fe01.firebaseio.com/");
         final Firebase notifications = ref.child("notificationRequests");
@@ -551,7 +616,6 @@ public class NewBoard extends AppCompatActivity implements NavigationView.OnNavi
 
         notifications.push().setValue(notification);
     }
-
 
 
 

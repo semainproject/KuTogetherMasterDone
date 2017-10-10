@@ -1,15 +1,21 @@
 package info.androidhive.firebase;
 
+import android.app.Activity;
 import android.app.Service;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.location.Location;
 import android.location.LocationManager;
 import android.os.Bundle;
 import android.os.IBinder;
+import android.support.design.widget.Snackbar;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.widget.Toast;
-
+import android.view.View;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -17,18 +23,20 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import android.Manifest;
 
 public class ServiceLocation extends Service
 {
     private static final String TAG = "BOOMBOOMTESTGPS";
     private LocationManager mLocationManager = null;
-    private static final int LOCATION_INTERVAL = 5000;
-    private static final float LOCATION_DISTANCE = 20f;
+    private static final int LOCATION_INTERVAL = 1000;
+    private static final float LOCATION_DISTANCE = 1f;
     DatabaseReference db;
     private FirebaseAuth auth;
     String uid;
-
-    private class LocationListener implements android.location.LocationListener
+    Context context = this;
+    private static final int PERMISSION_REQUEST_CODE = 1;
+    private class LocationListener extends AppCompatActivity implements android.location.LocationListener
     {
         Location mLastLocation;
 
@@ -97,7 +105,7 @@ public class ServiceLocation extends Service
     {
         Log.e(TAG, "onStartCommand");
         super.onStartCommand(intent, flags, startId);
-        return START_STICKY;
+        return START_NOT_STICKY;
     }
 
     @Override
@@ -105,12 +113,14 @@ public class ServiceLocation extends Service
     {
         Log.e(TAG, "onCreate");
         initializeLocationManager();
+        //context = this;
 
         auth = FirebaseAuth.getInstance();
         final FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         uid = user.getUid();
         db = FirebaseDatabase.getInstance().getReference("Location");
-
+        //db.child(uid).setValue(mLastLocation);
+        //ActivityCompat.requestPermissions((Activity) context, new String[]{android.Manifest.permission.ACCESS_FINE_LOCATION}, 1);
         Toast.makeText(ServiceLocation.this, "location started", Toast.LENGTH_LONG).show();
         try {
             mLocationManager.requestLocationUpdates(
@@ -130,6 +140,7 @@ public class ServiceLocation extends Service
         } catch (IllegalArgumentException ex) {
             Log.d(TAG, "gps provider does not exist " + ex.getMessage());
         }
+
     }
 
     @Override
@@ -146,6 +157,7 @@ public class ServiceLocation extends Service
                 }
             }
         }
+        stopSelf();
     }
 
     private void initializeLocationManager() {
@@ -154,4 +166,6 @@ public class ServiceLocation extends Service
             mLocationManager = (LocationManager) getApplicationContext().getSystemService(Context.LOCATION_SERVICE);
         }
     }
+
+
 }

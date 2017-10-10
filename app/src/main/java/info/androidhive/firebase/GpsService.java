@@ -22,8 +22,8 @@ public class GpsService extends Service
 {
     private static final String TAG = "BOOMBOOMTESTGPS";
     private LocationManager mLocationManager = null;
-    private static final int LOCATION_INTERVAL = 5000;
-    private static final float LOCATION_DISTANCE = 20f;
+    private static final int LOCATION_INTERVAL = 1000;
+    private static final float LOCATION_DISTANCE = 1f;
     DatabaseReference db;
     private FirebaseAuth auth;
     String uid;
@@ -97,7 +97,7 @@ public class GpsService extends Service
     {
         Log.e(TAG, "onStartCommand");
         super.onStartCommand(intent, flags, startId);
-        return START_STICKY;
+        return START_NOT_STICKY;
     }
 
     @Override

@@ -34,6 +34,7 @@ public class MyService extends Service {
     @Override
     public void onCreate() {
         super.onCreate();
+        Toast.makeText(MyService.this, "service Start from myservice", Toast.LENGTH_SHORT).show();
         DatabaseReference firebaseRef,ref;
         final FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         uid = user.getUid();
@@ -103,32 +104,18 @@ public class MyService extends Service {
         });
         ref = FirebaseDatabase.getInstance().getReference("Destination Data").child(uid).child("connect");
         final Intent i = new Intent(MyService.this, ServiceLocation.class);
-        ref.addChildEventListener(new ChildEventListener() {
+        ref.addValueEventListener(new ValueEventListener() {
             @Override
-            public void onChildAdded(DataSnapshot dataSnapshot, String s) {
-                Boolean status = dataSnapshot.getValue(Boolean.class);
-                if(status == true){
-                    //Intent i = new Intent(MyService.this, ServiceLocation.class);
-                    startService(i);
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                if(dataSnapshot.getValue(Boolean.class) != null) {
+                    Boolean status = dataSnapshot.getValue(Boolean.class);
+                    if (status == true) {
+                        Toast.makeText(MyService.this, "TRUE", Toast.LENGTH_SHORT).show();
+                        startService(i);
+                    } else {
+                        Toast.makeText(MyService.this, "FALSE", Toast.LENGTH_SHORT).show();
+                    }
                 }
-            }
-
-            @Override
-            public void onChildChanged(DataSnapshot dataSnapshot, String s) {
-                Boolean status = dataSnapshot.getValue(Boolean.class);
-                if(status == false){
-                    stopService(i);
-                }
-            }
-
-            @Override
-            public void onChildRemoved(DataSnapshot dataSnapshot) {
-
-            }
-
-            @Override
-            public void onChildMoved(DataSnapshot dataSnapshot, String s) {
-
             }
 
             @Override
@@ -136,6 +123,41 @@ public class MyService extends Service {
 
             }
         });
+//        ref.addChildEventListener(new ChildEventListener() {
+//            @Override
+//            public void onChildAdded(DataSnapshot dataSnapshot, String s) {
+//                Boolean status = dataSnapshot.getValue(Boolean.class);
+//                if(status == true){
+//                    //Intent i = new Intent(MyService.this, ServiceLocation.class);
+//                    Toast.makeText(MyService.this, "service Start", Toast.LENGTH_SHORT).show();
+//                    startService(i);
+//                }
+//            }
+//
+//            @Override
+//            public void onChildChanged(DataSnapshot dataSnapshot, String s) {
+//                Boolean status = dataSnapshot.getValue(Boolean.class);
+//                if(status == false){
+//                    stopService(i);
+//                    Toast.makeText(MyService.this, "service Stop", Toast.LENGTH_SHORT).show();
+//                }
+//            }
+//
+//            @Override
+//            public void onChildRemoved(DataSnapshot dataSnapshot) {
+//
+//            }
+//
+//            @Override
+//            public void onChildMoved(DataSnapshot dataSnapshot, String s) {
+//
+//            }
+//
+//            @Override
+//            public void onCancelled(DatabaseError databaseError) {
+//
+//            }
+//        });
     }
 
 //    @Override
@@ -147,6 +169,7 @@ public class MyService extends Service {
     public void onDestroy() {
         super.onDestroy();
         Toast.makeText(this, "service Stopped", Toast.LENGTH_SHORT).show();
+        stopSelf();
     }
 
     @Override

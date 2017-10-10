@@ -1,9 +1,13 @@
 package info.androidhive.firebase;
 
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.constraint.ConstraintLayout;
+import android.support.design.widget.Snackbar;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
@@ -25,6 +29,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import android.Manifest;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -33,12 +38,16 @@ public class LoginActivity extends AppCompatActivity {
     private ProgressBar progressBar,wprogress;
     private Button btnSignup, btnLogin, btnReset;
     DatabaseReference db;
+    private static final int PERMISSION_REQUEST_CODE = 1;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //Get Firebase auth instance
+
         setContentView(R.layout.activity_login);
         auth = FirebaseAuth.getInstance();
+
         inputEmail = (EditText) findViewById(R.id.email);
         inputPassword = (EditText) findViewById(R.id.password);
         progressBar = (ProgressBar) findViewById(R.id.progressBar);
@@ -50,7 +59,10 @@ public class LoginActivity extends AppCompatActivity {
         ConstraintLayout colayout = (ConstraintLayout) findViewById(R.id.conLayout);
         wprogress = (ProgressBar) findViewById(R.id.progressBarStart);
         LinearLayout layone= (LinearLayout) findViewById(R.id.lay);
-        if (auth.getCurrentUser() != null) {
+        if(checkPermission()==false){
+            requestPermission();
+        }
+        if (FirebaseAuth.getInstance().getCurrentUser() != null) {
             layone.setVisibility(View.INVISIBLE);
             colayout.setVisibility(View.VISIBLE);
             wprogress.setVisibility(View.VISIBLE);
@@ -59,7 +71,7 @@ public class LoginActivity extends AppCompatActivity {
             infocheck(uid);
 
         }
-        auth = FirebaseAuth.getInstance();
+        //auth = FirebaseAuth.getInstance();
 
         btnSignup.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -161,6 +173,49 @@ public class LoginActivity extends AppCompatActivity {
 
             }
         });
+    }
+    private boolean checkPermission(){
+        int result = ContextCompat.checkSelfPermission(LoginActivity.this, Manifest.permission.ACCESS_FINE_LOCATION);
+        if (result == PackageManager.PERMISSION_GRANTED){
+
+            return true;
+
+        } else {
+
+            return false;
+
+        }
+    }
+
+
+    private void requestPermission(){
+
+        if (ActivityCompat.shouldShowRequestPermissionRationale(LoginActivity.this,Manifest.permission.ACCESS_FINE_LOCATION)){
+
+            Toast.makeText(LoginActivity.this,"GPS permission allows us to access location data. Please allow in App Settings for additional functionality.",Toast.LENGTH_LONG).show();
+            //ActivityCompat.requestPermissions(LoginActivity.this,new String[]{Manifest.permission.ACCESS_FINE_LOCATION},PERMISSION_REQUEST_CODE);
+        } else {
+
+            ActivityCompat.requestPermissions(LoginActivity.this,new String[]{Manifest.permission.ACCESS_FINE_LOCATION},PERMISSION_REQUEST_CODE);
+        }
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {
+        switch (requestCode) {
+            case PERMISSION_REQUEST_CODE:
+                if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+
+                    //Snackbar.make(view,"Permission Granted, Now you can access location data.",Snackbar.LENGTH_LONG).show();
+
+                } else {
+
+                    //Snackbar.make(view,"Permission Denied, You cannot access location data.", Snackbar.LENGTH_LONG).show();
+                    finish();
+
+                }
+                break;
+        }
     }
 }
 

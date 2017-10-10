@@ -33,6 +33,7 @@ public class DriverService extends Service {
                 Toast.makeText(getApplicationContext(), "DataChange to :"+driverID, Toast.LENGTH_LONG).show();
                 if(dataSnapshot.getKey().toString().equals("CID") ){
                     startService(i);
+                    //stopSelf();
                 }
             }
             @Override
