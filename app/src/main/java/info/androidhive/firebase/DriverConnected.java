@@ -273,18 +273,34 @@ public class DriverConnected extends AppCompatActivity {
 
                         }
                     });
+                    //Toast.makeText(DriverConnected.this,type,Toast.LENGTH_LONG).show();
+                //PASSENGER PART
+                    // finishBtn.setOnClickListener(new View.OnClickListener() {
+//                                @Override
+//                                public void onClick(View v) {
+//                                    deleteData(idg);
+//                                    finish();
+//                                }
+//                            });
+//
+//                            cancelBtn.setOnClickListener(new View.OnClickListener() {
+//                                @Override
+//                                public void onClick(View v) {
+//                                    deleteData(idg);
+//                                    finish();
+//                                }
+//                            });
+                }else if(type.equals("Passenger")) {
 
-                //PASSENGER PART//
-
-                } else if(type.equals("Passenger")) {
-                    dbDes.child(uid).child("ConnectedID").addChildEventListener(new ChildEventListener() {
+                    Toast.makeText(DriverConnected.this,"gunsorry",Toast.LENGTH_LONG).show();
+                    dbDes.child(uid).child("ConnectedID").addValueEventListener(new ValueEventListener() {
                         @Override
-                        public void onChildAdded(DataSnapshot dataSnapshot, String s) {
+                        public void onDataChange(DataSnapshot dataSnapshot) {
                             final String id = dataSnapshot.getValue(String.class);
-                            Toast.makeText(DriverConnected.this,id,Toast.LENGTH_LONG).show();
+                            Toast.makeText(DriverConnected.this, id, Toast.LENGTH_SHORT).show();
                             setVal(id);
 
-                            finishBtn.setOnClickListener(new View.OnClickListener() {
+                             finishBtn.setOnClickListener(new View.OnClickListener() {
                                 @Override
                                 public void onClick(View v) {
                                     deleteData(id);
@@ -299,21 +315,6 @@ public class DriverConnected extends AppCompatActivity {
                                     finish();
                                 }
                             });
-                        }
-
-                        @Override
-                        public void onChildChanged(DataSnapshot dataSnapshot, String s) {
-
-                        }
-
-                        @Override
-                        public void onChildRemoved(DataSnapshot dataSnapshot) {
-
-                        }
-
-                        @Override
-                        public void onChildMoved(DataSnapshot dataSnapshot, String s) {
-
                         }
 
                         @Override

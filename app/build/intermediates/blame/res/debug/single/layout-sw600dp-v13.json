@@ -1,6 +1,10 @@
 [
     {
-        "merged": "C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13\\design_layout_snackbar.xml",
-        "source": "C:\\Users\\KITTAPORN\\.android\\build-cache\\f96e9766c50bb3ab8e80da0939d695edb5f5b3a8\\output\\res\\layout-sw600dp-v13\\design_layout_snackbar.xml"
+        "merged": "/Users/narathorn/Desktop/KuTogetherMaster/app/build/intermediates/res/merged/debug/layout-sw600dp-v13/design_layout_snackbar.xml",
+        "source": "/Users/narathorn/.android/build-cache/7b0d8e94d0413d0e5f09f71d0d5039904ed81033/output/res/layout-sw600dp-v13/design_layout_snackbar.xml"
+    },
+    {
+        "merged": "/Users/narathorn/desktop/KuTogetherMaster/C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13\\design_layout_snackbar.xml",
+        "source": "/Users/narathorn/desktop/KuTogetherMaster/C:\\Users\\KITTAPORN\\.android\\build-cache\\f96e9766c50bb3ab8e80da0939d695edb5f5b3a8\\output\\res\\layout-sw600dp-v13\\design_layout_snackbar.xml"
     }
 ]

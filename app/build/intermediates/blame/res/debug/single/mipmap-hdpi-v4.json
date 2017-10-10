@@ -1,6 +1,10 @@
 [
     {
-        "merged": "C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\full_speed.gif",
-        "source": "C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\src\\main\\res\\mipmap-hdpi\\full_speed.gif"
+        "merged": "/Users/narathorn/desktop/KuTogetherMaster/C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\full_speed.gif",
+        "source": "/Users/narathorn/desktop/KuTogetherMaster/C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\src\\main\\res\\mipmap-hdpi\\full_speed.gif"
+    },
+    {
+        "merged": "/Users/narathorn/Desktop/KuTogetherMaster/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/full_speed.gif",
+        "source": "/Users/narathorn/Desktop/KuTogetherMaster/app/src/main/res/mipmap-hdpi/full_speed.gif"
     }
 ]
