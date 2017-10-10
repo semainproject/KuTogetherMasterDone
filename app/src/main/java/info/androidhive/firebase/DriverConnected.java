@@ -223,7 +223,7 @@ public class DriverConnected extends AppCompatActivity {
             public void onDataChange(DataSnapshot dataSnapshot) {
                 InfoUser infoUser = dataSnapshot.getValue(InfoUser.class);
                 String type = infoUser.getTypePassDriv().toString();
-                Toast.makeText(DriverConnected.this , type , Toast.LENGTH_LONG).show();
+                //Toast.makeText(DriverConnected.this , type , Toast.LENGTH_LONG).show();
 
                 //DRIVER PART//
 
