@@ -64,7 +64,7 @@ public class MypostActivity extends AppCompatActivity {
                          @Override
                          public void onClick(DialogInterface dialog, int which) {
                              dbDes.child("connect").setValue(true);
-                             Intent intent = new Intent(MypostActivity.this, Connected.class);
+                             Intent intent = new Intent(MypostActivity.this, DriverConnected.class);
                              intent.putExtra(ID , infoUser.getId());
                              String id = infoUser.getId();
                              db.removeValue();

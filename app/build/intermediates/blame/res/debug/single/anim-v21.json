@@ -1,18 +1,26 @@
 [
     {
-        "merged": "/Users/narathorn/Desktop/KuTogetherMaster/app/build/intermediates/res/merged/debug/anim-v21/design_bottom_sheet_slide_out.xml",
-        "source": "/Users/narathorn/.android/build-cache/7b0d8e94d0413d0e5f09f71d0d5039904ed81033/output/res/anim-v21/design_bottom_sheet_slide_out.xml"
+        "merged": "C:\\Users\\narathorn\\desktop\\KuTogetherMaster\\C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21\\design_bottom_sheet_slide_out.xml",
+        "source": "C:\\Users\\narathorn\\desktop\\KuTogetherMaster\\C:\\Users\\KITTAPORN\\.android\\build-cache\\f96e9766c50bb3ab8e80da0939d695edb5f5b3a8\\output\\res\\anim-v21\\design_bottom_sheet_slide_out.xml"
     },
     {
-        "merged": "/Users/narathorn/desktop/KuTogetherMaster/C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21\\design_bottom_sheet_slide_in.xml",
-        "source": "/Users/narathorn/desktop/KuTogetherMaster/C:\\Users\\KITTAPORN\\.android\\build-cache\\f96e9766c50bb3ab8e80da0939d695edb5f5b3a8\\output\\res\\anim-v21\\design_bottom_sheet_slide_in.xml"
+        "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21\\design_bottom_sheet_slide_in.xml",
+        "source": "C:\\Users\\Kittaporn\\.android\\build-cache\\6244626836569d45bbdb928f54e3be4544eba59d\\output\\res\\anim-v21\\design_bottom_sheet_slide_in.xml"
     },
     {
-        "merged": "/Users/narathorn/desktop/KuTogetherMaster/C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21\\design_bottom_sheet_slide_out.xml",
-        "source": "/Users/narathorn/desktop/KuTogetherMaster/C:\\Users\\KITTAPORN\\.android\\build-cache\\f96e9766c50bb3ab8e80da0939d695edb5f5b3a8\\output\\res\\anim-v21\\design_bottom_sheet_slide_out.xml"
+        "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21\\design_bottom_sheet_slide_out.xml",
+        "source": "C:\\Users\\Kittaporn\\.android\\build-cache\\6244626836569d45bbdb928f54e3be4544eba59d\\output\\res\\anim-v21\\design_bottom_sheet_slide_out.xml"
     },
     {
-        "merged": "/Users/narathorn/Desktop/KuTogetherMaster/app/build/intermediates/res/merged/debug/anim-v21/design_bottom_sheet_slide_in.xml",
-        "source": "/Users/narathorn/.android/build-cache/7b0d8e94d0413d0e5f09f71d0d5039904ed81033/output/res/anim-v21/design_bottom_sheet_slide_in.xml"
+        "merged": "C:\\Users\\narathorn\\desktop\\KuTogetherMaster\\C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21\\design_bottom_sheet_slide_in.xml",
+        "source": "C:\\Users\\narathorn\\desktop\\KuTogetherMaster\\C:\\Users\\KITTAPORN\\.android\\build-cache\\f96e9766c50bb3ab8e80da0939d695edb5f5b3a8\\output\\res\\anim-v21\\design_bottom_sheet_slide_in.xml"
+    },
+    {
+        "merged": "C:\\Users\\narathorn\\Desktop\\KuTogetherMaster\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21\\design_bottom_sheet_slide_out.xml",
+        "source": "C:\\Users\\narathorn\\.android\\build-cache\\7b0d8e94d0413d0e5f09f71d0d5039904ed81033\\output\\res\\anim-v21\\design_bottom_sheet_slide_out.xml"
+    },
+    {
+        "merged": "C:\\Users\\narathorn\\Desktop\\KuTogetherMaster\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21\\design_bottom_sheet_slide_in.xml",
+        "source": "C:\\Users\\narathorn\\.android\\build-cache\\7b0d8e94d0413d0e5f09f71d0d5039904ed81033\\output\\res\\anim-v21\\design_bottom_sheet_slide_in.xml"
     }
 ]

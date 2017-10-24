@@ -109,7 +109,6 @@
             android:enabled="true"
             android:exported="true" />
 
-        <activity android:name="info.androidhive.firebase.Connected" />
         <activity
             android:name="info.androidhive.firebase.ConnectedMap"
             android:label="@string/title_activity_connected_map" />
@@ -140,6 +139,8 @@
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
             </intent-filter>
         </service>
+
+        <activity android:name="info.androidhive.firebase.editProfile" />
 
         <receiver
             android:name="com.google.android.gms.measurement.AppMeasurementReceiver"

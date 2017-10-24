@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="googledirectionlibrary-1.0.5">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.android/build-cache/d338760aeb3c799d564e5420813255105c8bad34/output/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.android/build-cache/d338760aeb3c799d564e5420813255105c8bad34/output/res" />
+      <root url="file://$USER_HOME$/.android/build-cache/e9928508a7674dffd5318023862635199a6f5d3c/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/e9928508a7674dffd5318023862635199a6f5d3c/output/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

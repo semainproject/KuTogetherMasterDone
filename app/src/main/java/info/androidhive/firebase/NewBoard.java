@@ -238,33 +238,6 @@ public class NewBoard extends AppCompatActivity implements NavigationView.OnNavi
                 //throw databaseError.toException();
             }
         });
-//        listViewDestination.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//            @Override
-//            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-//                DesInfo desInfo = desList.get(position);
-//                dbforinfo.addListenerForSingleValueEvent(new ValueEventListener() {
-//                    @Override
-//                    public void onDataChange(DataSnapshot dataSnapshot) {
-//                        InfoUser infoUser =
-//                        if(desInfo.getId().toString() == uid) {
-//                            Snackbar.make(findViewById(android.R.id.content), Html.fromHtml("<font color=\"#CB4335\"><font size=\"7\">It's You!</font size></font>"), Snackbar.LENGTH_LONG)
-//                                    //.setAction("Undo", mOnClickListener)
-//                                    .setActionTextColor(Color.RED)
-//                                    .show();
-//                        } else if() {
-//                            Intent intent = new Intent(NewBoard.this, ConnectPassenger.class);
-//                            intent.putExtra(passengerID, desInfo.getId());
-//                            startActivity(intent);
-//                        }
-//                    }
-//
-//                    @Override
-//                    public void onCancelled(DatabaseError databaseError) {
-//
-//                    }
-//                });
-//            }
-//        });
 
         dbforinfo.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
@@ -406,41 +379,6 @@ public class NewBoard extends AppCompatActivity implements NavigationView.OnNavi
                 }
             });
 
-
-
-//            db.child(uid).addValueEventListener(new ValueEventListener() {
-//                @Override
-//                public void onDataChange(DataSnapshot dataSnapshot) {
-//                    DesInfo desInfo = dataSnapshot.getValue(DesInfo.class);
-//                    try {
-//                        if (desInfo.isConnect() == false) {
-//                            Intent intent = new Intent(NewBoard.this, MypostActivity.class);
-//                            startActivity(intent);
-//                        } else {
-//                            Intent intent = new Intent(NewBoard.this, Connected.class);
-//                            startActivity(intent);
-//                        }
-//                    } catch(Exception exception) {
-//                        AlertDialog.Builder alert = new AlertDialog.Builder(NewBoard.this);
-//                        alert.setMessage("You don't have posted")
-//                                .setCancelable(false)
-//                                .setNegativeButton("Close", new DialogInterface.OnClickListener() {
-//                                    @Override
-//                                    public void onClick(DialogInterface dialog, int which) {
-//                                        dialog.cancel();
-//                                    }
-//                                });
-//                        AlertDialog alertDialog = alert.create();
-//                        alertDialog.show();
-//
-//                    }
-//                }
-//
-//                @Override
-//                public void onCancelled(DatabaseError databaseError) {
-//
-//                }
-//            });
         }
 
         return super.onOptionsItemSelected(item);
@@ -455,6 +393,8 @@ public class NewBoard extends AppCompatActivity implements NavigationView.OnNavi
         int id = item.getItemId();
 
         if (id == R.id.nav_camera) {
+            Intent intent3 = new Intent(NewBoard.this, editProfile.class);
+            startActivity(intent3);
         } else if (id == R.id.nav_gallery) {
 
             auth.signOut();
