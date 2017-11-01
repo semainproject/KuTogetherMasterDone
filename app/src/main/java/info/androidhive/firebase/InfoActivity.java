@@ -142,13 +142,16 @@ public class InfoActivity extends AppCompatActivity {
                         if(!TextUtils.isEmpty(userstudentID.getText().toString())){
                             if(!TextUtils.isEmpty(userNickname.getText().toString())){
                                 if(getBike() == "Passenger"){
-                                    passDataToPote(username.getText().toString(),userlastname.getText().toString(),userstudentID.getText().toString(),userNickname.getText().toString(),getGender(),getBike(),uid);
                                     //progress2.setVisibility(View.VISIBLE);
+                                    passDataWithDriverInformation(username.getText().toString(),userlastname.getText().toString(),userstudentID.getText().toString(),userNickname.getText().toString(),getGender(),getBike(),uid,"0","0","0",0,0);
+                                    Intent i = new Intent(InfoActivity.this,NewBoard.class);
+                                    startActivity(i);
+                                    finish();
                                 }else{
                                     if(!TextUtils.isEmpty(bikecolor.getText().toString())){
                                         if(!TextUtils.isEmpty(bikebrand.getText().toString())){
                                             if(!TextUtils.isEmpty(bikeid.getText().toString())){
-                                                passDataWithDriverInformation(username.getText().toString(),userlastname.getText().toString(),userstudentID.getText().toString(),userNickname.getText().toString(),getGender(),getBike(),uid,bikebrand.getText().toString(),bikecolor.getText().toString(),bikeid.getText().toString());
+                                                passDataWithDriverInformation(username.getText().toString(),userlastname.getText().toString(),userstudentID.getText().toString(),userNickname.getText().toString(),getGender(),getBike(),uid,bikebrand.getText().toString(),bikecolor.getText().toString(),bikeid.getText().toString(),0,0);
                                             }else{
                                                 Toast.makeText(InfoActivity.this,"Please type bike ID", Toast.LENGTH_LONG).show();
                                             }
@@ -198,27 +201,27 @@ public class InfoActivity extends AppCompatActivity {
         }
     }
 
-    public void passDataToPote(String username,String userlastname,String userstudentID,String userNickname,String gender,String isdriver,String UID){
-        //////////////////////////////////////////////////////////////////
-        //SEND DATA HER
-        InfoUser infoUser = new InfoUser(username , userlastname , userNickname , userstudentID , gender , isdriver , uid);
-        try {
-            infoDB.child(UID).child("INFORMATION").setValue(infoUser);
-            Toast.makeText(InfoActivity.this, "Sucsess", Toast.LENGTH_LONG).show();
-            Intent intent = new Intent(InfoActivity.this, NewBoard.class);
-            startActivity(intent);
-            finish();
-        }catch (Exception e){
-            Toast.makeText(InfoActivity.this, "Unsucsess", Toast.LENGTH_LONG).show();
-        }
-       // progress2.setVisibility(View.INVISIBLE);
-
-        //Toast.makeText(InfoActivity.this,UID, Toast.LENGTH_LONG).show();
-        /////////////////////////////////////////////////////////////////
-    }
-    public void passDataWithDriverInformation(String username,String userlastname,String userstudentID,String userNickname,String gender,String isdriver,String UID,String brand,String color,String bikeID){
+//    public void passDataToPote(String username,String userlastname,String userstudentID,String userNickname,String gender,String isdriver,String UID){
+//        //////////////////////////////////////////////////////////////////
+//        //SEND DATA HER
+//        InfoUser infoUser = new InfoUser(username , userlastname , userNickname , userstudentID , gender , isdriver , uid);
+//        try {
+//            infoDB.child(UID).child("INFORMATION").setValue(infoUser);
+//            Toast.makeText(InfoActivity.this, "Sucsess", Toast.LENGTH_LONG).show();
+//            Intent intent = new Intent(InfoActivity.this, NewBoard.class);
+//            startActivity(intent);
+//            finish();
+//        }catch (Exception e){
+//            Toast.makeText(InfoActivity.this, "Unsucsess", Toast.LENGTH_LONG).show();
+//        }
+//       // progress2.setVisibility(View.INVISIBLE);
+//
+//        //Toast.makeText(InfoActivity.this,UID, Toast.LENGTH_LONG).show();
+//        /////////////////////////////////////////////////////////////////
+//    }
+    public void passDataWithDriverInformation(String username,String userlastname,String userstudentID,String userNickname,String gender,String isdriver,String UID,String brand,String color,String bikeID,int like,int unlike){
         //////////////////////////////////////////////////
-        InfoUser infoUser = new InfoUser(username , userlastname , userNickname , userstudentID , gender , isdriver , brand , color , bikeID , uid);
+        InfoUser infoUser = new InfoUser(username , userlastname , userNickname , userstudentID , gender , isdriver , brand , color , bikeID , uid , like , unlike);
         infoDB.child(UID).child("INFORMATION").setValue(infoUser);
     }
 

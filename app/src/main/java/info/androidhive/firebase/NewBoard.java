@@ -80,6 +80,7 @@ import java.util.Map;
 import static info.androidhive.firebase.R.id.image;
 import static info.androidhive.firebase.R.id.imageView;
 import static info.androidhive.firebase.R.id.imageView5;
+import static info.androidhive.firebase.R.id.info;
 import static java.security.AccessController.getContext;
 
 public class NewBoard extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
@@ -117,17 +118,6 @@ public class NewBoard extends AppCompatActivity implements NavigationView.OnNavi
         startService(intent);
         //////////////////////////////////////////////////////////
        ActivityCompat.requestPermissions(NewBoard.this, new String[]{android.Manifest.permission.ACCESS_FINE_LOCATION}, 1);
-        dbToken.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                dbToken.child("Token").setValue(FirebaseInstanceId.getInstance().getToken());
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-
-            }
-        });
         //////////////////////////////////////////////////////////////
         listViewDestination = (ListView) findViewById(R.id.listViewDestination);
         desList = new ArrayList<>();
@@ -246,6 +236,9 @@ public class NewBoard extends AppCompatActivity implements NavigationView.OnNavi
                     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                         InfoUser infoUser = dataSnapshot.getValue(InfoUser.class);
                         String type = infoUser.getTypePassDriv().toString();
+                        String bikeBrand = infoUser.getBrand().toString();
+                        String color = infoUser.getColor().toString();
+                        String bikeID = infoUser.getBikeID().toString();
                         DesInfo desInfo = desList.get(position);
                         if(desInfo.getId().toString() == uid) {
                             Snackbar.make(findViewById(android.R.id.content), Html.fromHtml("<font color=\"#CB4335\"><font size=\"7\">It's You!</font size></font>"), Snackbar.LENGTH_LONG)
@@ -256,7 +249,7 @@ public class NewBoard extends AppCompatActivity implements NavigationView.OnNavi
                             Intent intent = new Intent(NewBoard.this, ConnectPassenger.class);
                             intent.putExtra(passengerID, desInfo.getId());
                             startActivity(intent);
-                        } else {
+                        } else if(type.equals("Passenger") && (bikeBrand.equals("0") && color.equals("0") && bikeID.equals("0"))) {
                             AlertDialog.Builder alert = new AlertDialog.Builder(NewBoard.this);
                             alert.setMessage("คุณไม่มีรถ ต้องการเปลี่ยนสถานะไหม?")
                                     .setCancelable(false)
@@ -265,6 +258,29 @@ public class NewBoard extends AppCompatActivity implements NavigationView.OnNavi
                                         public void onClick(DialogInterface dialogInterface, int i) {
                                             Intent intent = new Intent(NewBoard.this, ChangeDriverStatus.class);
                                             startActivity(intent);
+                                        }
+                                    })
+                                    .setPositiveButton("Cancel", new DialogInterface.OnClickListener() {
+                                        @Override
+                                        public void onClick(DialogInterface dialog, int which) {
+                                            dialog.cancel();
+                                        }
+                                    });
+
+                            AlertDialog alertDialog = alert.create();
+                            alertDialog.show();
+                        } else if(type.equals("Passenger") && !(bikeBrand.equals("0") && color.equals("0") && bikeID.equals("0"))) {
+                            AlertDialog.Builder alert = new AlertDialog.Builder(NewBoard.this);
+                            alert.setMessage("คุณไม่มีรถ ต้องการเปลี่ยนสถานะไหม?")
+                                    .setCancelable(false)
+                                    .setNegativeButton("Ok", new DialogInterface.OnClickListener() {
+                                        @Override
+                                        public void onClick(DialogInterface dialogInterface, int i) {
+                                            dbforinfo.child("typePassDriv").setValue("Driver");
+                                            finish();
+                                            overridePendingTransition(0, 0);
+                                            startActivity(getIntent());
+                                            overridePendingTransition(0, 0);
                                         }
                                     })
                                     .setPositiveButton("Cancel", new DialogInterface.OnClickListener() {
@@ -349,20 +365,30 @@ public class NewBoard extends AppCompatActivity implements NavigationView.OnNavi
                             dbConnect.child("CID").addValueEventListener(new ValueEventListener() {
                                 @Override
                                 public void onDataChange(DataSnapshot drivConnect) {
-                                    DesInfo desInfo = passConnect.getValue(DesInfo.class);
+                                    boolean isConnect = false;
+                                    boolean havePost = false;
+                                    try {
+                                        DesInfo desInfo = passConnect.getValue(DesInfo.class);
+                                        isConnect = desInfo.isConnect();
+                                        havePost = true;
+                                    } catch(Exception e) {
+
+                                    }
                                     InfoUser infoUser = type.getValue(InfoUser.class);
                                     String connect = drivConnect.getValue(String.class);
-                                    if(infoUser.getTypePassDriv().equals("Driver") && connect != null) {
+                                    if (infoUser.getTypePassDriv().equals("Driver") && connect != null) {
                                         Intent intent = new Intent(NewBoard.this, DriverConnected.class);
                                         startActivity(intent);
-                                    } else if(infoUser.getTypePassDriv().equals("Passenger") && desInfo.isConnect() == false) {
+                                    } else if (infoUser.getTypePassDriv().equals("Passenger") && isConnect == false && havePost == true) {
                                         Intent intent = new Intent(NewBoard.this, MypostActivity.class);
                                         startActivity(intent);
-                                    } else if(infoUser.getTypePassDriv().equals("Passenger") && desInfo.isConnect() == true) {
+                                    } else if (infoUser.getTypePassDriv().equals("Passenger") && isConnect == true && havePost == true) {
                                         Intent intent = new Intent(NewBoard.this, DriverConnected.class);
                                         startActivity(intent);
+                                    } else if(infoUser.getTypePassDriv().equals("Passenger") && havePost == false) {
+                                        Toast.makeText(NewBoard.this, "ํYou don't posted yet", Toast.LENGTH_LONG).show();
                                     } else {
-                                        Toast.makeText(NewBoard.this , "ํYou don't have a passenger yet" , Toast.LENGTH_LONG).show();
+                                        Toast.makeText(NewBoard.this, "ํYou don't have a passenger yet", Toast.LENGTH_LONG).show();
                                     }
                                 }
 
@@ -541,6 +567,7 @@ public class NewBoard extends AppCompatActivity implements NavigationView.OnNavi
 
             }
         });
+        dialog.hide();
 
 
     }
@@ -552,6 +579,7 @@ public class NewBoard extends AppCompatActivity implements NavigationView.OnNavi
         stopService(new Intent(this, MyService.class));
         stopService(new Intent(this, GpsService.class));
     }
+
 
 
 

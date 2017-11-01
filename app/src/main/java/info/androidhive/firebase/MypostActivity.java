@@ -115,9 +115,15 @@ public class MypostActivity extends AppCompatActivity {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 DesInfo desInfo = dataSnapshot.getValue(DesInfo.class);
-                startText.setText(desInfo.getStart().toString().trim());
-                desText.setText(desInfo.getDestination().toString().trim());
-                timeText.setText(desInfo.getTime().toString().trim());
+                try {
+                    startText.setText(desInfo.getStart().toString().trim());
+                    desText.setText(desInfo.getDestination().toString().trim());
+                    timeText.setText(desInfo.getTime().toString().trim());
+                } catch(Exception e) {
+                    startText.setText("Not Found!!");
+                    desText.setText("Not Found!!");
+                    timeText.setText("Not Found!!");
+                }
             }
 
             @Override

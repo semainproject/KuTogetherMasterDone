@@ -101,6 +101,7 @@ public class DestinationActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 addDesInfo();
+
                 finish();
             }
         });

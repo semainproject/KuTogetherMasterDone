@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -48,6 +49,8 @@ public class ChangeDriverStatus extends AppCompatActivity {
                         }
                     });
                     finish();
+                }else{
+                    Toast.makeText(ChangeDriverStatus.this,"Please fill your information", Toast.LENGTH_LONG).show();
                 }
             }
         });

@@ -27,6 +27,9 @@ import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 public class DriverConnected extends AppCompatActivity {
     ImageView myPic,passPic;
     FloatingActionButton mapBtn , finishBtn , cancelBtn;
@@ -69,12 +72,12 @@ public class DriverConnected extends AppCompatActivity {
         final FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         uid = user.getUid();
         db = FirebaseDatabase.getInstance().getReference("USER").child(uid).child("ConnectID");
-        dbDelConnectID = FirebaseDatabase.getInstance().getReference("USER").child(uid).child("ConnectID");
+        dbDelConnectID = FirebaseDatabase.getInstance().getReference("USER");
         dbDelDes = FirebaseDatabase.getInstance().getReference("Destination Data");
         dbDelLocation = FirebaseDatabase.getInstance().getReference("Location");
         dbUser = FirebaseDatabase.getInstance().getReference("USER").child(uid);
         dbDes = FirebaseDatabase.getInstance().getReference("Destination Data");
-        dbLog = FirebaseDatabase.getInstance().getReference("Log").child(uid);
+        dbLog = FirebaseDatabase.getInstance().getReference("USER").child(uid).child("Log");
         final StorageReference myPicStoreage = FirebaseStorage.getInstance().getReference("USERPICTURE").child(uid+"_PIC");
         myPicStoreage.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
             @Override
@@ -91,12 +94,12 @@ public class DriverConnected extends AppCompatActivity {
             }
         });
 
+
         dbUser.child("INFORMATION").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 InfoUser infoUser = dataSnapshot.getValue(InfoUser.class);
                 String type = infoUser.getTypePassDriv().toString();
-                //Toast.makeText(DriverConnected.this , type , Toast.LENGTH_LONG).show();
 
                 //DRIVER PART//
 
@@ -111,7 +114,8 @@ public class DriverConnected extends AppCompatActivity {
                             finishBtn.setOnClickListener(new View.OnClickListener() {
                                 @Override
                                 public void onClick(View v) {
-                                    deleteData(idd);
+                                    logForDriv(idd);
+                                    deleteDataDriv(idd);
                                     finish();
                                 }
                             });
@@ -119,7 +123,7 @@ public class DriverConnected extends AppCompatActivity {
                             cancelBtn.setOnClickListener(new View.OnClickListener() {
                                 @Override
                                 public void onClick(View v) {
-                                    deleteData(idd);
+                                    deleteDataDriv(idd);
                                     finish();
                                 }
                             });
@@ -146,20 +150,37 @@ public class DriverConnected extends AppCompatActivity {
 
                         }
                     });
+                    //Toast.makeText(DriverConnected.this,type,Toast.LENGTH_LONG).show();
+                //PASSENGER PART
+                    // finishBtn.setOnClickListener(new View.OnClickListener() {
+//                                @Override
+//                                public void onClick(View v) {
+//                                    deleteData(idg);
+//                                    finish();
+//                                }
+//                            });
+//
+//                            cancelBtn.setOnClickListener(new View.OnClickListener() {
+//                                @Override
+//                                public void onClick(View v) {
+//                                    deleteData(idg);
+//                                    finish();
+//                                }
+//                            });
                 }else if(type.equals("Passenger")) {
-
-                    Toast.makeText(DriverConnected.this,"gunsorry",Toast.LENGTH_LONG).show();
                     dbDes.child(uid).child("ConnectedID").addValueEventListener(new ValueEventListener() {
                         @Override
                         public void onDataChange(DataSnapshot dataSnapshot) {
                             final String id = dataSnapshot.getValue(String.class);
                             Toast.makeText(DriverConnected.this, id, Toast.LENGTH_SHORT).show();
                             setVal(id);
-
-                             finishBtn.setOnClickListener(new View.OnClickListener() {
+                            finishBtn.setOnClickListener(new View.OnClickListener() {
                                 @Override
                                 public void onClick(View v) {
-                                    deleteData(id);
+                                    logForPass(id);
+                                    deleteDataPass(id);
+                                    Intent intent = new Intent(DriverConnected.this, NewBoard.class);
+                                    startActivity(intent);
                                     finish();
                                 }
                             });
@@ -167,7 +188,7 @@ public class DriverConnected extends AppCompatActivity {
                             cancelBtn.setOnClickListener(new View.OnClickListener() {
                                 @Override
                                 public void onClick(View v) {
-                                    deleteData(id);
+                                    deleteDataPass(id);
                                     finish();
                                 }
                             });
@@ -190,34 +211,37 @@ public class DriverConnected extends AppCompatActivity {
 
     }
 
-    public void deleteData(final String id) {
+    public void deleteDataDriv(final String id) {
         dbDelDes.child(id).removeValue();
-        dbDelConnectID.removeValue();
+        dbDelConnectID.child(uid).child("ConnectID").removeValue();
         dbDelLocation.child(uid).removeValue();
         dbDelLocation.child(id).removeValue();
     }
 
-    public void log(final String id) {
-        dbDes.child(uid).addValueEventListener(new ValueEventListener() {
+    public void deleteDataPass(final String id) {
+        dbDelDes.child(uid).removeValue();
+        dbDelConnectID.child(id).child("ConnectID").removeValue();
+        dbDelLocation.child(uid).removeValue();
+        dbDelLocation.child(id).removeValue();
+    }
+
+    public void logForPass(final String id) {
+        dbDes.child(uid).addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 DesInfo desInfo = dataSnapshot.getValue(DesInfo.class);
-                final String start = desInfo.getStart().toString();
-                final String des = desInfo.getDestination().toString();
-                final String time = desInfo.getTime().toString();
-                dbDes.child(uid).child("ConnectedID").addValueEventListener(new ValueEventListener() {
-                    @Override
-                    public void onDataChange(DataSnapshot connectedID) {
-                        final String connectID = connectedID.getValue(String.class);
-                        LogData logData = new LogData(start , des , time , connectID);
-                        dbLog.setValue(logData);
-                    }
+                try {
+                    final String start = desInfo.getStart().toString();
+                    final String des = desInfo.getDestination().toString();
+                    final String time = desInfo.getTime().toString();
+                    LogData logData = new LogData(start, des, time, id);
+                    Date curDate = new Date();
+                    SimpleDateFormat format = new SimpleDateFormat("yyyy/MM/dd hh:mm a");
+                    String dateToStr = format.format(curDate).toString();
+                    dbLog.child(dateToStr).setValue(logData);
+                } catch(Exception e) {
 
-                    @Override
-                    public void onCancelled(DatabaseError databaseError) {
-
-                    }
-                });
+                }
             }
 
             @Override
@@ -226,4 +250,31 @@ public class DriverConnected extends AppCompatActivity {
             }
         });
     }
+
+    public void logForDriv(final String id) {
+        dbDes.child(id).addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                DesInfo desInfo = dataSnapshot.getValue(DesInfo.class);
+                try {
+                    final String start = desInfo.getStart().toString();
+                    final String des = desInfo.getDestination().toString();
+                    final String time = desInfo.getTime().toString();
+                    LogData logData = new LogData(start, des, time, uid);
+                    Date curDate = new Date();
+                    SimpleDateFormat format = new SimpleDateFormat("yyyy/MM/dd hh:mm a");
+                    String dateToStr = format.format(curDate).toString();
+                    dbLog.child(dateToStr).setValue(logData);
+                } catch(Exception e) {
+
+                }
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+    }
+
 }

@@ -15,6 +15,8 @@ public class InfoUser {
     String color;
     String bikeID;
     String id;
+    int like;
+    int unlike;
 
     InfoUser() {
 
@@ -30,7 +32,7 @@ public class InfoUser {
         this.id = id;
     }
 
-    public InfoUser(String name, String lastName, String nickname, String studentID, String gender, String typePassDriv, String brand, String color, String bikeID, String id) {
+    public InfoUser(String name, String lastName, String nickname, String studentID, String gender, String typePassDriv, String brand, String color, String bikeID, String id, int like, int unlike) {
         this.name = name;
         this.lastName = lastName;
         this.nickname = nickname;
@@ -41,6 +43,8 @@ public class InfoUser {
         this.color = color;
         this.bikeID = bikeID;
         this.id =id;
+        this.like = like;
+        this.unlike = unlike;
     }
 
     public InfoUser(String nickname, String gender, String brand, String color, String bikeID, String id) {
@@ -90,5 +94,13 @@ public class InfoUser {
 
     public String getId() {
         return id;
+    }
+
+    public int getLike() {
+        return like;
+    }
+
+    public int getUnlike() {
+        return unlike;
     }
 }

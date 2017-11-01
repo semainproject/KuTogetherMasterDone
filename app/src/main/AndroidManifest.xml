@@ -79,10 +79,6 @@
             android:label="@string/title_activity_maps_des" />
         <activity android:name=".ConnectPassenger" />
         <activity
-            android:name=".MypostActivity"
-            android:label="@string/title_activity_mypost"
-            android:theme="@style/AppTheme" />
-        <activity
             android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
             android:theme="@style/Base.Theme.AppCompat" />
 
