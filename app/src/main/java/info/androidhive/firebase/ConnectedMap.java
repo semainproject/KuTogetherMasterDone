@@ -43,6 +43,7 @@ public class ConnectedMap extends FragmentActivity implements OnMapReadyCallback
     String partnerid;
     String uid;
     Marker marker;
+    Marker Fmarker;
     Marker myMarker;
     Marker friendMarker;
     TextView distanceTX,dura;
@@ -53,7 +54,7 @@ public class ConnectedMap extends FragmentActivity implements OnMapReadyCallback
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_connected_map);
         distanceTX = (TextView) findViewById(R.id.distanceText);
-        dura = (TextView) findViewById(R.id.distanceText);
+        dura = (TextView) findViewById(R.id.durationText);
         final FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         uid = user.getUid();
         Intent iin= getIntent();
@@ -130,8 +131,8 @@ public class ConnectedMap extends FragmentActivity implements OnMapReadyCallback
                                             Info durationInfo = leg.getDuration();
                                             String distance = distanceInfo.getText();
                                             String duration = durationInfo.getText();
-                                            distanceTX.setText("Distance is :" +distance);
-                                            dura.setText("Duration is : "+duration);
+                                            distanceTX.setText("ระยะทาง  :" +distance);
+                                            dura.setText("ใช้เวลาโดยประมาณ: "+duration);
                                             ArrayList<LatLng> directionPositionList = leg.getDirectionPoint();
                                             PolylineOptions polylineOptions = DirectionConverter.createPolyline(ConnectedMap.this, directionPositionList, 5, Color.RED);
                                             mMap.addPolyline(polylineOptions);
@@ -168,8 +169,28 @@ public class ConnectedMap extends FragmentActivity implements OnMapReadyCallback
                 }
                 LocationLatLng ltlng = dataSnapshot.getValue(LocationLatLng.class);
                 LatLng location = new LatLng(ltlng.getLat(), ltlng.getLng());
-                MarkerOptions meMark =  new MarkerOptions().position(location).title("your position");
+                MarkerOptions meMark =  new MarkerOptions().position(location).title("Your position");
                 marker = mMap.addMarker(meMark);
+                marker.showInfoWindow();
+
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+        db.child(partnerid).addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                if(Fmarker != null){
+                    Fmarker.remove();
+                }
+                LocationLatLng ltlng = dataSnapshot.getValue(LocationLatLng.class);
+                LatLng location = new LatLng(ltlng.getLat(), ltlng.getLng());
+                MarkerOptions meMark =  new MarkerOptions().position(location).title("Friend position");
+                Fmarker = mMap.addMarker(meMark);
+                Fmarker.showInfoWindow();
 
             }
 

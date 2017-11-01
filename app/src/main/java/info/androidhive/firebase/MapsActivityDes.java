@@ -103,7 +103,7 @@ public class MapsActivityDes extends FragmentActivity implements OnMapReadyCallb
                         String slat = String.valueOf(dlat);
                         String slon = String.valueOf(dlon);
                         //Toast.makeText(MapsActivity.this, slat, Toast.LENGTH_LONG).show();
-                        String message = slat+"/"+slon;
+                        String message = arg0.getTitle();
                         Intent intent = new Intent();
                         intent.putExtra("MESSAGE",message);
                         setResult(2,intent);

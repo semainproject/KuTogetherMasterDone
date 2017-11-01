@@ -1,5 +1,6 @@
 package info.androidhive.firebase;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
@@ -9,7 +10,9 @@ import android.support.v4.graphics.drawable.RoundedBitmapDrawableFactory;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
@@ -33,7 +36,7 @@ import java.util.Date;
 public class DriverConnected extends AppCompatActivity {
     ImageView myPic,passPic;
     FloatingActionButton mapBtn , finishBtn , cancelBtn;
-    DatabaseReference db , dbDelDes , dbDelConnectID , dbDelLocation , dbUser , dbDes , dbLog;
+    DatabaseReference db , dbDelDes , dbDelConnectID , dbDelLocation , dbUser , dbDes , dbLog , dbRating;
     String uid;
     public void setVal(final String id){
         final StorageReference myPicStoreage2 = FirebaseStorage.getInstance().getReference("USERPICTURE").child(id+"_PIC");
@@ -78,6 +81,7 @@ public class DriverConnected extends AppCompatActivity {
         dbUser = FirebaseDatabase.getInstance().getReference("USER").child(uid);
         dbDes = FirebaseDatabase.getInstance().getReference("Destination Data");
         dbLog = FirebaseDatabase.getInstance().getReference("USER").child(uid).child("Log");
+        dbRating = FirebaseDatabase.getInstance().getReference("USER");
         final StorageReference myPicStoreage = FirebaseStorage.getInstance().getReference("USERPICTURE").child(uid+"_PIC");
         myPicStoreage.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
             @Override
@@ -104,6 +108,44 @@ public class DriverConnected extends AppCompatActivity {
                 //DRIVER PART//
 
                 if(type.equals("Driver")) {
+                    finishBtn.setVisibility(View.INVISIBLE);
+                    db.child("CID").addValueEventListener(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(DataSnapshot dataSnapshot) {
+                            final String id = dataSnapshot.getValue(String.class);
+                            try {
+                                dbDes.child(id).addValueEventListener(new ValueEventListener() {
+                                    @Override
+                                    public void onDataChange(DataSnapshot desSnapshot) {
+                                        boolean close = false;
+                                        try {
+                                            DesInfo desInfo = desSnapshot.getValue(DesInfo.class);
+                                            close = true;
+                                        } catch (Exception e) {
+
+                                        }
+                                        if (close == false) {
+                                            finish();
+                                            stopService(new Intent(DriverConnected.this, GpsService.class));
+                                        }
+                                    }
+
+                                    @Override
+                                    public void onCancelled(DatabaseError databaseError) {
+
+                                    }
+                                });
+                            } catch(Exception ee) {
+                                finish();
+                            }
+                        }
+
+                        @Override
+                        public void onCancelled(DatabaseError databaseError) {
+
+                        }
+                    });
+
                     db.addChildEventListener(new ChildEventListener() {
                         @Override
                         public void onChildAdded(DataSnapshot dataSnapshot, String s) {
@@ -111,19 +153,25 @@ public class DriverConnected extends AppCompatActivity {
                             //Toast.makeText(DriverConnected.this,idd,Toast.LENGTH_LONG).show();
                             setVal(idd);
 
-                            finishBtn.setOnClickListener(new View.OnClickListener() {
-                                @Override
-                                public void onClick(View v) {
-                                    logForDriv(idd);
-                                    deleteDataDriv(idd);
-                                    finish();
-                                }
-                            });
+//                            finishBtn.setOnClickListener(new View.OnClickListener() {
+//                                @Override
+//                                public void onClick(View v) {
+//                                    logForDriv(idd);
+//                                    deleteDataDriv(idd);
+//                                    Intent intent = new Intent(DriverConnected.this, NewBoard.class);
+//                                    startActivity(intent);
+//                                    finish();
+//                                }
+//                            });
 
                             cancelBtn.setOnClickListener(new View.OnClickListener() {
                                 @Override
                                 public void onClick(View v) {
                                     deleteDataDriv(idd);
+                                    stopService(new Intent(DriverConnected.this, GpsService.class));
+                                    stopService(new Intent(DriverConnected.this, ServiceLocation.class));
+                                    Intent intent = new Intent(DriverConnected.this, NewBoard.class);
+                                    startActivity(intent);
                                     finish();
                                 }
                             });
@@ -150,38 +198,99 @@ public class DriverConnected extends AppCompatActivity {
 
                         }
                     });
-                    //Toast.makeText(DriverConnected.this,type,Toast.LENGTH_LONG).show();
-                //PASSENGER PART
-                    // finishBtn.setOnClickListener(new View.OnClickListener() {
-//                                @Override
-//                                public void onClick(View v) {
-//                                    deleteData(idg);
-//                                    finish();
-//                                }
-//                            });
-//
-//                            cancelBtn.setOnClickListener(new View.OnClickListener() {
-//                                @Override
-//                                public void onClick(View v) {
-//                                    deleteData(idg);
-//                                    finish();
-//                                }
-//                            });
                 }else if(type.equals("Passenger")) {
+                    try {
+                        dbDes.child(uid).addValueEventListener(new ValueEventListener() {
+                            @Override
+                            public void onDataChange(DataSnapshot desSnapshot) {
+                                boolean close = false;
+                                try {
+                                    DesInfo desInfo = desSnapshot.getValue(DesInfo.class);
+                                    if(desInfo != null){
+                                        close = true;
+                                    }
+                                } catch (Exception e) {
+                                    //finish();
+                                }
+                                if (close == false) {
+                                    finish();
+                                    stopService(new Intent(DriverConnected.this, GpsService.class));
+                                    stopService(new Intent(DriverConnected.this, ServiceLocation.class));
+                                }
+                            }
+
+                            @Override
+                            public void onCancelled(DatabaseError databaseError) {
+                                finish();
+                            }
+                        });
+                    } catch(Exception ee) {
+                        finish();
+                    }
                     dbDes.child(uid).child("ConnectedID").addValueEventListener(new ValueEventListener() {
                         @Override
                         public void onDataChange(DataSnapshot dataSnapshot) {
                             final String id = dataSnapshot.getValue(String.class);
                             Toast.makeText(DriverConnected.this, id, Toast.LENGTH_SHORT).show();
                             setVal(id);
+                            logForPass(id);
                             finishBtn.setOnClickListener(new View.OnClickListener() {
                                 @Override
                                 public void onClick(View v) {
-                                    logForPass(id);
-                                    deleteDataPass(id);
-                                    Intent intent = new Intent(DriverConnected.this, NewBoard.class);
-                                    startActivity(intent);
-                                    finish();
+
+                                    final Dialog dialog = new Dialog(DriverConnected.this);
+                                    dialog.setContentView(R.layout.like_layout);
+                                    dialog.show();
+
+                                    Button likeButton = (Button) dialog.findViewById(R.id.likeBtn);
+                                    likeButton.setOnClickListener(new View.OnClickListener() {
+                                        @Override
+                                        public void onClick(View v) {
+                                            dbRating.child(id).child("INFORMATION").child("like").addListenerForSingleValueEvent(new ValueEventListener() {
+                                                @Override
+                                                public void onDataChange(DataSnapshot likeSnapshot) {
+                                                    int like = likeSnapshot.getValue(int.class);
+                                                    like = like + 1;
+                                                    dbRating.child(id).child("INFORMATION").child("like").setValue(like);
+                                                }
+
+                                                @Override
+                                                public void onCancelled(DatabaseError databaseError) {
+
+                                                }
+                                            });
+                                            deleteDataPass(id);
+                                            stopService(new Intent(DriverConnected.this, GpsService.class));
+                                            stopService(new Intent(DriverConnected.this, ServiceLocation.class));
+                                            Intent intent = new Intent(DriverConnected.this, NewBoard.class);
+                                            startActivity(intent);
+                                            finish();
+                                        }
+                                    });
+                                    Button dislikeButton = (Button) dialog.findViewById(R.id.dislikeBtn);
+                                    dislikeButton.setOnClickListener(new View.OnClickListener() {
+                                        @Override
+                                        public void onClick(View v) {
+                                            dbRating.child(id).child("INFORMATION").child("unlike").addListenerForSingleValueEvent(new ValueEventListener() {
+                                                @Override
+                                                public void onDataChange(DataSnapshot dislikeSnapshot) {
+                                                    int dislike = dislikeSnapshot.getValue(int.class);
+                                                    dislike = dislike + 1;
+                                                    dbRating.child(id).child("INFORMATION").child("unlike").setValue(dislike);
+                                                }
+
+                                                @Override
+                                                public void onCancelled(DatabaseError databaseError) {
+
+                                                }
+                                            });
+                                            deleteDataPass(id);
+                                            Intent intent = new Intent(DriverConnected.this, NewBoard.class);
+                                            startActivity(intent);
+                                            finish();
+                                        }
+                                    });
+
                                 }
                             });
 

@@ -122,7 +122,7 @@ public class NewBoard extends AppCompatActivity implements NavigationView.OnNavi
         listViewDestination = (ListView) findViewById(R.id.listViewDestination);
         desList = new ArrayList<>();
         final FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        dbforinfo.addListenerForSingleValueEvent(new ValueEventListener() {
+        dbforinfo.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 InfoUser infoUser = dataSnapshot.getValue(InfoUser.class);
@@ -170,11 +170,43 @@ public class NewBoard extends AppCompatActivity implements NavigationView.OnNavi
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-//                        .setAction("Action", null).show();
-                //Toast.makeText(BoardActivity.this , gender , Toast.LENGTH_LONG).show();
-                Intent intent = new Intent(NewBoard.this, DestinationActivity.class);
-                startActivity(intent);
+                dbforinfo.child("typePassDriv").addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(DataSnapshot dataSnapshot) {
+                        String type = dataSnapshot.getValue(String.class);
+                        if(type.equals("Driver")){
+                            AlertDialog.Builder alert = new AlertDialog.Builder(NewBoard.this);
+                            alert.setMessage("คุณเป็นคนขับ ต้องการเปลี่ยนสถานะไหม")
+                                    .setCancelable(false)
+                                    .setNegativeButton("Ok", new DialogInterface.OnClickListener() {
+                                        @Override
+                                        public void onClick(DialogInterface dialogInterface, int i) {
+                                            dbforinfo.child("typePassDriv").setValue("Passenger");
+                                            Toast.makeText(getApplicationContext(), "สถานะคุณคือ ผู้โดยสาร", Toast.LENGTH_LONG).show();
+                                            Intent intent = new Intent(NewBoard.this, DestinationActivity.class);
+                                            startActivity(intent);
+                                        }
+                                    })
+                                    .setPositiveButton("Cancel", new DialogInterface.OnClickListener() {
+                                        @Override
+                                        public void onClick(DialogInterface dialog, int which) {
+                                            dialog.cancel();
+                                        }
+                                    });
+
+                            AlertDialog alertDialog = alert.create();
+                            alertDialog.show();
+                        }else {
+                            Intent intent = new Intent(NewBoard.this, DestinationActivity.class);
+                            startActivity(intent);
+                        }
+                        }
+
+                    @Override
+                    public void onCancelled(DatabaseError databaseError) {
+
+                    }
+                });
             }
         });
         ///////////////////get user real name from server////////////////////
@@ -228,7 +260,7 @@ public class NewBoard extends AppCompatActivity implements NavigationView.OnNavi
             }
         });
 
-        dbforinfo.addListenerForSingleValueEvent(new ValueEventListener() {
+        dbforinfo.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(final DataSnapshot dataSnapshot) {
                 listViewDestination.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -239,7 +271,7 @@ public class NewBoard extends AppCompatActivity implements NavigationView.OnNavi
                         String bikeBrand = infoUser.getBrand().toString();
                         String color = infoUser.getColor().toString();
                         String bikeID = infoUser.getBikeID().toString();
-                        DesInfo desInfo = desList.get(position);
+                        final DesInfo desInfo = desList.get(position);
                         if(desInfo.getId().toString() == uid) {
                             Snackbar.make(findViewById(android.R.id.content), Html.fromHtml("<font color=\"#CB4335\"><font size=\"7\">It's You!</font size></font>"), Snackbar.LENGTH_LONG)
                                     //.setAction("Undo", mOnClickListener)
@@ -257,7 +289,7 @@ public class NewBoard extends AppCompatActivity implements NavigationView.OnNavi
                                         @Override
                                         public void onClick(DialogInterface dialogInterface, int i) {
                                             Intent intent = new Intent(NewBoard.this, ChangeDriverStatus.class);
-                                            startActivity(intent);
+                                            startActivityForResult(intent, 10);
                                         }
                                     })
                                     .setPositiveButton("Cancel", new DialogInterface.OnClickListener() {
@@ -277,10 +309,14 @@ public class NewBoard extends AppCompatActivity implements NavigationView.OnNavi
                                         @Override
                                         public void onClick(DialogInterface dialogInterface, int i) {
                                             dbforinfo.child("typePassDriv").setValue("Driver");
-                                            finish();
-                                            overridePendingTransition(0, 0);
-                                            startActivity(getIntent());
-                                            overridePendingTransition(0, 0);
+                                            Toast.makeText(getApplicationContext(), "สถานะคุณคือ คนขับ", Toast.LENGTH_LONG).show();
+                                            Intent intent = new Intent(NewBoard.this, ConnectPassenger.class);
+                                            intent.putExtra(passengerID, desInfo.getId());
+                                            startActivity(intent);
+//                                            finish();
+//                                            overridePendingTransition(0, 0);
+//                                            startActivity(getIntent());
+//                                            overridePendingTransition(0, 0);
                                         }
                                     })
                                     .setPositiveButton("Cancel", new DialogInterface.OnClickListener() {
@@ -335,7 +371,6 @@ public class NewBoard extends AppCompatActivity implements NavigationView.OnNavi
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
                             finish();
-                            onDestroy();
                         }
                     });
             AlertDialog alertDialog = alertExit.create();
@@ -354,15 +389,15 @@ public class NewBoard extends AppCompatActivity implements NavigationView.OnNavi
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
         if(id == R.id.action_favorite){
-            dbforinfo.addValueEventListener(new ValueEventListener() {
+            dbforinfo.addListenerForSingleValueEvent(new ValueEventListener() {
                 @Override
                 public void onDataChange(final DataSnapshot type) {
 
-                    db.child(uid).addValueEventListener(new ValueEventListener() {
+                    db.child(uid).addListenerForSingleValueEvent(new ValueEventListener() {
                         @Override
                         public void onDataChange(final DataSnapshot passConnect) {
 
-                            dbConnect.child("CID").addValueEventListener(new ValueEventListener() {
+                            dbConnect.child("CID").addListenerForSingleValueEvent(new ValueEventListener() {
                                 @Override
                                 public void onDataChange(DataSnapshot drivConnect) {
                                     boolean isConnect = false;

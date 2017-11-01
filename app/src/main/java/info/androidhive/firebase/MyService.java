@@ -34,17 +34,18 @@ public class MyService extends Service {
     @Override
     public void onCreate() {
         super.onCreate();
-        Toast.makeText(MyService.this, "service Start from myservice", Toast.LENGTH_SHORT).show();
+        //Toast.makeText(MyService.this, "service Start from myservice", Toast.LENGTH_SHORT).show();
         DatabaseReference firebaseRef,ref;
         final FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         uid = user.getUid();
         firebaseRef = FirebaseDatabase.getInstance().getReference("Destination Data").child(uid).child("ReceiverID");
+        final DatabaseReference db = FirebaseDatabase.getInstance().getReference("USER").child(uid);
         firebaseRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 for (DataSnapshot data : dataSnapshot.getChildren()) {
                     InfoUser id = data.getValue(InfoUser.class);
-                    Uri alarmSound = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_ALARM);
+                    Uri alarmSound = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
                     Intent intentTomypost = new Intent(MyService.this,MypostActivity.class);
                     PendingIntent pendingIntent = PendingIntent.getActivity(MyService.this, 0, intentTomypost, 0);
                     Notification notification =
@@ -86,6 +87,8 @@ public class MyService extends Service {
                     } else {
                         Toast.makeText(MyService.this, "FALSE", Toast.LENGTH_SHORT).show();
                     }
+                }else{
+                    stopService(new Intent(MyService.this, ServiceLocation.class));
                 }
             }
 
@@ -100,8 +103,8 @@ public class MyService extends Service {
     @Override
     public void onDestroy() {
         super.onDestroy();
-        Toast.makeText(this, "service Stopped", Toast.LENGTH_SHORT).show();
-        stopSelf();
+//        Toast.makeText(this, "service Stopped", Toast.LENGTH_SHORT).show();
+//        stopSelf();
     }
 
     @Override
@@ -109,4 +112,9 @@ public class MyService extends Service {
         // TODO: Return the communication channel to the service.
         throw new UnsupportedOperationException("Not yet implemented");
     }
+    @Override
+    public int onStartCommand(Intent intent, int flags, int startId) {
+        return START_STICKY;
+    }
+
 }

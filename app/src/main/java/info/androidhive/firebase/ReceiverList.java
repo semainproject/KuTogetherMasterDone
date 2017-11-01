@@ -57,9 +57,13 @@ public class ReceiverList extends ArrayAdapter<InfoUser> {
         TextView bikeIDText = (TextView) listViewItem.findViewById(R.id.bikeIDText);
         final TextView startText = (TextView) listViewItem.findViewById(R.id.startText);
         final ImageView imageViewRec = (ImageView) listViewItem.findViewById(R.id.imageViewRec);
+        TextView like = (TextView) listViewItem.findViewById(R.id.like);
+        TextView dislike = (TextView) listViewItem.findViewById(R.id.dislike);
 
         InfoUser infoUser = infoUserList.get(position);
         String id = infoUser.getId();
+        int likeNumber = infoUser.getLike();
+        int dislikeNumber = infoUser.getUnlike();
 
         final StorageReference storageReference = FirebaseStorage.getInstance().getReference("USERPICTURE").child(id+"_PIC");
         storageReference.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
@@ -82,6 +86,8 @@ public class ReceiverList extends ArrayAdapter<InfoUser> {
         bikeBrandText.setText(infoUser.getBrand());
         bikeColorText.setText(infoUser.getColor());
         bikeIDText.setText(infoUser.getBikeID());
+        like.setText(String.valueOf(likeNumber));
+        dislike.setText(String.valueOf(dislikeNumber));
         return listViewItem;
     }
 }

@@ -63,6 +63,7 @@
             android:label="@string/title_activity_reset_password"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name="info.androidhive.firebase.InfoActivity" />
+        <activity android:name="info.androidhive.firebase.MypostActivity" />
         <activity android:name="info.androidhive.firebase.DestinationActivity" >
 
             <!-- <intent-filter> -->
@@ -89,9 +90,6 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
-        <activity
-            android:name="info.androidhive.firebase.MapsActivity"
-            android:label="@string/title_activity_maps" />
         <activity
             android:name="info.androidhive.firebase.MapsActivityDes"
             android:label="@string/title_activity_maps_des" />

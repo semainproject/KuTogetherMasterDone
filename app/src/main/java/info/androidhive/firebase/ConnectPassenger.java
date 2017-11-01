@@ -127,7 +127,9 @@ public class ConnectPassenger extends AppCompatActivity {
                 String bikeBrand = infoUser.getBrand();
                 String bikeColor = infoUser.getColor();
                 String bikeID = infoUser.getBikeID();
-                InfoUser info = new InfoUser(name , gender , bikeBrand , bikeColor , bikeID , uid);
+                int like = infoUser.getLike();
+                int dislike = infoUser.getUnlike();
+                InfoUser info = new InfoUser(name , gender , bikeBrand , bikeColor , bikeID , uid , like , dislike);
                 dbUpdate.child(uid).setValue(info);
                 finish();
             }
@@ -170,15 +172,22 @@ public class ConnectPassenger extends AppCompatActivity {
         dbDes.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                DesInfo desInfo = dataSnapshot.getValue(DesInfo.class);
-                String start = desInfo.getStart().toString().trim();
-                String des = desInfo.getDestination().toString().trim();
-                String time = desInfo.getTime().toString().trim();
-                String note = desInfo.getNote().toString().trim();
-                startText.setText(start);
-                desText.setText(des);
-                timeText.setText(time);
-                noteText.setText("*" + note);
+                try {
+                    DesInfo desInfo = dataSnapshot.getValue(DesInfo.class);
+                    String start = desInfo.getStart().toString().trim();
+                    String des = desInfo.getDestination().toString().trim();
+                    String time = desInfo.getTime().toString().trim();
+                    String note = desInfo.getNote().toString().trim();
+                    startText.setText(start);
+                    desText.setText(des);
+                    timeText.setText(time);
+                    noteText.setText("*" + note);
+                } catch(Exception e) {
+                    startText.setText("Not Found");
+                    desText.setText("Not Found");
+                    timeText.setText("Not Found");
+                    noteText.setText("Not Found");
+                }
             }
 
             @Override

@@ -47,13 +47,15 @@ public class InfoUser {
         this.unlike = unlike;
     }
 
-    public InfoUser(String nickname, String gender, String brand, String color, String bikeID, String id) {
+    public InfoUser(String nickname, String gender, String brand, String color, String bikeID, String id, int like, int unlike) {
         this.nickname = nickname;
         this.gender = gender;
         this.brand = brand;
         this.color = color;
         this.bikeID = bikeID;
         this.id = id;
+        this.like = like;
+        this.unlike = unlike;
     }
 
     public String getName() {

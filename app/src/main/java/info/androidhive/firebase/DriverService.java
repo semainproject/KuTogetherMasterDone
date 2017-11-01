@@ -33,7 +33,7 @@ public class DriverService extends Service {
                 Toast.makeText(getApplicationContext(), "DataChange to :"+driverID, Toast.LENGTH_LONG).show();
                 if(dataSnapshot.getKey().toString().equals("CID") ){
                     startService(i);
-                    //stopSelf();
+                   // stopSelf();
                 }
             }
             @Override
@@ -45,6 +45,7 @@ public class DriverService extends Service {
             @Override
             public void onChildRemoved(DataSnapshot dataSnapshot) {
                 stopSelf();
+                stopService(new Intent(DriverService.this, GpsService.class));
             }
 
             @Override

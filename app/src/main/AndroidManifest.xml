@@ -45,6 +45,7 @@
             android:label="@string/title_activity_reset_password"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".InfoActivity" />
+        <activity android:name=".MypostActivity" />
         <activity android:name=".DestinationActivity">
 
             <!-- <intent-filter> -->
@@ -71,9 +72,6 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
-        <activity
-            android:name=".MapsActivity"
-            android:label="@string/title_activity_maps" />
         <activity
             android:name=".MapsActivityDes"
             android:label="@string/title_activity_maps_des" />

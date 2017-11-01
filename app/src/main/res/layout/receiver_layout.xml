@@ -2,21 +2,22 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:layout_editor_absoluteY="25dp"
-    tools:layout_editor_absoluteX="0dp">
+    android:orientation="vertical"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="25dp">
 
     <ImageView
         android:id="@+id/imageViewRec"
         android:layout_width="0dp"
         android:layout_height="100dp"
-        android:layout_marginLeft="2dp"
+        android:layout_marginEnd="222dp"
         android:layout_marginStart="2dp"
         app:layout_constraintBottom_toBottomOf="@+id/nameText"
+        app:layout_constraintEnd_toStartOf="@+id/like"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@+id/nameText"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nameText"
         app:layout_constraintVertical_bias="0.265"
         app:srcCompat="@drawable/ic_directions_run_black_24dp"
@@ -29,13 +30,12 @@
         android:id="@+id/nameText"
         android:layout_width="97dp"
         android:layout_height="50dp"
-        android:layout_marginStart="102dp"
+        android:layout_marginLeft="102dp"
         android:text="TextView"
         app:layout_constraintBaseline_toBaselineOf="@+id/bikeBrandText"
-        tools:layout_constraintBaseline_creator="1"
-        tools:layout_constraintLeft_creator="1"
         app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginLeft="102dp" />
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintLeft_creator="1" />
 
     <TextView
         android:id="@+id/genderText"
@@ -52,11 +52,11 @@
 
     <TextView
         android:id="@+id/bikeBrandText"
-        android:layout_width="0dp"
+        android:layout_width="125dp"
         android:layout_height="33dp"
-        android:layout_marginEnd="10dp"
         android:layout_marginRight="10dp"
         android:text="TextView"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toRightOf="@+id/nameText"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -68,28 +68,46 @@
         android:id="@+id/bikeColorText"
         android:layout_width="0dp"
         android:layout_height="33dp"
+        android:layout_marginTop="34dp"
         android:text="TextView"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/bikeBrandText"
         app:layout_constraintRight_toRightOf="@+id/bikeBrandText"
         app:layout_constraintTop_toBottomOf="@+id/bikeBrandText"
         tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="@+id/bikeBrandText"
-        android:layout_marginTop="34dp"
-        app:layout_constraintHorizontal_bias="0.0" />
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
 
     <TextView
         android:id="@+id/bikeIDText"
         android:layout_width="0dp"
         android:layout_height="33dp"
         android:text="TextView"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/bikeBrandText"
         app:layout_constraintRight_toRightOf="@+id/bikeBrandText"
         app:layout_constraintTop_toBottomOf="@+id/bikeBrandText"
         tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="@+id/bikeBrandText"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <TextView
+        android:id="@+id/like"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
         android:layout_marginTop="0dp"
-        app:layout_constraintHorizontal_bias="0.0" />
+        android:text="TextView"
+        app:layout_constraintBaseline_toBaselineOf="@+id/bikeBrandText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageViewRec" />
+
+    <TextView
+        android:id="@+id/dislike"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="17dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/bikeIDText"
+        app:layout_constraintTop_toTopOf="@+id/bikeIDText" />
 
 </android.support.constraint.ConstraintLayout>
