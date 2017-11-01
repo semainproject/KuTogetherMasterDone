@@ -1,5 +1,29 @@
 [
     {
+        "outputFile": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v18\\values-v18.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 48,
+                    "endOffset": 99
+                },
+                "from": {
+                    "file": "C:\\Users\\Kittaporn\\.android\\build-cache\\03bbb02882d16c256713c790b4ba20cdc123a500\\output\\res\\values-v18\\values-v18.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 48,
+                        "endOffset": 99
+                    }
+                }
+            }
+        ]
+    },
+    {
         "outputFile": "C:\\Users\\narathorn\\desktop\\KuTogetherMaster\\C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v18\\values-v18.xml",
         "map": [
             {
@@ -24,30 +48,6 @@
         ]
     },
     {
-        "outputFile": "C:\\Users\\narathorn\\Desktop\\KuTogetherMaster\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v18\\values-v18.xml",
-        "map": [
-            {
-                "to": {
-                    "startLine": 2,
-                    "startColumn": 4,
-                    "startOffset": 55,
-                    "endColumn": 48,
-                    "endOffset": 99
-                },
-                "from": {
-                    "file": "C:\\Users\\narathorn\\.android\\build-cache\\88ddef4d75322e6a6eec070de0affd19a591ae67\\output\\res\\values-v18\\values-v18.xml",
-                    "position": {
-                        "startLine": 2,
-                        "startColumn": 4,
-                        "startOffset": 55,
-                        "endColumn": 48,
-                        "endOffset": 99
-                    }
-                }
-            }
-        ]
-    },
-    {
         "outputFile": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v18\\values-v18.xml",
         "map": [
             {
@@ -60,6 +60,30 @@
                 },
                 "from": {
                     "file": "C:\\Users\\Kittaporn\\.android\\build-cache\\03bbb02882d16c256713c790b4ba20cdc123a500\\output\\res\\values-v18\\values-v18.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 48,
+                        "endOffset": 99
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "C:\\Users\\narathorn\\Desktop\\KuTogetherMaster\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v18\\values-v18.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 48,
+                    "endOffset": 99
+                },
+                "from": {
+                    "file": "C:\\Users\\narathorn\\.android\\build-cache\\88ddef4d75322e6a6eec070de0affd19a591ae67\\output\\res\\values-v18\\values-v18.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,

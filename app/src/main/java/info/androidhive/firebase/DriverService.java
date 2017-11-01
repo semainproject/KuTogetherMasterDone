@@ -44,7 +44,7 @@ public class DriverService extends Service {
 
             @Override
             public void onChildRemoved(DataSnapshot dataSnapshot) {
-                stopService(i);
+                stopSelf();
             }
 
             @Override

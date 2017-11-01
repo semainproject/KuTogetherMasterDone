@@ -1,99 +1,139 @@
 [
     {
-        "merged": "C:\\Users\\narathorn\\desktop\\KuTogetherMaster\\C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_send.xml",
-        "source": "C:\\Users\\narathorn\\desktop\\KuTogetherMaster\\C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\src\\main\\res\\drawable-v21\\ic_menu_send.xml"
-    },
-    {
-        "merged": "C:\\Users\\narathorn\\desktop\\KuTogetherMaster\\C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_edit_text_material.xml",
-        "source": "C:\\Users\\narathorn\\desktop\\KuTogetherMaster\\C:\\Users\\KITTAPORN\\.android\\build-cache\\357ed509c40beca13d31e6114ae1fb51d1bb093f\\output\\res\\drawable-v21\\abc_edit_text_material.xml"
+        "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_action_bar_item_background_material.xml",
+        "source": "C:\\Users\\Kittaporn\\.android\\build-cache\\03bbb02882d16c256713c790b4ba20cdc123a500\\output\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
     },
     {
         "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_camera.xml",
         "source": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster\\app\\src\\main\\res\\drawable-v21\\ic_menu_camera.xml"
     },
     {
-        "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_action_bar_item_background_material.xml",
-        "source": "C:\\Users\\Kittaporn\\.android\\build-cache\\03bbb02882d16c256713c790b4ba20cdc123a500\\output\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\narathorn\\desktop\\KuTogetherMaster\\C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_share.xml",
-        "source": "C:\\Users\\narathorn\\desktop\\KuTogetherMaster\\C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\src\\main\\res\\drawable-v21\\ic_menu_share.xml"
-    },
-    {
-        "merged": "C:\\Users\\narathorn\\Desktop\\KuTogetherMaster\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_send.xml",
-        "source": "C:\\Users\\narathorn\\Desktop\\KuTogetherMaster\\app\\src\\main\\res\\drawable-v21\\ic_menu_send.xml"
-    },
-    {
-        "merged": "C:\\Users\\narathorn\\Desktop\\KuTogetherMaster\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_camera.xml",
-        "source": "C:\\Users\\narathorn\\Desktop\\KuTogetherMaster\\app\\src\\main\\res\\drawable-v21\\ic_menu_camera.xml"
-    },
-    {
-        "merged": "C:\\Users\\narathorn\\Desktop\\KuTogetherMaster\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_share.xml",
-        "source": "C:\\Users\\narathorn\\Desktop\\KuTogetherMaster\\app\\src\\main\\res\\drawable-v21\\ic_menu_share.xml"
-    },
-    {
-        "merged": "C:\\Users\\narathorn\\Desktop\\KuTogetherMaster\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_action_bar_item_background_material.xml",
-        "source": "C:\\Users\\narathorn\\.android\\build-cache\\88ddef4d75322e6a6eec070de0affd19a591ae67\\output\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
-    },
-    {
         "merged": "C:\\Users\\narathorn\\Desktop\\KuTogetherMaster\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_slideshow.xml",
         "source": "C:\\Users\\narathorn\\Desktop\\KuTogetherMaster\\app\\src\\main\\res\\drawable-v21\\ic_menu_slideshow.xml"
-    },
-    {
-        "merged": "C:\\Users\\narathorn\\desktop\\KuTogetherMaster\\C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_manage.xml",
-        "source": "C:\\Users\\narathorn\\desktop\\KuTogetherMaster\\C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\src\\main\\res\\drawable-v21\\ic_menu_manage.xml"
-    },
-    {
-        "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_send.xml",
-        "source": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster\\app\\src\\main\\res\\drawable-v21\\ic_menu_send.xml"
-    },
-    {
-        "merged": "C:\\Users\\narathorn\\desktop\\KuTogetherMaster\\C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_btn_colored_material.xml",
-        "source": "C:\\Users\\narathorn\\desktop\\KuTogetherMaster\\C:\\Users\\KITTAPORN\\.android\\build-cache\\357ed509c40beca13d31e6114ae1fb51d1bb093f\\output\\res\\drawable-v21\\abc_btn_colored_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_btn_colored_material.xml",
-        "source": "C:\\Users\\Kittaporn\\.android\\build-cache\\03bbb02882d16c256713c790b4ba20cdc123a500\\output\\res\\drawable-v21\\abc_btn_colored_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\narathorn\\desktop\\KuTogetherMaster\\C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_action_bar_item_background_material.xml",
-        "source": "C:\\Users\\narathorn\\desktop\\KuTogetherMaster\\C:\\Users\\KITTAPORN\\.android\\build-cache\\357ed509c40beca13d31e6114ae1fb51d1bb093f\\output\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_manage.xml",
-        "source": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster\\app\\src\\main\\res\\drawable-v21\\ic_menu_manage.xml"
     },
     {
         "merged": "C:\\Users\\narathorn\\desktop\\KuTogetherMaster\\C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_camera.xml",
         "source": "C:\\Users\\narathorn\\desktop\\KuTogetherMaster\\C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\src\\main\\res\\drawable-v21\\ic_menu_camera.xml"
     },
     {
-        "merged": "C:\\Users\\narathorn\\Desktop\\KuTogetherMaster\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_manage.xml",
-        "source": "C:\\Users\\narathorn\\Desktop\\KuTogetherMaster\\app\\src\\main\\res\\drawable-v21\\ic_menu_manage.xml"
-    },
-    {
-        "merged": "C:\\Users\\narathorn\\Desktop\\KuTogetherMaster\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_edit_text_material.xml",
-        "source": "C:\\Users\\narathorn\\.android\\build-cache\\88ddef4d75322e6a6eec070de0affd19a591ae67\\output\\res\\drawable-v21\\abc_edit_text_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_slideshow.xml",
-        "source": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster\\app\\src\\main\\res\\drawable-v21\\ic_menu_slideshow.xml"
-    },
-    {
         "merged": "C:\\Users\\narathorn\\desktop\\KuTogetherMaster\\C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_gallery.xml",
         "source": "C:\\Users\\narathorn\\desktop\\KuTogetherMaster\\C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\src\\main\\res\\drawable-v21\\ic_menu_gallery.xml"
-    },
-    {
-        "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_share.xml",
-        "source": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster\\app\\src\\main\\res\\drawable-v21\\ic_menu_share.xml"
     },
     {
         "merged": "C:\\Users\\narathorn\\Desktop\\KuTogetherMaster\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_btn_colored_material.xml",
         "source": "C:\\Users\\narathorn\\.android\\build-cache\\88ddef4d75322e6a6eec070de0affd19a591ae67\\output\\res\\drawable-v21\\abc_btn_colored_material.xml"
     },
     {
+        "merged": "C:\\Users\\narathorn\\desktop\\KuTogetherMaster\\C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_send.xml",
+        "source": "C:\\Users\\narathorn\\desktop\\KuTogetherMaster\\C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\src\\main\\res\\drawable-v21\\ic_menu_send.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_manage.xml",
+        "source": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\src\\main\\res\\drawable-v21\\ic_menu_manage.xml"
+    },
+    {
+        "merged": "C:\\Users\\narathorn\\Desktop\\KuTogetherMaster\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_share.xml",
+        "source": "C:\\Users\\narathorn\\Desktop\\KuTogetherMaster\\app\\src\\main\\res\\drawable-v21\\ic_menu_share.xml"
+    },
+    {
+        "merged": "C:\\Users\\narathorn\\Desktop\\KuTogetherMaster\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_manage.xml",
+        "source": "C:\\Users\\narathorn\\Desktop\\KuTogetherMaster\\app\\src\\main\\res\\drawable-v21\\ic_menu_manage.xml"
+    },
+    {
+        "merged": "C:\\Users\\narathorn\\Desktop\\KuTogetherMaster\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_action_bar_item_background_material.xml",
+        "source": "C:\\Users\\narathorn\\.android\\build-cache\\88ddef4d75322e6a6eec070de0affd19a591ae67\\output\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\narathorn\\desktop\\KuTogetherMaster\\C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_action_bar_item_background_material.xml",
+        "source": "C:\\Users\\narathorn\\desktop\\KuTogetherMaster\\C:\\Users\\KITTAPORN\\.android\\build-cache\\357ed509c40beca13d31e6114ae1fb51d1bb093f\\output\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_send.xml",
+        "source": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster\\app\\src\\main\\res\\drawable-v21\\ic_menu_send.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_gallery.xml",
+        "source": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\src\\main\\res\\drawable-v21\\ic_menu_gallery.xml"
+    },
+    {
+        "merged": "C:\\Users\\narathorn\\desktop\\KuTogetherMaster\\C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_btn_colored_material.xml",
+        "source": "C:\\Users\\narathorn\\desktop\\KuTogetherMaster\\C:\\Users\\KITTAPORN\\.android\\build-cache\\357ed509c40beca13d31e6114ae1fb51d1bb093f\\output\\res\\drawable-v21\\abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\narathorn\\Desktop\\KuTogetherMaster\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_send.xml",
+        "source": "C:\\Users\\narathorn\\Desktop\\KuTogetherMaster\\app\\src\\main\\res\\drawable-v21\\ic_menu_send.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_btn_colored_material.xml",
+        "source": "C:\\Users\\Kittaporn\\.android\\build-cache\\03bbb02882d16c256713c790b4ba20cdc123a500\\output\\res\\drawable-v21\\abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\narathorn\\Desktop\\KuTogetherMaster\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_gallery.xml",
+        "source": "C:\\Users\\narathorn\\Desktop\\KuTogetherMaster\\app\\src\\main\\res\\drawable-v21\\ic_menu_gallery.xml"
+    },
+    {
+        "merged": "C:\\Users\\narathorn\\desktop\\KuTogetherMaster\\C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_manage.xml",
+        "source": "C:\\Users\\narathorn\\desktop\\KuTogetherMaster\\C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\src\\main\\res\\drawable-v21\\ic_menu_manage.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_edit_text_material.xml",
+        "source": "C:\\Users\\Kittaporn\\.android\\build-cache\\03bbb02882d16c256713c790b4ba20cdc123a500\\output\\res\\drawable-v21\\abc_edit_text_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_manage.xml",
+        "source": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster\\app\\src\\main\\res\\drawable-v21\\ic_menu_manage.xml"
+    },
+    {
+        "merged": "C:\\Users\\narathorn\\Desktop\\KuTogetherMaster\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_edit_text_material.xml",
+        "source": "C:\\Users\\narathorn\\.android\\build-cache\\88ddef4d75322e6a6eec070de0affd19a591ae67\\output\\res\\drawable-v21\\abc_edit_text_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\narathorn\\Desktop\\KuTogetherMaster\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_camera.xml",
+        "source": "C:\\Users\\narathorn\\Desktop\\KuTogetherMaster\\app\\src\\main\\res\\drawable-v21\\ic_menu_camera.xml"
+    },
+    {
+        "merged": "C:\\Users\\narathorn\\desktop\\KuTogetherMaster\\C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_edit_text_material.xml",
+        "source": "C:\\Users\\narathorn\\desktop\\KuTogetherMaster\\C:\\Users\\KITTAPORN\\.android\\build-cache\\357ed509c40beca13d31e6114ae1fb51d1bb093f\\output\\res\\drawable-v21\\abc_edit_text_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_camera.xml",
+        "source": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\src\\main\\res\\drawable-v21\\ic_menu_camera.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_btn_colored_material.xml",
+        "source": "C:\\Users\\Kittaporn\\.android\\build-cache\\03bbb02882d16c256713c790b4ba20cdc123a500\\output\\res\\drawable-v21\\abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_send.xml",
+        "source": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\src\\main\\res\\drawable-v21\\ic_menu_send.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_slideshow.xml",
+        "source": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster\\app\\src\\main\\res\\drawable-v21\\ic_menu_slideshow.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_slideshow.xml",
+        "source": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\src\\main\\res\\drawable-v21\\ic_menu_slideshow.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_share.xml",
+        "source": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster\\app\\src\\main\\res\\drawable-v21\\ic_menu_share.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_action_bar_item_background_material.xml",
+        "source": "C:\\Users\\Kittaporn\\.android\\build-cache\\03bbb02882d16c256713c790b4ba20cdc123a500\\output\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
+    },
+    {
         "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_gallery.xml",
         "source": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster\\app\\src\\main\\res\\drawable-v21\\ic_menu_gallery.xml"
+    },
+    {
+        "merged": "C:\\Users\\narathorn\\desktop\\KuTogetherMaster\\C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_share.xml",
+        "source": "C:\\Users\\narathorn\\desktop\\KuTogetherMaster\\C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\src\\main\\res\\drawable-v21\\ic_menu_share.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_share.xml",
+        "source": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\src\\main\\res\\drawable-v21\\ic_menu_share.xml"
     },
     {
         "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_edit_text_material.xml",
@@ -102,9 +142,5 @@
     {
         "merged": "C:\\Users\\narathorn\\desktop\\KuTogetherMaster\\C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_slideshow.xml",
         "source": "C:\\Users\\narathorn\\desktop\\KuTogetherMaster\\C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\src\\main\\res\\drawable-v21\\ic_menu_slideshow.xml"
-    },
-    {
-        "merged": "C:\\Users\\narathorn\\Desktop\\KuTogetherMaster\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_gallery.xml",
-        "source": "C:\\Users\\narathorn\\Desktop\\KuTogetherMaster\\app\\src\\main\\res\\drawable-v21\\ic_menu_gallery.xml"
     }
 ]

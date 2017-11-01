@@ -112,8 +112,9 @@ public class NewBoard extends AppCompatActivity implements NavigationView.OnNavi
         dbforinfo = FirebaseDatabase.getInstance().getReference("USER").child(uid).child("INFORMATION");
         dbToken = FirebaseDatabase.getInstance().getReference("USER").child(uid);
         final StorageReference storageReference = FirebaseStorage.getInstance().getReference("USERPICTURE").child(uid+"_PIC");
-        ////////////////////FCM start /////////////////////////////////
-        FirebaseMessaging.getInstance().subscribeToTopic("notifications");
+        ////////////////////service start /////////////////////////////////
+        Intent intent = new Intent(NewBoard.this, MyService.class);
+        startService(intent);
         //////////////////////////////////////////////////////////
        ActivityCompat.requestPermissions(NewBoard.this, new String[]{android.Manifest.permission.ACCESS_FINE_LOCATION}, 1);
         dbToken.addValueEventListener(new ValueEventListener() {
@@ -148,9 +149,7 @@ public class NewBoard extends AppCompatActivity implements NavigationView.OnNavi
                     View headerView = navigationView2.getHeaderView(0);
                     status = (ImageView) headerView.findViewById(imageView5);
                     status.setImageResource(R.mipmap.ic_passenger);
-                    Intent i = new Intent(NewBoard.this, MyService.class);
-                    startService(i);
-                    Toast.makeText(NewBoard.this, "service starting from newboard", Toast.LENGTH_SHORT).show();
+
                 }
             }
 
@@ -259,14 +258,22 @@ public class NewBoard extends AppCompatActivity implements NavigationView.OnNavi
                             startActivity(intent);
                         } else {
                             AlertDialog.Builder alert = new AlertDialog.Builder(NewBoard.this);
-                            alert.setMessage("You don't have bike.")
+                            alert.setMessage("คุณไม่มีรถ ต้องการเปลี่ยนสถานะไหม?")
                                     .setCancelable(false)
+                                    .setNegativeButton("Ok", new DialogInterface.OnClickListener() {
+                                        @Override
+                                        public void onClick(DialogInterface dialogInterface, int i) {
+                                            Intent intent = new Intent(NewBoard.this, ChangeDriverStatus.class);
+                                            startActivity(intent);
+                                        }
+                                    })
                                     .setPositiveButton("Cancel", new DialogInterface.OnClickListener() {
                                         @Override
                                         public void onClick(DialogInterface dialog, int which) {
                                             dialog.cancel();
                                         }
                                     });
+
                             AlertDialog alertDialog = alert.create();
                             alertDialog.show();
                         }
@@ -546,16 +553,6 @@ public class NewBoard extends AppCompatActivity implements NavigationView.OnNavi
         stopService(new Intent(this, GpsService.class));
     }
 
-    public static void sendNotificationToUser(String user, final String message) {
-        Firebase ref = new Firebase("https://fir-auth-3fe01.firebaseio.com/");
-        final Firebase notifications = ref.child("notificationRequests");
-
-        Map notification = new HashMap<>();
-        notification.put("username", user);
-        notification.put("message", message);
-
-        notifications.push().setValue(notification);
-    }
 
 
 

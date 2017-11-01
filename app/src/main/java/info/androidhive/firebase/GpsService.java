@@ -47,18 +47,6 @@ public class GpsService extends Service
             final Double lng = location.getLongitude();
             LocationLatLng locationLatLng = new LocationLatLng(lng , lat);
             db.child(uid).setValue(locationLatLng);
-//            db.addValueEventListener(new ValueEventListener() {
-//                @Override
-//                public void onDataChange(DataSnapshot dataSnapshot) {
-//                    LocationLatLng locationLatLng = new LocationLatLng(lng , lat);
-//                    db.child(uid).setValue(locationLatLng);
-//                }
-//
-//                @Override
-//                public void onCancelled(DatabaseError databaseError) {
-//
-//                }
-//            });
             mLastLocation.set(location);
         }
 

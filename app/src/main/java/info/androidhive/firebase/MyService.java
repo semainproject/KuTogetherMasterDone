@@ -42,32 +42,18 @@ public class MyService extends Service {
         firebaseRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-//                Notification notification =
-//                        new NotificationCompat.Builder(MyService.this) // this is context
-//                                .setSmallIcon(R.mipmap.ic_launcher)
-//                                .setContentTitle("มีคนมารับจ้าา")
-//                                .setContentText("กำลังมารับ")
-//                                .setAutoCancel(true)
-//                                .build();
-//                Random random = new Random();
-//                int randomNumber = random.nextInt(9999 - 1000) + 1000;
-//                NotificationManager notificationManager =
-//                        (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
-//                notificationManager.notify(randomNumber, notification);
-//                Intent intent = new Intent(MyService.this, MypostActivity.class);
-//
-//                PendingIntent pendingIntent = PendingIntent.getActivity(MyService.this,0, intent, 0);
                 for (DataSnapshot data : dataSnapshot.getChildren()) {
                     InfoUser id = data.getValue(InfoUser.class);
                     Uri alarmSound = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_ALARM);
-                    //Toast.makeText(MyService.this, id.getId(), Toast.LENGTH_LONG).show();
+                    Intent intentTomypost = new Intent(MyService.this,MypostActivity.class);
+                    PendingIntent pendingIntent = PendingIntent.getActivity(MyService.this, 0, intentTomypost, 0);
                     Notification notification =
                         new NotificationCompat.Builder(MyService.this) // this is context
-                                .setSmallIcon(R.mipmap.ic_newsfeed)
+                                .setSmallIcon(R.mipmap.ic_driver)
                                 .setContentTitle("มีคนมารับจ้าา")
-                                .setContentText(id.getNickname()+"กำลังมารับ")
+                                .setContentText(id.getNickname()+" กำลังมารับ")
                                 .setSound(alarmSound)
-                                //.setContentIntent(pendingIntent)
+                                .setContentIntent(pendingIntent)
                                 .setAutoCancel(true)
                                 .build();
                 Random random = new Random();
@@ -79,21 +65,6 @@ public class MyService extends Service {
                     break;
                 }
                 }
-//                String idSTR = id.getId();
-//                Notification notification =
-//                        new NotificationCompat.Builder(MyService.this) // this is context
-//                                .setSmallIcon(R.mipmap.ic_launcher)
-//                                .setContentTitle("มีคนมารับจ้าา")
-//                                .setContentText(idSTR+"กำลังมารับ")
-//                                .setAutoCancel(true)
-//                                .build();
-//                Random random = new Random();
-//                int randomNumber = random.nextInt(9999 - 1000) + 1000;
-//                if(idSTR != null) {
-//                    NotificationManager notificationManager =
-//                            (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
-//                    notificationManager.notify(randomNumber, notification);
-//                }
             }
 
             @Override
@@ -123,47 +94,8 @@ public class MyService extends Service {
 
             }
         });
-//        ref.addChildEventListener(new ChildEventListener() {
-//            @Override
-//            public void onChildAdded(DataSnapshot dataSnapshot, String s) {
-//                Boolean status = dataSnapshot.getValue(Boolean.class);
-//                if(status == true){
-//                    //Intent i = new Intent(MyService.this, ServiceLocation.class);
-//                    Toast.makeText(MyService.this, "service Start", Toast.LENGTH_SHORT).show();
-//                    startService(i);
-//                }
-//            }
-//
-//            @Override
-//            public void onChildChanged(DataSnapshot dataSnapshot, String s) {
-//                Boolean status = dataSnapshot.getValue(Boolean.class);
-//                if(status == false){
-//                    stopService(i);
-//                    Toast.makeText(MyService.this, "service Stop", Toast.LENGTH_SHORT).show();
-//                }
-//            }
-//
-//            @Override
-//            public void onChildRemoved(DataSnapshot dataSnapshot) {
-//
-//            }
-//
-//            @Override
-//            public void onChildMoved(DataSnapshot dataSnapshot, String s) {
-//
-//            }
-//
-//            @Override
-//            public void onCancelled(DatabaseError databaseError) {
-//
-//            }
-//        });
-    }
 
-//    @Override
-//    public int onStartCommand(Intent intent, int flags, int startId) {
-//        return super.onStartCommand(intent,flags,startId);
-//    }
+    }
 
     @Override
     public void onDestroy() {

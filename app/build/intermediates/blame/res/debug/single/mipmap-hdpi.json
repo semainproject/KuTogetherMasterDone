@@ -1,83 +1,115 @@
 [
     {
-        "merged": "C:\\Users\\narathorn\\Desktop\\KuTogetherMaster\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_megaphone.png",
-        "source": "C:\\Users\\narathorn\\Desktop\\KuTogetherMaster\\app\\src\\main\\res\\mipmap-hdpi\\ic_megaphone.png"
-    },
-    {
-        "merged": "C:\\Users\\narathorn\\Desktop\\KuTogetherMaster\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_launcher.png",
-        "source": "C:\\Users\\narathorn\\Desktop\\KuTogetherMaster\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
-    },
-    {
         "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_passenger.png",
         "source": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster\\app\\src\\main\\res\\mipmap-hdpi\\ic_passenger.png"
     },
     {
-        "merged": "C:\\Users\\narathorn\\Desktop\\KuTogetherMaster\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_newsfeed.png",
-        "source": "C:\\Users\\narathorn\\Desktop\\KuTogetherMaster\\app\\src\\main\\res\\mipmap-hdpi\\ic_newsfeed.png"
-    },
-    {
-        "merged": "C:\\Users\\narathorn\\Desktop\\KuTogetherMaster\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_driver.png",
-        "source": "C:\\Users\\narathorn\\Desktop\\KuTogetherMaster\\app\\src\\main\\res\\mipmap-hdpi\\ic_driver.png"
-    },
-    {
-        "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_maplocation.png",
-        "source": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster\\app\\src\\main\\res\\mipmap-hdpi\\ic_maplocation.png"
-    },
-    {
-        "merged": "C:\\Users\\narathorn\\desktop\\KuTogetherMaster\\C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_launcher.png",
-        "source": "C:\\Users\\narathorn\\desktop\\KuTogetherMaster\\C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "C:\\Users\\narathorn\\desktop\\KuTogetherMaster\\C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_riding.png",
-        "source": "C:\\Users\\narathorn\\desktop\\KuTogetherMaster\\C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\src\\main\\res\\mipmap-hdpi\\ic_riding.png"
-    },
-    {
-        "merged": "C:\\Users\\narathorn\\desktop\\KuTogetherMaster\\C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_maplocation.png",
-        "source": "C:\\Users\\narathorn\\desktop\\KuTogetherMaster\\C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\src\\main\\res\\mipmap-hdpi\\ic_maplocation.png"
-    },
-    {
-        "merged": "C:\\Users\\narathorn\\Desktop\\KuTogetherMaster\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_denined.png",
-        "source": "C:\\Users\\narathorn\\Desktop\\KuTogetherMaster\\app\\src\\main\\res\\mipmap-hdpi\\ic_denined.png"
-    },
-    {
-        "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_accept.png",
-        "source": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster\\app\\src\\main\\res\\mipmap-hdpi\\ic_accept.png"
-    },
-    {
-        "merged": "C:\\Users\\narathorn\\desktop\\KuTogetherMaster\\C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_accept.png",
-        "source": "C:\\Users\\narathorn\\desktop\\KuTogetherMaster\\C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\src\\main\\res\\mipmap-hdpi\\ic_accept.png"
-    },
-    {
-        "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_newsfeed.png",
-        "source": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster\\app\\src\\main\\res\\mipmap-hdpi\\ic_newsfeed.png"
-    },
-    {
-        "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_megaphone.png",
-        "source": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster\\app\\src\\main\\res\\mipmap-hdpi\\ic_megaphone.png"
+        "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_passenger.png",
+        "source": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\src\\main\\res\\mipmap-hdpi\\ic_passenger.png"
     },
     {
         "merged": "C:\\Users\\narathorn\\desktop\\KuTogetherMaster\\C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_denined.png",
         "source": "C:\\Users\\narathorn\\desktop\\KuTogetherMaster\\C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\src\\main\\res\\mipmap-hdpi\\ic_denined.png"
     },
     {
-        "merged": "C:\\Users\\narathorn\\Desktop\\KuTogetherMaster\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_riding.png",
-        "source": "C:\\Users\\narathorn\\Desktop\\KuTogetherMaster\\app\\src\\main\\res\\mipmap-hdpi\\ic_riding.png"
+        "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_maplocation.png",
+        "source": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster\\app\\src\\main\\res\\mipmap-hdpi\\ic_maplocation.png"
     },
     {
-        "merged": "C:\\Users\\narathorn\\Desktop\\KuTogetherMaster\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_accept.png",
-        "source": "C:\\Users\\narathorn\\Desktop\\KuTogetherMaster\\app\\src\\main\\res\\mipmap-hdpi\\ic_accept.png"
+        "merged": "C:\\Users\\narathorn\\desktop\\KuTogetherMaster\\C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_megaphone.png",
+        "source": "C:\\Users\\narathorn\\desktop\\KuTogetherMaster\\C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\src\\main\\res\\mipmap-hdpi\\ic_megaphone.png"
     },
     {
-        "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_denined.png",
-        "source": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster\\app\\src\\main\\res\\mipmap-hdpi\\ic_denined.png"
+        "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_launcher.png",
+        "source": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_accept.png",
+        "source": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\src\\main\\res\\mipmap-hdpi\\ic_accept.png"
+    },
+    {
+        "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_riding.png",
+        "source": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\src\\main\\res\\mipmap-hdpi\\ic_riding.png"
+    },
+    {
+        "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_newsfeed.png",
+        "source": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\src\\main\\res\\mipmap-hdpi\\ic_newsfeed.png"
+    },
+    {
+        "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_location.png",
+        "source": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\src\\main\\res\\mipmap-hdpi\\ic_location.png"
+    },
+    {
+        "merged": "C:\\Users\\narathorn\\desktop\\KuTogetherMaster\\C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_maplocation.png",
+        "source": "C:\\Users\\narathorn\\desktop\\KuTogetherMaster\\C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\src\\main\\res\\mipmap-hdpi\\ic_maplocation.png"
     },
     {
         "merged": "C:\\Users\\narathorn\\Desktop\\KuTogetherMaster\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_passenger.png",
         "source": "C:\\Users\\narathorn\\Desktop\\KuTogetherMaster\\app\\src\\main\\res\\mipmap-hdpi\\ic_passenger.png"
     },
     {
-        "merged": "C:\\Users\\narathorn\\desktop\\KuTogetherMaster\\C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_passenger.png",
-        "source": "C:\\Users\\narathorn\\desktop\\KuTogetherMaster\\C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\src\\main\\res\\mipmap-hdpi\\ic_passenger.png"
+        "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_accept.png",
+        "source": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster\\app\\src\\main\\res\\mipmap-hdpi\\ic_accept.png"
+    },
+    {
+        "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_newsfeed.png",
+        "source": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster\\app\\src\\main\\res\\mipmap-hdpi\\ic_newsfeed.png"
+    },
+    {
+        "merged": "C:\\Users\\narathorn\\Desktop\\KuTogetherMaster\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_maplocation.png",
+        "source": "C:\\Users\\narathorn\\Desktop\\KuTogetherMaster\\app\\src\\main\\res\\mipmap-hdpi\\ic_maplocation.png"
+    },
+    {
+        "merged": "C:\\Users\\narathorn\\Desktop\\KuTogetherMaster\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_launcher.png",
+        "source": "C:\\Users\\narathorn\\Desktop\\KuTogetherMaster\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_megaphone.png",
+        "source": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster\\app\\src\\main\\res\\mipmap-hdpi\\ic_megaphone.png"
+    },
+    {
+        "merged": "C:\\Users\\narathorn\\desktop\\KuTogetherMaster\\C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_launcher.png",
+        "source": "C:\\Users\\narathorn\\desktop\\KuTogetherMaster\\C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\narathorn\\desktop\\KuTogetherMaster\\C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_driver.png",
+        "source": "C:\\Users\\narathorn\\desktop\\KuTogetherMaster\\C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\src\\main\\res\\mipmap-hdpi\\ic_driver.png"
+    },
+    {
+        "merged": "C:\\Users\\narathorn\\Desktop\\KuTogetherMaster\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_driver.png",
+        "source": "C:\\Users\\narathorn\\Desktop\\KuTogetherMaster\\app\\src\\main\\res\\mipmap-hdpi\\ic_driver.png"
+    },
+    {
+        "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_maplocation.png",
+        "source": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\src\\main\\res\\mipmap-hdpi\\ic_maplocation.png"
+    },
+    {
+        "merged": "C:\\Users\\narathorn\\Desktop\\KuTogetherMaster\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_denined.png",
+        "source": "C:\\Users\\narathorn\\Desktop\\KuTogetherMaster\\app\\src\\main\\res\\mipmap-hdpi\\ic_denined.png"
+    },
+    {
+        "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_driver.png",
+        "source": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\src\\main\\res\\mipmap-hdpi\\ic_driver.png"
+    },
+    {
+        "merged": "C:\\Users\\narathorn\\Desktop\\KuTogetherMaster\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_riding.png",
+        "source": "C:\\Users\\narathorn\\Desktop\\KuTogetherMaster\\app\\src\\main\\res\\mipmap-hdpi\\ic_riding.png"
+    },
+    {
+        "merged": "C:\\Users\\narathorn\\desktop\\KuTogetherMaster\\C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_riding.png",
+        "source": "C:\\Users\\narathorn\\desktop\\KuTogetherMaster\\C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\src\\main\\res\\mipmap-hdpi\\ic_riding.png"
+    },
+    {
+        "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_denined.png",
+        "source": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster\\app\\src\\main\\res\\mipmap-hdpi\\ic_denined.png"
+    },
+    {
+        "merged": "C:\\Users\\narathorn\\Desktop\\KuTogetherMaster\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_location.png",
+        "source": "C:\\Users\\narathorn\\Desktop\\KuTogetherMaster\\app\\src\\main\\res\\mipmap-hdpi\\ic_location.png"
+    },
+    {
+        "merged": "C:\\Users\\narathorn\\desktop\\KuTogetherMaster\\C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_location.png",
+        "source": "C:\\Users\\narathorn\\desktop\\KuTogetherMaster\\C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\src\\main\\res\\mipmap-hdpi\\ic_location.png"
     },
     {
         "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_riding.png",
@@ -88,24 +120,20 @@
         "source": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster\\app\\src\\main\\res\\mipmap-hdpi\\ic_location.png"
     },
     {
-        "merged": "C:\\Users\\narathorn\\desktop\\KuTogetherMaster\\C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_newsfeed.png",
-        "source": "C:\\Users\\narathorn\\desktop\\KuTogetherMaster\\C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\src\\main\\res\\mipmap-hdpi\\ic_newsfeed.png"
+        "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_denined.png",
+        "source": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\src\\main\\res\\mipmap-hdpi\\ic_denined.png"
     },
     {
-        "merged": "C:\\Users\\narathorn\\Desktop\\KuTogetherMaster\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_location.png",
-        "source": "C:\\Users\\narathorn\\Desktop\\KuTogetherMaster\\app\\src\\main\\res\\mipmap-hdpi\\ic_location.png"
+        "merged": "C:\\Users\\narathorn\\desktop\\KuTogetherMaster\\C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_accept.png",
+        "source": "C:\\Users\\narathorn\\desktop\\KuTogetherMaster\\C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\src\\main\\res\\mipmap-hdpi\\ic_accept.png"
     },
     {
-        "merged": "C:\\Users\\narathorn\\desktop\\KuTogetherMaster\\C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_megaphone.png",
-        "source": "C:\\Users\\narathorn\\desktop\\KuTogetherMaster\\C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\src\\main\\res\\mipmap-hdpi\\ic_megaphone.png"
+        "merged": "C:\\Users\\narathorn\\desktop\\KuTogetherMaster\\C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_passenger.png",
+        "source": "C:\\Users\\narathorn\\desktop\\KuTogetherMaster\\C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\src\\main\\res\\mipmap-hdpi\\ic_passenger.png"
     },
     {
-        "merged": "C:\\Users\\narathorn\\desktop\\KuTogetherMaster\\C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_location.png",
-        "source": "C:\\Users\\narathorn\\desktop\\KuTogetherMaster\\C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\src\\main\\res\\mipmap-hdpi\\ic_location.png"
-    },
-    {
-        "merged": "C:\\Users\\narathorn\\Desktop\\KuTogetherMaster\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_maplocation.png",
-        "source": "C:\\Users\\narathorn\\Desktop\\KuTogetherMaster\\app\\src\\main\\res\\mipmap-hdpi\\ic_maplocation.png"
+        "merged": "C:\\Users\\narathorn\\Desktop\\KuTogetherMaster\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_accept.png",
+        "source": "C:\\Users\\narathorn\\Desktop\\KuTogetherMaster\\app\\src\\main\\res\\mipmap-hdpi\\ic_accept.png"
     },
     {
         "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_launcher.png",
@@ -116,7 +144,19 @@
         "source": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster\\app\\src\\main\\res\\mipmap-hdpi\\ic_driver.png"
     },
     {
-        "merged": "C:\\Users\\narathorn\\desktop\\KuTogetherMaster\\C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_driver.png",
-        "source": "C:\\Users\\narathorn\\desktop\\KuTogetherMaster\\C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\src\\main\\res\\mipmap-hdpi\\ic_driver.png"
+        "merged": "C:\\Users\\narathorn\\desktop\\KuTogetherMaster\\C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_newsfeed.png",
+        "source": "C:\\Users\\narathorn\\desktop\\KuTogetherMaster\\C:\\Users\\KITTAPORN\\Desktop\\gunsorry55\\KUtogetherFromPOTE\\app\\src\\main\\res\\mipmap-hdpi\\ic_newsfeed.png"
+    },
+    {
+        "merged": "C:\\Users\\narathorn\\Desktop\\KuTogetherMaster\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_megaphone.png",
+        "source": "C:\\Users\\narathorn\\Desktop\\KuTogetherMaster\\app\\src\\main\\res\\mipmap-hdpi\\ic_megaphone.png"
+    },
+    {
+        "merged": "C:\\Users\\narathorn\\Desktop\\KuTogetherMaster\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_newsfeed.png",
+        "source": "C:\\Users\\narathorn\\Desktop\\KuTogetherMaster\\app\\src\\main\\res\\mipmap-hdpi\\ic_newsfeed.png"
+    },
+    {
+        "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_megaphone.png",
+        "source": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\src\\main\\res\\mipmap-hdpi\\ic_megaphone.png"
     }
 ]
