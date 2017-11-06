@@ -69,28 +69,32 @@ public class DestinationList extends ArrayAdapter<DesInfo>  {
             Glide.with(context).load("https://firebasestorage.googleapis.com/v0/b/fir-auth-3fe01.appspot.com/o/USERPICTURE%2Fuserpic.png?alt=media&token=6a225213-9877-4af4-9b59-5bb0267d74c7").into(imageBoard);
         }
         if(desInfo!=null) {
-            nickname.setText(desInfo.getNickname());
-            if (desInfo.getStart().toString().length() > 20) {
-                start.setText(desInfo.getStart().toString().substring(0, 18) + "...");
-            } else {
-                start.setText(desInfo.getStart().toString());
-            }
-            switch (desInfo.getDestination().toString()) {
-                case "13.117676/100.920749":
-                    destination.setText("โรงอาหาร");
-                    break;
-                case "13.116652/100.921605":
-                    destination.setText("หอพักนิสิต");
-                    break;
-                case "13.119157/100.919828":
-                    destination.setText("ตึก17");
-                    break;
-                default:
-                    destination.setText("ตึก17");
-                    break;
-            }
+            try {
+                nickname.setText(desInfo.getNickname());
+                if (desInfo.getStart().toString().length() > 20) {
+                    start.setText(desInfo.getStart().toString().substring(0, 18) + "...");
+                } else {
+                    start.setText(desInfo.getStart().toString());
+                }
+                switch (desInfo.getDestination().toString()) {
+                    case "13.117676/100.920749":
+                        destination.setText("โรงอาหาร");
+                        break;
+                    case "13.116652/100.921605":
+                        destination.setText("หอพักนิสิต");
+                        break;
+                    case "13.119157/100.919828":
+                        destination.setText("ตึก17");
+                        break;
+                    default:
+                        destination.setText("ตึก17");
+                        break;
+                }
 //        destination.setText(desInfo.getDestination());
-            time.setText(desInfo.getTime());
+                time.setText(desInfo.getTime());
+            }catch (Exception e){
+
+            }
         }
        // Glide.with(context).load(desInfo.getPicURL()).into(imageBoard);
         return listViewItem;

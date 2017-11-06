@@ -118,7 +118,7 @@ public class ConnectPassenger extends AppCompatActivity {
     }
 
     private void setReceiver() {
-        dbUserInfo.addValueEventListener(new ValueEventListener() {
+        dbUserInfo.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 InfoUser infoUser = dataSnapshot.getValue(InfoUser.class);
