@@ -13,6 +13,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
@@ -37,6 +38,7 @@ public class DriverConnected extends AppCompatActivity {
     ImageView myPic,passPic;
     FloatingActionButton mapBtn , finishBtn , cancelBtn;
     DatabaseReference db , dbDelDes , dbDelConnectID , dbDelLocation , dbUser , dbDes , dbLog , dbRating;
+    TextView textView7;
     String uid;
     public void setVal(final String id){
         final StorageReference myPicStoreage2 = FirebaseStorage.getInstance().getReference("USERPICTURE").child(id+"_PIC");
@@ -72,6 +74,7 @@ public class DriverConnected extends AppCompatActivity {
         mapBtn = (FloatingActionButton) findViewById(R.id.mapBtn);
         finishBtn = (FloatingActionButton) findViewById(R.id.finishBtn);
         cancelBtn = (FloatingActionButton) findViewById(R.id.cancelBtn);
+        textView7 = (TextView) findViewById(R.id.textView7);
         final FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         uid = user.getUid();
         db = FirebaseDatabase.getInstance().getReference("USER").child(uid).child("ConnectID");
@@ -109,6 +112,7 @@ public class DriverConnected extends AppCompatActivity {
 
                 if(type.equals("Driver")) {
                     finishBtn.setVisibility(View.INVISIBLE);
+                    textView7.setVisibility(View.INVISIBLE);
                     db.child("CID").addValueEventListener(new ValueEventListener() {
                         @Override
                         public void onDataChange(DataSnapshot dataSnapshot) {
@@ -231,7 +235,7 @@ public class DriverConnected extends AppCompatActivity {
                         @Override
                         public void onDataChange(DataSnapshot dataSnapshot) {
                             final String id = dataSnapshot.getValue(String.class);
-                            Toast.makeText(DriverConnected.this, id, Toast.LENGTH_SHORT).show();
+                            //Toast.makeText(DriverConnected.this, id, Toast.LENGTH_SHORT).show();
                             setVal(id);
                             logForPass(id);
                             finishBtn.setOnClickListener(new View.OnClickListener() {

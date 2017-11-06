@@ -1,5 +1,9 @@
 [
     {
+        "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_dislike_thumb.png",
+        "source": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_dislike_thumb.png"
+    },
+    {
         "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_arrow.png",
         "source": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_arrow.png"
     },
@@ -8,12 +12,24 @@
         "source": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_sign_out_24dp.png"
     },
     {
+        "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_if_bin.png",
+        "source": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_if_bin.png"
+    },
+    {
         "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_person_black_24dp.png",
         "source": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_person_black_24dp.png"
     },
     {
         "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_man.png",
         "source": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_man.png"
+    },
+    {
+        "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_if_waste_basket_2625630.png",
+        "source": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_if_waste_basket_2625630.png"
+    },
+    {
+        "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_thumb_up.png",
+        "source": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_thumb_up.png"
     },
     {
         "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_dislike.png",

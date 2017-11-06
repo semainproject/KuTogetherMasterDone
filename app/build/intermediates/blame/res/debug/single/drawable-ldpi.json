@@ -24,6 +24,14 @@
         "source": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_bicycle.png"
     },
     {
+        "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\ic_if_waste_basket_2625630.png",
+        "source": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_if_waste_basket_2625630.png"
+    },
+    {
+        "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\ic_thumb_up.png",
+        "source": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_thumb_up.png"
+    },
+    {
         "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\ic_arrow.png",
         "source": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_arrow.png"
     },
@@ -34,5 +42,13 @@
     {
         "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\ic_person_black_24dp.png",
         "source": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_person_black_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\ic_dislike_thumb.png",
+        "source": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_dislike_thumb.png"
+    },
+    {
+        "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\ic_if_bin.png",
+        "source": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_if_bin.png"
     }
 ]

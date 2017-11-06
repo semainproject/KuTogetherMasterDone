@@ -42,7 +42,7 @@ public class GpsService extends Service
         public void onLocationChanged(Location location)
         {
             Log.e(TAG, "onLocationChanged: " + location);
-            Toast.makeText(GpsService.this, "location is"+location, Toast.LENGTH_LONG).show();
+            //Toast.makeText(GpsService.this, "location is"+location, Toast.LENGTH_LONG).show();
             final Double lat = location.getLatitude();
             final Double lng = location.getLongitude();
             LocationLatLng locationLatLng = new LocationLatLng(lng , lat);
@@ -99,7 +99,7 @@ public class GpsService extends Service
         uid = user.getUid();
         db = FirebaseDatabase.getInstance().getReference("Location");
 
-        Toast.makeText(GpsService.this, "Driver location started", Toast.LENGTH_LONG).show();
+        //Toast.makeText(GpsService.this, "Driver location started", Toast.LENGTH_LONG).show();
         try {
             mLocationManager.requestLocationUpdates(
                     LocationManager.NETWORK_PROVIDER, LOCATION_INTERVAL, LOCATION_DISTANCE,

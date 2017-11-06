@@ -105,6 +105,7 @@ public class NewBoard extends AppCompatActivity implements NavigationView.OnNavi
         setContentView(R.layout.activity_new_board);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        setTitle("มีคนกำลังรอคุณอยู่");
         auth = FirebaseAuth.getInstance();
         final FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         uid = user.getUid();

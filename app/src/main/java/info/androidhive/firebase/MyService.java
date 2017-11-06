@@ -82,10 +82,10 @@ public class MyService extends Service {
                 if(dataSnapshot.getValue(Boolean.class) != null) {
                     Boolean status = dataSnapshot.getValue(Boolean.class);
                     if (status == true) {
-                        Toast.makeText(MyService.this, "TRUE", Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(MyService.this, "TRUE", Toast.LENGTH_SHORT).show();
                         startService(i);
                     } else {
-                        Toast.makeText(MyService.this, "FALSE", Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(MyService.this, "FALSE", Toast.LENGTH_SHORT).show();
                     }
                 }else{
                     stopService(new Intent(MyService.this, ServiceLocation.class));

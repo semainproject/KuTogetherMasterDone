@@ -22,7 +22,7 @@ public class DriverService extends Service {
     public void onCreate() {
         super.onCreate();
         final Intent i = new Intent(DriverService.this, GpsService.class);
-        Toast.makeText(getApplicationContext(), "service started", Toast.LENGTH_LONG).show();
+        //Toast.makeText(getApplicationContext(), "service started", Toast.LENGTH_LONG).show();
         final FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         String uid = user.getUid();
         db = FirebaseDatabase.getInstance().getReference("USER").child(uid).child("ConnectID");
@@ -30,7 +30,7 @@ public class DriverService extends Service {
             @Override
             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
                 String driverID = dataSnapshot.getValue(String.class);
-                Toast.makeText(getApplicationContext(), "DataChange to :"+driverID, Toast.LENGTH_LONG).show();
+                //Toast.makeText(getApplicationContext(), "DataChange to :"+driverID, Toast.LENGTH_LONG).show();
                 if(dataSnapshot.getKey().toString().equals("CID") ){
                     startService(i);
                    // stopSelf();
