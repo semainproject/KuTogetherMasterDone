@@ -1,5 +1,9 @@
 [
     {
+        "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\ic_pin.png",
+        "source": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_pin.png"
+    },
+    {
         "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\ic_sign_out_24dp.png",
         "source": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_sign_out_24dp.png"
     },
@@ -14,6 +18,10 @@
     {
         "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\ic_person_black_24dp.png",
         "source": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_person_black_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\ic_clock.png",
+        "source": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_clock.png"
     },
     {
         "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\ic_if_bin.png",
@@ -50,5 +58,9 @@
     {
         "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\ic_like.png",
         "source": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_like.png"
+    },
+    {
+        "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\ic_flag.png",
+        "source": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_flag.png"
     }
 ]

@@ -4,6 +4,10 @@
         "source": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_sign_out_24dp.png"
     },
     {
+        "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_pin.png",
+        "source": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_pin.png"
+    },
+    {
         "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_arrow.png",
         "source": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_arrow.png"
     },
@@ -18,6 +22,10 @@
     {
         "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_if_location_1055034.png",
         "source": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_if_location_1055034.png"
+    },
+    {
+        "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_clock.png",
+        "source": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_clock.png"
     },
     {
         "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_man.png",
@@ -38,6 +46,10 @@
     {
         "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_dislike_thumb.png",
         "source": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_dislike_thumb.png"
+    },
+    {
+        "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_flag.png",
+        "source": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_flag.png"
     },
     {
         "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_directions_run_black_24dp.png",

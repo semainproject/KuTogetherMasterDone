@@ -12,9 +12,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
@@ -38,7 +36,7 @@ public class DriverConnected extends AppCompatActivity {
     ImageView myPic,passPic;
     FloatingActionButton mapBtn , finishBtn , cancelBtn;
     DatabaseReference db , dbDelDes , dbDelConnectID , dbDelLocation , dbUser , dbDes , dbLog , dbRating;
-    TextView textView7;
+    TextView textView7,plateID,nickName,color,brand , drivText;
     String uid;
     public void setVal(final String id){
         final StorageReference myPicStoreage2 = FirebaseStorage.getInstance().getReference("USERPICTURE").child(id+"_PIC");
@@ -75,6 +73,11 @@ public class DriverConnected extends AppCompatActivity {
         finishBtn = (FloatingActionButton) findViewById(R.id.finishBtn);
         cancelBtn = (FloatingActionButton) findViewById(R.id.cancelBtn);
         textView7 = (TextView) findViewById(R.id.textView7);
+        plateID = (TextView) findViewById(R.id.plateID);
+        nickName = (TextView) findViewById(R.id.nickName);
+        color = (TextView) findViewById(R.id.color);
+        brand = (TextView) findViewById(R.id.brand);
+        drivText = (TextView) findViewById(R.id.textView14);
         final FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         uid = user.getUid();
         db = FirebaseDatabase.getInstance().getReference("USER").child(uid).child("ConnectID");
@@ -113,6 +116,11 @@ public class DriverConnected extends AppCompatActivity {
                 if(type.equals("Driver")) {
                     finishBtn.setVisibility(View.INVISIBLE);
                     textView7.setVisibility(View.INVISIBLE);
+                    plateID.setVisibility(View.INVISIBLE);
+                    nickName.setVisibility(View.INVISIBLE);
+                    brand.setVisibility(View.INVISIBLE);
+                    color.setVisibility(View.INVISIBLE);
+                    drivText.setVisibility(View.INVISIBLE);
                     db.child("CID").addValueEventListener(new ValueEventListener() {
                         @Override
                         public void onDataChange(DataSnapshot dataSnapshot) {
@@ -212,6 +220,7 @@ public class DriverConnected extends AppCompatActivity {
                                     DesInfo desInfo = desSnapshot.getValue(DesInfo.class);
                                     if(desInfo != null){
                                         close = true;
+                                        String pid = desInfo.getId();
                                     }
                                 } catch (Exception e) {
                                     //finish();
@@ -231,10 +240,25 @@ public class DriverConnected extends AppCompatActivity {
                     } catch(Exception ee) {
                         finish();
                     }
-                    dbDes.child(uid).child("ConnectedID").addValueEventListener(new ValueEventListener() {
+                    dbDes.child(uid).child("ConnectedID").addListenerForSingleValueEvent(new ValueEventListener() {
                         @Override
                         public void onDataChange(DataSnapshot dataSnapshot) {
                             final String id = dataSnapshot.getValue(String.class);
+                            dbDelConnectID.child(id).child("INFORMATION").addListenerForSingleValueEvent(new ValueEventListener() {
+                                @Override
+                                public void onDataChange(DataSnapshot dataSnapshot) {
+                                    InfoUser info = dataSnapshot.getValue(InfoUser.class);
+                                    plateID.setText("License plate : "+info.getBikeID());
+                                    nickName.setText("Name : "+info.getName().toString());
+                                    brand.setText("Bike Brand : "+info.getBrand());
+                                    color.setText("Color : "+info.getColor());
+                                }
+
+                                @Override
+                                public void onCancelled(DatabaseError databaseError) {
+
+                                }
+                            });
                             //Toast.makeText(DriverConnected.this, id, Toast.LENGTH_SHORT).show();
                             setVal(id);
                             logForPass(id);

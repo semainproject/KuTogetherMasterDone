@@ -101,8 +101,6 @@ public class DestinationActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 addDesInfo();
-
-                finish();
             }
         });
         storageReference.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
@@ -144,7 +142,7 @@ public class DestinationActivity extends AppCompatActivity {
                 List<Integer> ptype = place.getPlaceTypes();
                 if(ptype.get(0) == 0){
                     //Toast.makeText(this, lat+"/"+lng, Toast.LENGTH_LONG).show();
-                    locationCompass.setText(lat+"/"+lng);
+                    locationCompass.setText("Mylocation");
 
                 }else {
                     //Toast.makeText(this,toastMsg, Toast.LENGTH_LONG).show();
@@ -178,11 +176,13 @@ public class DestinationActivity extends AppCompatActivity {
             public void onDataChange(DataSnapshot dataSnapshot) {
                 InfoUser infoUser = dataSnapshot.getValue(InfoUser.class);
                 String nickname = infoUser.getNickname().toString().trim();
-                if( (!TextUtils.isEmpty(start)) && (!TextUtils.isEmpty(time)) && (!TextUtils.isEmpty(destination))) {
+//                if( !start.equals("My Location") && !destination.equals("Go To")) {
+                if(!start.equals("") && !destination.equals("") && !time.equals("")) {
                     DesInfo desInfo = new DesInfo(nickname , start , destination , time , note , id , url , connect);
                     db.child(uid).setValue(desInfo);
                     db.child(uid).child("ReceiverID");
                     //db.child(uid).setValue(ServerValue.TIMESTAMP);
+                    finish();
                     Toast.makeText(DestinationActivity.this , "added" , Toast.LENGTH_LONG).show();
                 }else{
                     Snackbar.make(findViewById(android.R.id.content), Html.fromHtml("<font color=\"#CB4335\"><font size=\"7\">Please Fill All Information</font size></font>"), Snackbar.LENGTH_LONG)
