@@ -1,6 +1,10 @@
 [
     {
-        "merged": "C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\place_autocomplete_fragment.xml",
-        "source": "C:\\Users\\Kittaporn\\.android\\build-cache\\59631fb72bf4445600cdf0e93bc59c044dff218a\\output\\res\\layout-v21\\place_autocomplete_fragment.xml"
+        "merged": "/Users/chutikarn/Downloads/SEclassImproove/C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\place_autocomplete_fragment.xml",
+        "source": "/Users/chutikarn/Downloads/SEclassImproove/C:\\Users\\Kittaporn\\.android\\build-cache\\59631fb72bf4445600cdf0e93bc59c044dff218a\\output\\res\\layout-v21\\place_autocomplete_fragment.xml"
+    },
+    {
+        "merged": "/Users/chutikarn/Downloads/SEclassImproove/app/build/intermediates/res/merged/debug/layout-v21/place_autocomplete_fragment.xml",
+        "source": "/Users/chutikarn/.android/build-cache/ef0eb57cacc3128283b75ae0563084656ad9be2a/output/res/layout-v21/place_autocomplete_fragment.xml"
     }
 ]

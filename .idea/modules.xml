@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/KuTogetherMaster10-31.iml" filepath="$PROJECT_DIR$/KuTogetherMaster10-31.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SEclassImproove.iml" filepath="$PROJECT_DIR$/SEclassImproove.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

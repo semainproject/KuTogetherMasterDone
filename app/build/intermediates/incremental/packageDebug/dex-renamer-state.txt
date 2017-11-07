@@ -1,4 +1,7 @@
-#Tue Nov 07 16:23:59 ICT 2017
-base.0=C\:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
+#Tue Nov 07 17:04:26 ICT 2017
+base.0=/Users/chutikarn/Downloads/SEclassImproove/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_951092eca217cf7669c5032d41aecfd876fee4eb
+renamed.1=classes2.dex
 renamed.0=classes.dex
-file.0=C\:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex
+file.1=/Users/chutikarn/Downloads/SEclassImproove/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_07f350c05548e336b405661703d2639558794436/classes.dex
+base.1=/Users/chutikarn/Downloads/SEclassImproove/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_07f350c05548e336b405661703d2639558794436
+file.0=/Users/chutikarn/Downloads/SEclassImproove/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_951092eca217cf7669c5032d41aecfd876fee4eb/classes.dex
