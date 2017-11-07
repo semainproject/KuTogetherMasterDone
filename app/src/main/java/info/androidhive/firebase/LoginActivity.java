@@ -42,6 +42,8 @@ public class LoginActivity extends AppCompatActivity {
     private Button btnSignup, btnLogin, btnReset;
     DatabaseReference db;
     private static final int PERMISSION_REQUEST_CODE = 1;
+    Animation uptodown,downtoup;
+    RelativeLayout re1_login;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,12 +52,7 @@ public class LoginActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_login);
         auth = FirebaseAuth.getInstance();
-        Animation uptodown,downtoup;
-        RelativeLayout re1_login;
 
-        uptodown = AnimationUtils.loadAnimation(this,R.anim.uptodown);
-        downtoup = AnimationUtils.loadAnimation(this,R.anim.downtoup);
-        //re1_login = (RelativeLayout) findViewById(this,R.id);
         inputEmail = (EditText) findViewById(R.id.email);
         inputPassword = (EditText) findViewById(R.id.password);
         progressBar = (ProgressBar) findViewById(R.id.progressBar);
@@ -63,6 +60,16 @@ public class LoginActivity extends AppCompatActivity {
         btnLogin = (Button) findViewById(R.id.btn_login);
         btnReset = (Button) findViewById(R.id.btn_reset_password);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+
+        uptodown = AnimationUtils.loadAnimation(this,R.anim.uptodown);
+        downtoup = AnimationUtils.loadAnimation(this,R.anim.downtoup);
+        re1_login = (RelativeLayout) findViewById(R.id.r_cloud);
+        re1_login.setAnimation(uptodown);
+
+        btnSignup.setAnimation(downtoup);
+        btnLogin.setAnimation(downtoup);
+        btnReset.setAnimation(downtoup);
+
         setSupportActionBar(toolbar);
         ConstraintLayout colayout = (ConstraintLayout) findViewById(R.id.conLayout);
         wprogress = (ProgressBar) findViewById(R.id.progressBarStart);

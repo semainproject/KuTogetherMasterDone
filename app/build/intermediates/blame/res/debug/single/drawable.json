@@ -16,28 +16,28 @@
         "source": "/Users/chutikarn/Downloads/SEclassImproove/app/src/main/res/drawable/button_login_style.xml"
     },
     {
-        "merged": "/Users/chutikarn/Downloads/SEclassImproove/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_light_focused.xml",
-        "source": "/Users/chutikarn/.android/build-cache/3ceeccb93835c0b66a9981d16c7d0b3a51453a97/output/res/drawable/common_google_signin_btn_icon_light_focused.xml"
-    },
-    {
         "merged": "/Users/chutikarn/Downloads/SEclassImproove/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_small_material.xml",
         "source": "/Users/chutikarn/.android/build-cache/156bdf570938444a8a8834fe04891f2d385b4dc8/output/res/drawable/abc_ratingbar_small_material.xml"
+    },
+    {
+        "merged": "/Users/chutikarn/Downloads/SEclassImproove/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_light_focused.xml",
+        "source": "/Users/chutikarn/.android/build-cache/3ceeccb93835c0b66a9981d16c7d0b3a51453a97/output/res/drawable/common_google_signin_btn_icon_light_focused.xml"
     },
     {
         "merged": "/Users/chutikarn/Downloads/SEclassImproove/app/build/intermediates/res/merged/debug/drawable/abc_btn_colored_material.xml",
         "source": "/Users/chutikarn/.android/build-cache/156bdf570938444a8a8834fe04891f2d385b4dc8/output/res/drawable/abc_btn_colored_material.xml"
     },
     {
-        "merged": "/Users/chutikarn/Downloads/SEclassImproove/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_light.xml",
-        "source": "/Users/chutikarn/.android/build-cache/156bdf570938444a8a8834fe04891f2d385b4dc8/output/res/drawable/abc_list_selector_holo_light.xml"
+        "merged": "/Users/chutikarn/Downloads/SEclassImproove/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_track_material.xml",
+        "source": "/Users/chutikarn/.android/build-cache/156bdf570938444a8a8834fe04891f2d385b4dc8/output/res/drawable/abc_seekbar_track_material.xml"
     },
     {
         "merged": "/Users/chutikarn/Downloads/SEclassImproove/app/build/intermediates/res/merged/debug/drawable/abc_ic_go_search_api_material.xml",
         "source": "/Users/chutikarn/.android/build-cache/156bdf570938444a8a8834fe04891f2d385b4dc8/output/res/drawable/abc_ic_go_search_api_material.xml"
     },
     {
-        "merged": "/Users/chutikarn/Downloads/SEclassImproove/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_track_material.xml",
-        "source": "/Users/chutikarn/.android/build-cache/156bdf570938444a8a8834fe04891f2d385b4dc8/output/res/drawable/abc_seekbar_track_material.xml"
+        "merged": "/Users/chutikarn/Downloads/SEclassImproove/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_light.xml",
+        "source": "/Users/chutikarn/.android/build-cache/156bdf570938444a8a8834fe04891f2d385b4dc8/output/res/drawable/abc_list_selector_holo_light.xml"
     },
     {
         "merged": "/Users/chutikarn/Downloads/SEclassImproove/app/build/intermediates/res/merged/debug/drawable/abc_ic_voice_search_api_material.xml",

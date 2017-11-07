@@ -145,7 +145,7 @@ public class ConnectPassenger extends AppCompatActivity {
     @Override
     public void onStart() {
        super.onStart();
-        dbUser.addValueEventListener(new ValueEventListener() {
+        dbUser.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 InfoUser infoUser = dataSnapshot.getValue(InfoUser.class);
@@ -169,7 +169,7 @@ public class ConnectPassenger extends AppCompatActivity {
             }
         });
 
-        dbDes.addValueEventListener(new ValueEventListener() {
+        dbDes.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 try {

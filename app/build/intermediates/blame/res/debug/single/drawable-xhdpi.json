@@ -24,12 +24,12 @@
         "source": "/Users/chutikarn/Downloads/SEclassImproove/app/src/main/res/drawable-xhdpi/ic_info_passenger.png"
     },
     {
-        "merged": "/Users/chutikarn/Downloads/SEclassImproove/app/build/intermediates/res/merged/debug/drawable-xhdpi/ic_dislike.png",
-        "source": "/Users/chutikarn/Downloads/SEclassImproove/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_dislike.png"
-    },
-    {
         "merged": "/Users/chutikarn/Downloads/SEclassImproove/app/build/intermediates/res/merged/debug/drawable-xhdpi/ic_pin.png",
         "source": "/Users/chutikarn/Downloads/SEclassImproove/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_pin.png"
+    },
+    {
+        "merged": "/Users/chutikarn/Downloads/SEclassImproove/app/build/intermediates/res/merged/debug/drawable-xhdpi/ic_dislike.png",
+        "source": "/Users/chutikarn/Downloads/SEclassImproove/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_dislike.png"
     },
     {
         "merged": "/Users/chutikarn/Downloads/SEclassImproove/app/build/intermediates/res/merged/debug/drawable-xhdpi/ic_sign_out_24dp.png",

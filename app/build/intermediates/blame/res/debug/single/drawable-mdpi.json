@@ -20,12 +20,12 @@
         "source": "/Users/chutikarn/Downloads/SEclassImproove/app/build/generated/res/pngs/debug/drawable-mdpi/ic_man.png"
     },
     {
-        "merged": "/Users/chutikarn/Downloads/SEclassImproove/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_person_black_24dp.png",
-        "source": "/Users/chutikarn/Downloads/SEclassImproove/app/build/generated/res/pngs/debug/drawable-mdpi/ic_person_black_24dp.png"
-    },
-    {
         "merged": "/Users/chutikarn/Downloads/SEclassImproove/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_dislike.png",
         "source": "/Users/chutikarn/Downloads/SEclassImproove/app/build/generated/res/pngs/debug/drawable-mdpi/ic_dislike.png"
+    },
+    {
+        "merged": "/Users/chutikarn/Downloads/SEclassImproove/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_person_black_24dp.png",
+        "source": "/Users/chutikarn/Downloads/SEclassImproove/app/build/generated/res/pngs/debug/drawable-mdpi/ic_person_black_24dp.png"
     },
     {
         "merged": "/Users/chutikarn/Downloads/SEclassImproove/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_arrow.png",

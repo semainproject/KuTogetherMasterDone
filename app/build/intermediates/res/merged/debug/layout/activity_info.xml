@@ -97,7 +97,7 @@
             android:layout_toRightOf="@id/nameInput"
             android:buttonTint="@color/colorPrimary"
             android:layout_marginBottom="5dp"
-            android:checked="true"
+            android:checked="false"
             android:drawableTop="@drawable/ic_info_driver"
             android:text="Driver"
             android:textAlignment="center" />
