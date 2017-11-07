@@ -12,16 +12,8 @@
         "source": "/Users/chutikarn/Downloads/SEclassImproove/app/src/main/res/drawable-v21/ic_menu_gallery.xml"
     },
     {
-        "merged": "/Users/chutikarn/Downloads/SEclassImproove/C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_edit_text_material.xml",
-        "source": "/Users/chutikarn/Downloads/SEclassImproove/C:\\Users\\Kittaporn\\.android\\build-cache\\03bbb02882d16c256713c790b4ba20cdc123a500\\output\\res\\drawable-v21\\abc_edit_text_material.xml"
-    },
-    {
         "merged": "/Users/chutikarn/Downloads/SEclassImproove/app/build/intermediates/res/merged/debug/drawable-v21/ic_menu_manage.xml",
         "source": "/Users/chutikarn/Downloads/SEclassImproove/app/src/main/res/drawable-v21/ic_menu_manage.xml"
-    },
-    {
-        "merged": "/Users/chutikarn/Downloads/SEclassImproove/C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_manage.xml",
-        "source": "/Users/chutikarn/Downloads/SEclassImproove/C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\src\\main\\res\\drawable-v21\\ic_menu_manage.xml"
     },
     {
         "merged": "/Users/chutikarn/Downloads/SEclassImproove/app/build/intermediates/res/merged/debug/drawable-v21/ic_menu_camera.xml",
@@ -32,32 +24,8 @@
         "source": "/Users/chutikarn/Downloads/SEclassImproove/app/src/main/res/drawable-v21/ic_menu_slideshow.xml"
     },
     {
-        "merged": "/Users/chutikarn/Downloads/SEclassImproove/C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_camera.xml",
-        "source": "/Users/chutikarn/Downloads/SEclassImproove/C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\src\\main\\res\\drawable-v21\\ic_menu_camera.xml"
-    },
-    {
-        "merged": "/Users/chutikarn/Downloads/SEclassImproove/C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_btn_colored_material.xml",
-        "source": "/Users/chutikarn/Downloads/SEclassImproove/C:\\Users\\Kittaporn\\.android\\build-cache\\03bbb02882d16c256713c790b4ba20cdc123a500\\output\\res\\drawable-v21\\abc_btn_colored_material.xml"
-    },
-    {
-        "merged": "/Users/chutikarn/Downloads/SEclassImproove/C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_send.xml",
-        "source": "/Users/chutikarn/Downloads/SEclassImproove/C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\src\\main\\res\\drawable-v21\\ic_menu_send.xml"
-    },
-    {
         "merged": "/Users/chutikarn/Downloads/SEclassImproove/app/build/intermediates/res/merged/debug/drawable-v21/abc_btn_colored_material.xml",
         "source": "/Users/chutikarn/.android/build-cache/156bdf570938444a8a8834fe04891f2d385b4dc8/output/res/drawable-v21/abc_btn_colored_material.xml"
-    },
-    {
-        "merged": "/Users/chutikarn/Downloads/SEclassImproove/C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_slideshow.xml",
-        "source": "/Users/chutikarn/Downloads/SEclassImproove/C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\src\\main\\res\\drawable-v21\\ic_menu_slideshow.xml"
-    },
-    {
-        "merged": "/Users/chutikarn/Downloads/SEclassImproove/C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_action_bar_item_background_material.xml",
-        "source": "/Users/chutikarn/Downloads/SEclassImproove/C:\\Users\\Kittaporn\\.android\\build-cache\\03bbb02882d16c256713c790b4ba20cdc123a500\\output\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
-    },
-    {
-        "merged": "/Users/chutikarn/Downloads/SEclassImproove/C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_gallery.xml",
-        "source": "/Users/chutikarn/Downloads/SEclassImproove/C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\src\\main\\res\\drawable-v21\\ic_menu_gallery.xml"
     },
     {
         "merged": "/Users/chutikarn/Downloads/SEclassImproove/app/build/intermediates/res/merged/debug/drawable-v21/abc_action_bar_item_background_material.xml",
@@ -66,9 +34,5 @@
     {
         "merged": "/Users/chutikarn/Downloads/SEclassImproove/app/build/intermediates/res/merged/debug/drawable-v21/abc_edit_text_material.xml",
         "source": "/Users/chutikarn/.android/build-cache/156bdf570938444a8a8834fe04891f2d385b4dc8/output/res/drawable-v21/abc_edit_text_material.xml"
-    },
-    {
-        "merged": "/Users/chutikarn/Downloads/SEclassImproove/C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_share.xml",
-        "source": "/Users/chutikarn/Downloads/SEclassImproove/C:\\Users\\Kittaporn\\StudioProjects\\KuTogetherMaster10-31\\app\\src\\main\\res\\drawable-v21\\ic_menu_share.xml"
     }
 ]

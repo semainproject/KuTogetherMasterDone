@@ -28,6 +28,7 @@ public class editProfile extends AppCompatActivity {
     EditText BikeID;
     EditText brand;
     EditText color;
+    String nametx,lastnametx,studentIDtx;
 
     String uid,change_name,change_lastname,change_id;
     private FirebaseAuth.AuthStateListener authListener;
@@ -66,6 +67,9 @@ public class editProfile extends AppCompatActivity {
                 change_name = infoUser.getName();
                 change_lastname = infoUser.getLastName();
                 change_id = infoUser.getStudentID();
+                nametx = infoUser.getName();
+                lastnametx = infoUser.getLastName();
+                studentIDtx = infoUser.getStudentID();
                 if(infoUser.getGender().equals("Male")){
                     male.setChecked(true);
                 }
@@ -90,13 +94,13 @@ public class editProfile extends AppCompatActivity {
                     @Override
                     public void onClick(View view) {
                         if(name.getText().equals("") ){
-                            infoDB.child("name").setValue(change_name.toString());
+                            infoDB.child("name").setValue(nametx);
                         }
                         if(lastname.getText().equals("") ){
-                            infoDB.child("lastName").setValue(change_lastname.toString());
+                            infoDB.child("lastName").setValue(lastnametx);
                         }
                         if(studentID.getText().equals("") ){
-                            infoDB.child("studentID").setValue(change_id.toString());
+                            infoDB.child("studentID").setValue(studentIDtx);
                         }
                         if(!name.getText().equals("") ){
                             infoDB.child("name").setValue(name.getText().toString());
