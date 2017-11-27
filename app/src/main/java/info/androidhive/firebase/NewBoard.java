@@ -273,7 +273,7 @@ public class NewBoard extends AppCompatActivity implements NavigationView.OnNavi
                         final String color = infoUser.getColor().toString();
                         final String bikeID = infoUser.getBikeID().toString();
                         final DesInfo desInfo = desList.get(position);
-                        db.addValueEventListener(new ValueEventListener() {
+                        db.addListenerForSingleValueEvent(new ValueEventListener() {
                             @Override
                             public void onDataChange(DataSnapshot dataSnapshot) {
                                 for (DataSnapshot desSnapshot : dataSnapshot.getChildren()) {

@@ -81,11 +81,11 @@ public class ReceiverList extends ArrayAdapter<InfoUser> {
             }
         });
 
-        nameText.setText(infoUser.getNickname());
-        genderText.setText(infoUser.getGender());
-        bikeBrandText.setText(infoUser.getBrand());
-        bikeColorText.setText(infoUser.getColor());
-        bikeIDText.setText(infoUser.getBikeID());
+        nameText.setText("Name : " + infoUser.getNickname());
+        genderText.setText("Gender : " + infoUser.getGender());
+        bikeBrandText.setText("Brand : " + infoUser.getBrand());
+        bikeColorText.setText("Color : " + infoUser.getColor());
+        bikeIDText.setText("License plate : " + infoUser.getBikeID());
         like.setText(String.valueOf(likeNumber));
         dislike.setText(String.valueOf(dislikeNumber));
         return listViewItem;

@@ -33,11 +33,12 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class DriverConnected extends AppCompatActivity {
-    ImageView myPic,passPic;
+    ImageView passPic;
     FloatingActionButton mapBtn , finishBtn , cancelBtn;
     DatabaseReference db , dbDelDes , dbDelConnectID , dbDelLocation , dbUser , dbDes , dbLog , dbRating;
     TextView textView7,plateID,nickName,color,brand , drivText;
     String uid;
+    View line;
     public void setVal(final String id){
         final StorageReference myPicStoreage2 = FirebaseStorage.getInstance().getReference("USERPICTURE").child(id+"_PIC");
         myPicStoreage2.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
@@ -67,7 +68,6 @@ public class DriverConnected extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_driver_connected);
-        myPic = (ImageView) findViewById(R.id.driverPic);
         passPic = (ImageView) findViewById(R.id.passPic);
         mapBtn = (FloatingActionButton) findViewById(R.id.mapBtn);
         finishBtn = (FloatingActionButton) findViewById(R.id.finishBtn);
@@ -78,6 +78,7 @@ public class DriverConnected extends AppCompatActivity {
         color = (TextView) findViewById(R.id.color);
         brand = (TextView) findViewById(R.id.brand);
         drivText = (TextView) findViewById(R.id.textView14);
+        line = (View) findViewById(R.id.view10);
         final FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         uid = user.getUid();
         db = FirebaseDatabase.getInstance().getReference("USER").child(uid).child("ConnectID");
@@ -89,20 +90,20 @@ public class DriverConnected extends AppCompatActivity {
         dbLog = FirebaseDatabase.getInstance().getReference("USER").child(uid).child("Log");
         dbRating = FirebaseDatabase.getInstance().getReference("USER");
         final StorageReference myPicStoreage = FirebaseStorage.getInstance().getReference("USERPICTURE").child(uid+"_PIC");
-        myPicStoreage.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
-            @Override
-            public void onSuccess(Uri uri) {
-                Glide.with(getApplicationContext()).load(uri).asBitmap().diskCacheStrategy(DiskCacheStrategy.ALL).centerCrop().into(new BitmapImageViewTarget(myPic) {
-                    @Override
-                    protected void setResource(Bitmap resource) {
-                        RoundedBitmapDrawable circularBitmapDrawable =
-                                RoundedBitmapDrawableFactory.create(getApplicationContext().getResources(), resource);
-                        circularBitmapDrawable.setCircular(true);
-                        myPic.setImageDrawable(circularBitmapDrawable);
-                    }
-                });
-            }
-        });
+//        myPicStoreage.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+//            @Override
+//            public void onSuccess(Uri uri) {
+//                Glide.with(getApplicationContext()).load(uri).asBitmap().diskCacheStrategy(DiskCacheStrategy.ALL).centerCrop().into(new BitmapImageViewTarget(myPic) {
+//                    @Override
+//                    protected void setResource(Bitmap resource) {
+//                        RoundedBitmapDrawable circularBitmapDrawable =
+//                                RoundedBitmapDrawableFactory.create(getApplicationContext().getResources(), resource);
+//                        circularBitmapDrawable.setCircular(true);
+//                        myPic.setImageDrawable(circularBitmapDrawable);
+//                    }
+//                });
+//            }
+//        });
 
 
         dbUser.child("INFORMATION").addValueEventListener(new ValueEventListener() {
@@ -114,13 +115,10 @@ public class DriverConnected extends AppCompatActivity {
                 //DRIVER PART//
 
                 if(type.equals("Driver")) {
+                    drivText.setText("Passenger Information");
+
                     finishBtn.setVisibility(View.INVISIBLE);
                     textView7.setVisibility(View.INVISIBLE);
-                    plateID.setVisibility(View.INVISIBLE);
-                    nickName.setVisibility(View.INVISIBLE);
-                    brand.setVisibility(View.INVISIBLE);
-                    color.setVisibility(View.INVISIBLE);
-                    drivText.setVisibility(View.INVISIBLE);
                     db.child("CID").addValueEventListener(new ValueEventListener() {
                         @Override
                         public void onDataChange(DataSnapshot dataSnapshot) {
@@ -132,6 +130,10 @@ public class DriverConnected extends AppCompatActivity {
                                         boolean close = false;
                                         try {
                                             DesInfo desInfo = desSnapshot.getValue(DesInfo.class);
+                                            nickName.setText("Name : " + desInfo.getNickname());
+                                            plateID.setText("From : " + desInfo.getStart());
+                                            color.setText("To : " + desInfo.getDestination());
+                                            brand.setText("Time : " + desInfo.getTime());
                                             close = true;
                                         } catch (Exception e) {
 

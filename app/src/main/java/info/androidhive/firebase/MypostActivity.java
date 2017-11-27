@@ -11,6 +11,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -44,6 +45,7 @@ public class MypostActivity extends AppCompatActivity {
     TextView startText;
     TextView desText;
     TextView timeText;
+    Button delBTN;
     public static final String ID = "id";
     ImageView picture;
     @Override
@@ -64,6 +66,7 @@ public class MypostActivity extends AppCompatActivity {
         desText = (TextView) findViewById(R.id.desText);
         timeText = (TextView) findViewById(R.id.desText);
         picture = (ImageView) findViewById(R.id.imageView6);
+        delBTN = (Button) findViewById(R.id.delbtn);
         final StorageReference myPicStoreage2 = FirebaseStorage.getInstance().getReference("USERPICTURE").child(uid+"_PIC");
         myPicStoreage2.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
             @Override
@@ -77,6 +80,30 @@ public class MypostActivity extends AppCompatActivity {
                         picture.setImageDrawable(circularBitmapDrawable);
                     }
                 });
+            }
+        });
+        delBTN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                AlertDialog.Builder alert = new AlertDialog.Builder(MypostActivity.this);
+                alert.setMessage("คุณต้องการจะลบโพสต์นี้ใช่ไหม ?")
+                        .setCancelable(false)
+                        .setNegativeButton("Ok", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                finish();
+                                dbDes.removeValue();
+                            }
+                        })
+                        .setPositiveButton("Cancel", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                dialog.cancel();
+                            }
+                        });
+
+                AlertDialog alertDialog = alert.create();
+                alertDialog.show();
             }
         });
         listViewPost.setOnItemClickListener(new AdapterView.OnItemClickListener() {
