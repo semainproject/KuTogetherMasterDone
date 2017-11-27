@@ -17,7 +17,14 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- Include required permissions for Google Maps API to run. -->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
 
@@ -26,10 +33,6 @@
         android:protectionLevel="signature" />
 
     <uses-permission android:name="info.androidhive.firebase.permission.C2D_MESSAGE" />
-
-    <uses-feature
-        android:glEsVersion="0x00020000"
-        android:required="true" />
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
          Google Maps Android API v2, but you must specify either coarse or fine
@@ -37,9 +40,11 @@
     -->
     <application
         android:allowBackup="true"
+        android:debuggable="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
             android:name="info.androidhive.firebase.LoginActivity"
@@ -124,6 +129,22 @@
         <activity android:name="info.androidhive.firebase.DriverConnected" />
         <activity android:name="info.androidhive.firebase.editProfile" />
         <activity android:name="info.androidhive.firebase.ChangeDriverStatus" />
+        <!--
+         FirebaseMessagingService performs security checks at runtime,
+             no need for explicit permissions despite exported="true"
+        -->
+        <service
+            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+            android:exported="true" >
+            <intent-filter android:priority="-500" >
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 
         <receiver
             android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
@@ -143,17 +164,6 @@
             android:name="com.google.android.gms.measurement.AppMeasurementService"
             android:enabled="true"
             android:exported="false" />
-        <!--
- FirebaseMessagingService performs security checks at runtime,
-             no need for explicit permissions despite exported="true"
-        -->
-        <service
-            android:name="com.google.firebase.messaging.FirebaseMessagingService"
-            android:exported="true" >
-            <intent-filter android:priority="-500" >
-                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-            </intent-filter>
-        </service>
 
         <receiver
             android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
@@ -190,11 +200,6 @@
             android:authorities="info.androidhive.firebase.firebaseinitprovider"
             android:exported="false"
             android:initOrder="100" />
-
-        <activity
-            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-            android:exported="false"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 
         <meta-data
             android:name="com.google.android.gms.version"

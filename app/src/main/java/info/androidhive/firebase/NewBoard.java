@@ -268,68 +268,97 @@ public class NewBoard extends AppCompatActivity implements NavigationView.OnNavi
                     @Override
                     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                         InfoUser infoUser = dataSnapshot.getValue(InfoUser.class);
-                        String type = infoUser.getTypePassDriv().toString();
-                        String bikeBrand = infoUser.getBrand().toString();
-                        String color = infoUser.getColor().toString();
-                        String bikeID = infoUser.getBikeID().toString();
+                        final String type = infoUser.getTypePassDriv().toString();
+                        final String bikeBrand = infoUser.getBrand().toString();
+                        final String color = infoUser.getColor().toString();
+                        final String bikeID = infoUser.getBikeID().toString();
                         final DesInfo desInfo = desList.get(position);
-                        if(desInfo.getId().toString() == uid) {
-                            Snackbar.make(findViewById(android.R.id.content), Html.fromHtml("<font color=\"#CB4335\"><font size=\"7\">It's You!</font size></font>"), Snackbar.LENGTH_LONG)
-                                    //.setAction("Undo", mOnClickListener)
-                                    .setActionTextColor(Color.RED)
-                                    .show();
-                        } else if(type.equals("Driver")) {
-                            Intent intent = new Intent(NewBoard.this, ConnectPassenger.class);
-                            intent.putExtra(passengerID, desInfo.getId());
-                            startActivity(intent);
-                        } else if(type.equals("Passenger") && (bikeBrand.equals("0") && color.equals("0") && bikeID.equals("0"))) {
-                            AlertDialog.Builder alert = new AlertDialog.Builder(NewBoard.this);
-                            alert.setMessage("คุณไม่มีรถ ต้องการเปลี่ยนสถานะไหม?")
-                                    .setCancelable(false)
-                                    .setNegativeButton("Ok", new DialogInterface.OnClickListener() {
-                                        @Override
-                                        public void onClick(DialogInterface dialogInterface, int i) {
-                                            Intent intent = new Intent(NewBoard.this, ChangeDriverStatus.class);
-                                            startActivityForResult(intent, 10);
-                                        }
-                                    })
-                                    .setPositiveButton("Cancel", new DialogInterface.OnClickListener() {
-                                        @Override
-                                        public void onClick(DialogInterface dialog, int which) {
-                                            dialog.cancel();
-                                        }
-                                    });
+                        db.addValueEventListener(new ValueEventListener() {
+                            @Override
+                            public void onDataChange(DataSnapshot dataSnapshot) {
+                                for (DataSnapshot desSnapshot : dataSnapshot.getChildren()) {
+                                   if(desSnapshot.getKey().toString().equals(uid)){
+                                       AlertDialog.Builder alert = new AlertDialog.Builder(NewBoard.this);
+                                       alert.setMessage("เมื่อคุณมีโพสต์ คุณจะไม่สามารถไปรับคนอื่นได้")
+                                               .setCancelable(true)
+                                               .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                                                   @Override
+                                                   public void onClick(DialogInterface dialog, int which) {
+                                                       dialog.cancel();
+                                                   }
+                                               });
 
-                            AlertDialog alertDialog = alert.create();
-                            alertDialog.show();
-                        } else if(type.equals("Passenger") && !(bikeBrand.equals("0") && color.equals("0") && bikeID.equals("0"))) {
-                            AlertDialog.Builder alert = new AlertDialog.Builder(NewBoard.this);
-                            alert.setMessage("คุณไม่มีรถ ต้องการเปลี่ยนสถานะไหม?")
-                                    .setCancelable(false)
-                                    .setNegativeButton("Ok", new DialogInterface.OnClickListener() {
-                                        @Override
-                                        public void onClick(DialogInterface dialogInterface, int i) {
-                                            dbforinfo.child("typePassDriv").setValue("Driver");
-                                            Toast.makeText(getApplicationContext(), "สถานะคุณคือ คนขับ", Toast.LENGTH_LONG).show();
-                                            Intent intent = new Intent(NewBoard.this, ConnectPassenger.class);
-                                            intent.putExtra(passengerID, desInfo.getId());
-                                            startActivity(intent);
+                                       AlertDialog alertDialog = alert.create();
+                                       alertDialog.show();
+                                       return;
+                                   }
+                                }
+                                if(desInfo.getId().toString() == uid) {
+                                    Snackbar.make(findViewById(android.R.id.content), Html.fromHtml("<font color=\"#CB4335\"><font size=\"7\">It's You!</font size></font>"), Snackbar.LENGTH_LONG)
+                                            //.setAction("Undo", mOnClickListener)
+                                            .setActionTextColor(Color.RED)
+                                            .show();
+                                } else if(type.equals("Driver")) {
+                                    Intent intent = new Intent(NewBoard.this, ConnectPassenger.class);
+                                    intent.putExtra(passengerID, desInfo.getId());
+                                    startActivity(intent);
+                                } else if(type.equals("Passenger") && (bikeBrand.equals("0") && color.equals("0") && bikeID.equals("0"))) {
+                                    AlertDialog.Builder alert = new AlertDialog.Builder(NewBoard.this);
+                                    alert.setMessage("คุณไม่มีรถ ต้องการเปลี่ยนสถานะไหม?")
+                                            .setCancelable(false)
+                                            .setNegativeButton("Ok", new DialogInterface.OnClickListener() {
+                                                @Override
+                                                public void onClick(DialogInterface dialogInterface, int i) {
+                                                    Intent intent = new Intent(NewBoard.this, ChangeDriverStatus.class);
+                                                    startActivityForResult(intent, 10);
+                                                }
+                                            })
+                                            .setPositiveButton("Cancel", new DialogInterface.OnClickListener() {
+                                                @Override
+                                                public void onClick(DialogInterface dialog, int which) {
+                                                    dialog.cancel();
+                                                }
+                                            });
+
+                                    AlertDialog alertDialog = alert.create();
+                                    alertDialog.show();
+                                } else if(type.equals("Passenger") && !(bikeBrand.equals("0") && color.equals("0") && bikeID.equals("0"))) {
+                                    AlertDialog.Builder alert = new AlertDialog.Builder(NewBoard.this);
+                                    alert.setMessage("คุณไม่มีรถ ต้องการเปลี่ยนสถานะไหม?")
+                                            .setCancelable(false)
+                                            .setNegativeButton("Ok", new DialogInterface.OnClickListener() {
+                                                @Override
+                                                public void onClick(DialogInterface dialogInterface, int i) {
+                                                    dbforinfo.child("typePassDriv").setValue("Driver");
+                                                    Toast.makeText(getApplicationContext(), "สถานะคุณคือ คนขับ", Toast.LENGTH_LONG).show();
+                                                    Intent intent = new Intent(NewBoard.this, ConnectPassenger.class);
+                                                    intent.putExtra(passengerID, desInfo.getId());
+                                                    startActivity(intent);
 //                                            finish();
 //                                            overridePendingTransition(0, 0);
 //                                            startActivity(getIntent());
 //                                            overridePendingTransition(0, 0);
-                                        }
-                                    })
-                                    .setPositiveButton("Cancel", new DialogInterface.OnClickListener() {
-                                        @Override
-                                        public void onClick(DialogInterface dialog, int which) {
-                                            dialog.cancel();
-                                        }
-                                    });
+                                                }
+                                            })
+                                            .setPositiveButton("Cancel", new DialogInterface.OnClickListener() {
+                                                @Override
+                                                public void onClick(DialogInterface dialog, int which) {
+                                                    dialog.cancel();
+                                                }
+                                            });
 
-                            AlertDialog alertDialog = alert.create();
-                            alertDialog.show();
-                        }
+                                    AlertDialog alertDialog = alert.create();
+                                    alertDialog.show();
+                                }
+
+                            }
+
+                            @Override
+                            public void onCancelled(DatabaseError databaseError) {
+
+                            }
+                        });
+
                     }
                 });
             }
