@@ -173,36 +173,50 @@ public class NewBoard extends AppCompatActivity implements NavigationView.OnNavi
             public void onClick(View view) {
                 dbforinfo.child("typePassDriv").addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
-                    public void onDataChange(DataSnapshot dataSnapshot) {
-                        String type = dataSnapshot.getValue(String.class);
-                        if(type.equals("Driver")){
-                            AlertDialog.Builder alert = new AlertDialog.Builder(NewBoard.this);
-                            alert.setMessage("คุณเป็นคนขับ ต้องการเปลี่ยนสถานะไหม")
-                                    .setCancelable(false)
-                                    .setNegativeButton("Ok", new DialogInterface.OnClickListener() {
-                                        @Override
-                                        public void onClick(DialogInterface dialogInterface, int i) {
-                                            dbforinfo.child("typePassDriv").setValue("Passenger");
-                                            Toast.makeText(getApplicationContext(), "สถานะคุณคือ ผู้โดยสาร", Toast.LENGTH_LONG).show();
-                                            Intent intent = new Intent(NewBoard.this, DestinationActivity.class);
-                                            startActivity(intent);
-                                        }
-                                    })
-                                    .setPositiveButton("Cancel", new DialogInterface.OnClickListener() {
-                                        @Override
-                                        public void onClick(DialogInterface dialog, int which) {
-                                            dialog.cancel();
-                                        }
-                                    });
+                    public void onDataChange(final DataSnapshot dataSnapshot) {
+                        dbToken.child("Waiting").addListenerForSingleValueEvent(new ValueEventListener() {
+                            @Override
+                            public void onDataChange(DataSnapshot waitSnapshot) {
+                                String type = dataSnapshot.getValue(String.class);
+                                try {
+                                    Boolean wait = waitSnapshot.getValue(Boolean.class);
+                                    if (type.equals("Driver") && wait == true) {
+                                        Toast.makeText(NewBoard.this, "คุณกดไปรับคนอื่นแล้ว ไม่สามารถโพสต์ได้!!", Toast.LENGTH_LONG).show();
+                                    } else {
+                                        Intent intent = new Intent(NewBoard.this, DestinationActivity.class);
+                                        startActivity(intent);
+                                    }
+                                } catch(Exception e) {
+                                    //////////////////////  Driver and not receive others ///////////////////////////////////////////////
+                                    AlertDialog.Builder alert = new AlertDialog.Builder(NewBoard.this);
+                                    alert.setMessage("คุณเป็นคนขับ ต้องการเปลี่ยนสถานะไหม")
+                                            .setCancelable(false)
+                                            .setNegativeButton("Ok", new DialogInterface.OnClickListener() {
+                                                @Override
+                                                public void onClick(DialogInterface dialogInterface, int i) {
+                                                    dbforinfo.child("typePassDriv").setValue("Passenger");
+                                                    Toast.makeText(getApplicationContext(), "สถานะคุณคือ ผู้โดยสาร", Toast.LENGTH_LONG).show();
+                                                    Intent intent = new Intent(NewBoard.this, DestinationActivity.class);
+                                                    startActivity(intent);
+                                                }
+                                            })
+                                            .setPositiveButton("Cancel", new DialogInterface.OnClickListener() {
+                                                @Override
+                                                public void onClick(DialogInterface dialog, int which) {
+                                                    dialog.cancel();
+                                                }
+                                            });
 
-                            AlertDialog alertDialog = alert.create();
-                            alertDialog.show();
-                        }else {
-                            Intent intent = new Intent(NewBoard.this, DestinationActivity.class);
-                            startActivity(intent);
-                        }
-                        }
+                                    AlertDialog alertDialog = alert.create();
+                                    alertDialog.show();
+                                }
+                            }
 
+                            @Override
+                            public void onCancelled(DatabaseError databaseError) {
+                            }
+                        });
+                    }
                     @Override
                     public void onCancelled(DatabaseError databaseError) {
 

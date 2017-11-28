@@ -35,7 +35,7 @@ import java.util.Date;
 public class DriverConnected extends AppCompatActivity {
     ImageView passPic;
     FloatingActionButton mapBtn , finishBtn , cancelBtn;
-    DatabaseReference db , dbDelDes , dbDelConnectID , dbDelLocation , dbUser , dbDes , dbLog , dbRating;
+    DatabaseReference db , dbDelDes , dbDelConnectID , dbDelLocation , dbUser , dbDes , dbLog , dbRating , dbWait;
     TextView textView7,plateID,nickName,color,brand , drivText;
     String uid;
     View line;
@@ -355,6 +355,7 @@ public class DriverConnected extends AppCompatActivity {
         dbDelConnectID.child(uid).child("ConnectID").removeValue();
         dbDelLocation.child(uid).removeValue();
         dbDelLocation.child(id).removeValue();
+        dbDelConnectID.child(uid).child("Waiting").removeValue();
     }
 
     public void deleteDataPass(final String id) {
@@ -362,6 +363,7 @@ public class DriverConnected extends AppCompatActivity {
         dbDelConnectID.child(id).child("ConnectID").removeValue();
         dbDelLocation.child(uid).removeValue();
         dbDelLocation.child(id).removeValue();
+        dbDelConnectID.child(id).child("Waiting").removeValue();
     }
 
     public void logForPass(final String id) {

@@ -37,6 +37,7 @@ public class ConnectPassenger extends AppCompatActivity {
     DatabaseReference dbUpdate;
     DatabaseReference dbUserInfo;
     DatabaseReference dbDes;
+    DatabaseReference dbWait;
     String uid;
     FirebaseAuth auth;
     ImageView userPIC;
@@ -74,6 +75,7 @@ public class ConnectPassenger extends AppCompatActivity {
         dbUserInfo = FirebaseDatabase.getInstance().getReference("USER").child(uid).child("INFORMATION");
         dbUpdate = FirebaseDatabase.getInstance().getReference("Destination Data").child(id).child("ReceiverID");
         dbDes = FirebaseDatabase.getInstance().getReference("Destination Data").child(id);
+        dbWait = FirebaseDatabase.getInstance().getReference("USER").child(uid);
         dbUserInfo.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
@@ -107,6 +109,7 @@ public class ConnectPassenger extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 setReceiver();
+                setWaiting();
             }
         });
 
@@ -139,6 +142,11 @@ public class ConnectPassenger extends AppCompatActivity {
                 Toast.makeText(ConnectPassenger.this , "ERROR TO SEND INFORMATION" , Toast.LENGTH_LONG).show();
             }
         });
+    }
+
+    public void setWaiting() {
+        boolean waiting = true;
+        dbWait.child("Waiting").setValue(waiting);
     }
 
 

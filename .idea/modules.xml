@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/KuTogether.iml" filepath="$PROJECT_DIR$/KuTogether.iml" />
       <module fileurl="file://C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone555\KuTogetherMaster10-31.iml" filepath="C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone555\KuTogetherMaster10-31.iml" />
-      <module fileurl="file://$PROJECT_DIR$/KuTogetherMasterDone555.iml" filepath="$PROJECT_DIR$/KuTogetherMasterDone555.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
