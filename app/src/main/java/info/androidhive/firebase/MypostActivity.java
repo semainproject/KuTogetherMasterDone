@@ -64,7 +64,7 @@ public class MypostActivity extends AppCompatActivity {
         cidDB = FirebaseDatabase.getInstance().getReference("USER");
         startText = (TextView) findViewById(R.id.startText);
         desText = (TextView) findViewById(R.id.desText);
-        timeText = (TextView) findViewById(R.id.desText);
+        timeText = (TextView) findViewById(R.id.timeTX);
         picture = (ImageView) findViewById(R.id.imageView6);
         delBTN = (Button) findViewById(R.id.delbtn);
         final StorageReference myPicStoreage2 = FirebaseStorage.getInstance().getReference("USERPICTURE").child(uid+"_PIC");
@@ -169,9 +169,9 @@ public class MypostActivity extends AppCompatActivity {
             public void onDataChange(DataSnapshot dataSnapshot) {
                 DesInfo desInfo = dataSnapshot.getValue(DesInfo.class);
                 try {
-                    startText.setText(desInfo.getStart().toString().trim());
-                    desText.setText(desInfo.getDestination().toString().trim());
-                    timeText.setText(desInfo.getTime().toString().trim());
+                    startText.setText("Start :"+desInfo.getStart().toString().trim());
+                    desText.setText("Destination :"+desInfo.getDestination().toString().trim());
+                    timeText.setText("Time :"+desInfo.getTime().toString().trim());
                 } catch(Exception e) {
                     startText.setText("Not Found!!");
                     desText.setText("Not Found!!");

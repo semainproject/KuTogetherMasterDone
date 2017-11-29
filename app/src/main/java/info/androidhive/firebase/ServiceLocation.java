@@ -50,7 +50,7 @@ public class ServiceLocation extends Service
         public void onLocationChanged(Location location)
         {
             Log.e(TAG, "onLocationChanged: " + location);
-            Toast.makeText(ServiceLocation.this, "location is"+location, Toast.LENGTH_LONG).show();
+            //Toast.makeText(ServiceLocation.this, "location is"+location, Toast.LENGTH_LONG).show();
             final Double lat = location.getLatitude();
             final Double lng = location.getLongitude();
             LocationLatLng locationLatLng = new LocationLatLng(lng , lat);

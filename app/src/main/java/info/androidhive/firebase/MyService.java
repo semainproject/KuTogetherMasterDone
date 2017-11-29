@@ -38,6 +38,7 @@ public class MyService extends Service {
         DatabaseReference firebaseRef,ref;
         final FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         uid = user.getUid();
+        final DatabaseReference passdb = FirebaseDatabase.getInstance().getReference("Destination Data");
         firebaseRef = FirebaseDatabase.getInstance().getReference("Destination Data").child(uid).child("ReceiverID");
         final DatabaseReference db = FirebaseDatabase.getInstance().getReference("USER").child(uid);
         firebaseRef.addValueEventListener(new ValueEventListener() {
@@ -50,7 +51,7 @@ public class MyService extends Service {
                     PendingIntent pendingIntent = PendingIntent.getActivity(MyService.this, 0, intentTomypost, 0);
                     Notification notification =
                         new NotificationCompat.Builder(MyService.this) // this is context
-                                .setSmallIcon(R.mipmap.ic_driver)
+                                .setSmallIcon(R.drawable.ic_notibike)
                                 .setContentTitle("มีคนมารับจ้าา")
                                 .setContentText(id.getNickname()+" กำลังมารับ")
                                 .setSound(alarmSound)
@@ -73,6 +74,55 @@ public class MyService extends Service {
 
             }
 
+        });
+        db.child("ConnectID").child("CID").addValueEventListener(new ValueEventListener() {
+            @Override
+                public void onDataChange(DataSnapshot dataSnapshot) {
+                try{
+
+                String passID = dataSnapshot.getValue().toString();
+                passdb.child(passID).child("connect").addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(DataSnapshot dataSnapshot) {
+                        boolean isConnected = dataSnapshot.getValue(Boolean.class);
+                        if (isConnected == true) {
+                            Uri alarmSound = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
+                            Intent intentTomypost = new Intent(MyService.this, DriverConnected.class);
+                            PendingIntent pendingIntent = PendingIntent.getActivity(MyService.this, 0, intentTomypost, 0);
+                            Notification notification =
+                                    new NotificationCompat.Builder(MyService.this) // this is context
+                                            .setSmallIcon(R.drawable.ic_notibike)
+                                            .setContentTitle("notifi")
+                                            .setContentText("มีคนตกลงให้คุณไปรับ")
+                                            .setSound(alarmSound)
+                                            .setContentIntent(pendingIntent)
+                                            .setAutoCancel(true)
+                                            .build();
+                            Random random = new Random();
+                            int randomNumber = random.nextInt(9999 - 1000) + 1000;
+                            NotificationManager notificationManager =
+                                    (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
+                            notificationManager.notify(randomNumber, notification);
+                            return;
+                        }else{
+                            return;
+                        }
+                    }
+
+                    @Override
+                    public void onCancelled(DatabaseError databaseError) {
+
+                    }
+                });
+            }catch (Exception e){
+
+                }
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
         });
         ref = FirebaseDatabase.getInstance().getReference("Destination Data").child(uid).child("connect");
         final Intent i = new Intent(MyService.this, ServiceLocation.class);

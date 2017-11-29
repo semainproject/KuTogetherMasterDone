@@ -78,7 +78,7 @@ public class DriverConnected extends AppCompatActivity {
         color = (TextView) findViewById(R.id.color);
         brand = (TextView) findViewById(R.id.brand);
         drivText = (TextView) findViewById(R.id.textView14);
-        line = (View) findViewById(R.id.view10);
+        //line = (View) findViewById(R.id.view10);
         final FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         uid = user.getUid();
         db = FirebaseDatabase.getInstance().getReference("USER").child(uid).child("ConnectID");

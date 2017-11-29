@@ -68,185 +68,184 @@
 
     </RelativeLayout>
 
-
-    <ScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:orientation="vertical">
+        android:layout_gravity="center">
 
-
-        <EditText
-            android:id="@+id/nameInput"
-            android:layout_width="@dimen/width_info"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/maginR_info"
-            android:hint="Name"
-            android:inputType="textPersonName"
-            android:padding="5dp"
-            android:layout_marginBottom="5dp"
-            android:background="@drawable/round2"/>
-
-        <CheckBox
-            android:id="@+id/driverCheck"
+        <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toRightOf="@id/nameInput"
-            android:buttonTint="@color/colorPrimary"
-            android:layout_marginBottom="5dp"
-            android:checked="false"
-            android:drawableTop="@drawable/ic_info_driver"
-            android:text="Driver"
-            android:textAlignment="center" />
-
-        <CheckBox
-            android:id="@+id/passengerCheck"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/driverCheck"
-            android:layout_alignLeft="@id/driverCheck"
-            android:buttonTint="@color/colorPrimary"
-            android:checked="false"
-            android:drawableTop="@drawable/ic_info_passenger"
-            android:text="Passenger"
-            android:textAlignment="center" />
-
-        <CheckBox
-            android:id="@+id/Malebtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/passengerCheck"
-            android:layout_alignLeft="@id/passengerCheck"
-            android:layout_marginTop="10dp"
-            android:checked="true"
-            android:text="Male"
-            app:buttonTint="@color/colorPrimary" />
-
-        <CheckBox
-            android:id="@+id/Femalebtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/Malebtn"
-            android:layout_alignLeft="@id/Malebtn"
-            android:checked="false"
-            android:text="Female"
-            app:buttonTint="@color/colorPrimary" />
+            android:layout_marginTop="20dp">
 
 
+            <EditText
+                android:id="@+id/nameInput"
+                android:layout_width="@dimen/width_info"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="@dimen/maginR_info"
+                android:background="@drawable/round2"
+                android:hint="Name"
+                android:inputType="textPersonName"
+                android:padding="5dp" />
 
-        <EditText
-            android:id="@+id/lastNameInput"
-            android:layout_width="@dimen/width_info"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/nameInput"
-            android:layout_marginStart="@dimen/maginR_info"
-            android:layout_marginEnd="@dimen/maginL_info"
-            android:ems="10"
-            android:hint="Lastname"
-            android:inputType="textPersonName"
-            android:padding="5dp"
-            android:layout_marginBottom="5dp"
-            android:background="@drawable/round2"/>
+            <CheckBox
+                android:id="@+id/driverCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_toRightOf="@id/nameInput"
+                android:buttonTint="@color/colorPrimary"
+                android:checked="false"
+                android:drawableTop="@drawable/ic_info_driver"
+                android:text="Driver"
+                android:textAlignment="center" />
 
+            <CheckBox
+                android:id="@+id/passengerCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/driverCheck"
+                android:layout_below="@id/driverCheck"
+                android:buttonTint="@color/colorPrimary"
+                android:checked="false"
+                android:drawableTop="@drawable/ic_info_passenger"
+                android:text="Passenger"
+                android:textAlignment="center" />
 
-        <EditText
-            android:id="@+id/studentInput"
-            android:layout_width="@dimen/width_info"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/lastNameInput"
-            android:layout_marginStart="@dimen/maginR_info"
-            android:layout_marginEnd="@dimen/maginL_info"
-            android:ems="10"
-            android:hint="StudentID"
-            android:inputType="textPersonName"
-            android:padding="5dp"
-            android:layout_marginBottom="5dp"
-            android:background="@drawable/round2"/>
+            <CheckBox
+                android:id="@+id/Malebtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/passengerCheck"
+                android:layout_below="@id/passengerCheck"
+                android:layout_marginTop="10dp"
+                android:checked="true"
+                android:text="Male"
+                app:buttonTint="@color/colorPrimary" />
 
-        <EditText
-            android:id="@+id/nickInput"
-            android:layout_width="@dimen/width_info"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/studentInput"
-            android:layout_marginStart="@dimen/maginR_info"
-            android:layout_marginEnd="@dimen/maginL_info"
-            android:ems="10"
-            android:hint="Nickname"
-            android:inputType="textPersonName"
-            android:padding="5dp"
-            android:layout_marginBottom="5dp"
-            android:background="@drawable/round2"/>
-
-        <EditText
-            android:id="@+id/bikeIDinput"
-            android:layout_width="@dimen/width_info"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/nickInput"
-            android:layout_marginStart="@dimen/maginR_info"
-            android:layout_marginEnd="@dimen/maginL_info"
-            android:ems="10"
-            android:hint="Your Bike ID"
-            android:inputType="textPersonName"
-            android:visibility="invisible"
-            android:padding="5dp"
-            android:layout_marginBottom="5dp"
-            android:background="@drawable/round2"/>
-
-        <EditText
-            android:id="@+id/bikeBrandInput"
-            android:layout_width="@dimen/width_info"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/bikeIDinput"
-            android:layout_marginStart="@dimen/maginR_info"
-            android:layout_marginEnd="@dimen/maginL_info"
-            android:ems="10"
-            android:hint="Your bike brand"
-            android:inputType="textPersonName"
-            android:visibility="invisible"
-            android:padding="5dp"
-            android:layout_marginBottom="5dp"
-            android:background="@drawable/round2"/>
-
-        <EditText
-            android:id="@+id/colorInput"
-            android:layout_width="@dimen/width_info"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/bikeBrandInput"
-            android:layout_marginStart="@dimen/maginR_info"
-            android:layout_marginLeft="@dimen/maginL_info"
-            android:hint="Your Bike Color"
-            android:inputType="textPersonName"
-            android:visibility="invisible"
-            android:padding="5dp"
-            android:layout_marginBottom="5dp"
-            android:background="@drawable/round2"/>
-
-        <Button
-            android:id="@+id/submitBtn"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/bikeBrandInput"
-            android:layout_marginTop="50dp"
-            android:layout_marginStart="20dp"
-            android:background="@drawable/button_login_style"
-            android:textColor="@android:color/white"
-            android:text="Submit" />
-
-        <Button
-            android:id="@+id/signoutBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/bikeBrandInput"
-            android:layout_toRightOf="@id/submitBtn"
-            android:layout_marginTop="50dp"
-            android:layout_marginStart="25dp"
-            android:background="@drawable/button_regis_style"
-            android:text="Signout" />
+            <CheckBox
+                android:id="@+id/Femalebtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/Malebtn"
+                android:layout_below="@id/Malebtn"
+                android:checked="false"
+                android:text="Female"
+                app:buttonTint="@color/colorPrimary" />
 
 
-    </RelativeLayout>
-    </ScrollView>
+            <EditText
+                android:id="@+id/lastNameInput"
+                android:layout_width="@dimen/width_info"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nameInput"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="@dimen/maginL_info"
+                android:layout_marginStart="@dimen/maginR_info"
+                android:background="@drawable/round2"
+                android:ems="10"
+                android:hint="Lastname"
+                android:inputType="textPersonName"
+                android:padding="5dp" />
+
+
+            <EditText
+                android:id="@+id/studentInput"
+                android:layout_width="@dimen/width_info"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lastNameInput"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="@dimen/maginL_info"
+                android:layout_marginStart="@dimen/maginR_info"
+                android:background="@drawable/round2"
+                android:ems="10"
+                android:hint="StudentID"
+                android:inputType="textPersonName"
+                android:padding="5dp" />
+
+            <EditText
+                android:id="@+id/nickInput"
+                android:layout_width="@dimen/width_info"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/studentInput"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="@dimen/maginL_info"
+                android:layout_marginStart="@dimen/maginR_info"
+                android:background="@drawable/round2"
+                android:ems="10"
+                android:hint="Nickname"
+                android:inputType="textPersonName"
+                android:padding="5dp" />
+
+            <EditText
+                android:id="@+id/bikeIDinput"
+                android:layout_width="@dimen/width_info"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nickInput"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="@dimen/maginL_info"
+                android:layout_marginStart="@dimen/maginR_info"
+                android:background="@drawable/round2"
+                android:ems="10"
+                android:hint="Your Bike ID"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/bikeBrandInput"
+                android:layout_width="@dimen/width_info"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bikeIDinput"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="@dimen/maginL_info"
+                android:layout_marginStart="@dimen/maginR_info"
+                android:background="@drawable/round2"
+                android:ems="10"
+                android:hint="Your bike brand"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/colorInput"
+                android:layout_width="@dimen/width_info"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bikeBrandInput"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="@dimen/maginL_info"
+                android:layout_marginStart="@dimen/maginR_info"
+                android:background="@drawable/round2"
+                android:hint="Your Bike Color"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/submitBtn"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bikeBrandInput"
+
+                android:layout_marginTop="50dp"
+                android:background="@drawable/button_login_style"
+                android:text="Submit"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/signoutBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bikeBrandInput"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="50dp"
+                android:layout_toRightOf="@id/submitBtn"
+                android:background="@drawable/button_regis_style"
+                android:text="Signout" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
 </LinearLayout>

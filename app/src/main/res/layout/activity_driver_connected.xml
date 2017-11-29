@@ -1,208 +1,212 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:weightSum="1"
     tools:context="info.androidhive.firebase.DriverConnected"
     tools:layout_editor_absoluteX="0dp"
     tools:layout_editor_absoluteY="25dp">
 
-    <View
-        android:id="@+id/view10"
-        android:layout_width="0dp"
-        android:layout_height="2dp"
-        android:layout_centerVertical="true"
-        android:layout_marginBottom="135dp"
-        android:layout_marginEnd="42dp"
-        android:layout_marginStart="42dp"
-        android:layout_marginTop="135dp"
-        android:background="@color/bg_white"
-        app:layout_constraintBottom_toBottomOf="@+id/mapBtn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/nickName"
-        tools:layout_constraintBottom_creator="1"
-        tools:layout_constraintLeft_creator="1"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintTop_creator="1" />
+    <RelativeLayout
+        android:id="@+id/r_cloud"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/mapBtn"
-        android:layout_width="74dp"
-        android:layout_height="74dp"
-        android:layout_column="2"
-        android:layout_marginBottom="8dp"
-        android:layout_row="2"
-        android:clickable="true"
-        app:fabSize="mini"
-        app:layout_constraintBottom_toTopOf="@+id/textView7"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@mipmap/ic_maplocation"
-        tools:layout_constraintBottom_creator="1"
-        tools:layout_constraintLeft_creator="1"
-        tools:layout_constraintRight_creator="1" />
+        <ImageView
+            android:id="@+id/login_cloud"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/login_bg_shape" />
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/finishBtn"
-        android:layout_width="49dp"
-        android:layout_height="49dp"
-        android:layout_column="11"
-        android:layout_marginBottom="26dp"
-        android:layout_marginTop="26dp"
-        android:layout_row="0"
-        android:clickable="true"
-        app:fabSize="mini"
-        app:layout_constraintBottom_toBottomOf="@+id/textView7"
-        app:layout_constraintEnd_toEndOf="@+id/textView7"
-        app:layout_constraintStart_toStartOf="@+id/textView7"
-        app:layout_constraintTop_toTopOf="@+id/mapBtn"
-        app:srcCompat="@mipmap/ic_accept"
-        tools:layout_constraintBottom_creator="1"
-        tools:layout_constraintLeft_creator="1"
-        tools:layout_constraintTop_creator="1" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Traveling"
+            android:textAlignment="center"
+            android:textSize="40sp"
+            app:layout_constraintBottom_toTopOf="@+id/passengerPIC"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_constraintBottom_creator="1"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintTop_creator="1" />
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/cancelBtn"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginBottom="26dp"
-        android:layout_marginEnd="41dp"
-        android:layout_marginStart="37dp"
-        android:layout_marginTop="27dp"
-        android:clickable="true"
-        app:fabSize="mini"
-        app:layout_constraintBottom_toBottomOf="@+id/textView9"
-        app:layout_constraintEnd_toEndOf="@+id/textView9"
-        app:layout_constraintStart_toEndOf="@+id/mapBtn"
-        app:layout_constraintTop_toTopOf="@+id/mapBtn"
-        app:srcCompat="@mipmap/ic_denined"
-        tools:layout_constraintBottom_creator="1"
-        tools:layout_constraintLeft_creator="1"
-        tools:layout_constraintRight_creator="1" />
-
-    <ImageView
-        android:id="@+id/passPic"
-        android:layout_width="130dp"
-        android:layout_height="130dp"
-        android:layout_marginTop="38dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_man"
-        tools:layout_constraintLeft_creator="1"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintTop_creator="1" />
-
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="12dp"
-        android:layout_marginStart="33dp"
-        android:text="สิ้นสุดการเดินทาง"
-        android:textColorLink="@color/btn_logut_bg"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_constraintLeft_creator="1"
-        tools:layout_constraintTop_creator="1" />
-
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="12dp"
-        android:layout_marginEnd="29dp"
-        android:text="ยกเลิกการเดินทาง"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintTop_creator="1" />
+        <ImageView
+            android:id="@+id/passPic"
+            android:layout_width="112dp"
+            android:layout_height="112dp"
+            android:layout_below="@+id/textView2"
+            android:layout_centerHorizontal="true"
+            app:layout_constraintLeft_toLeftOf="@+id/textView2"
+            app:srcCompat="@drawable/ic_man"
+            tools:layout_constraintBottom_creator="1"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1"
+            tools:layout_constraintTop_creator="1" />
+    </RelativeLayout>
 
     <TextView
         android:id="@+id/textView14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="13dp"
-        android:layout_marginStart="44dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
         android:text="Driver Information"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/nickName"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_constraintBottom_creator="1"
-        tools:layout_constraintLeft_creator="1"
-        tools:layout_constraintRight_creator="1" />
+        android:textColor="@color/black"
+        android:textSize="22dp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/btn_login" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/nickName"
+            android:layout_width="250dp"
+            android:layout_height="25dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/plateID"
+            android:layout_width="250dp"
+            android:layout_height="25dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/color"
+            android:layout_width="250dp"
+            android:layout_height="25dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/brand"
+            android:layout_width="250dp"
+            android:layout_height="25dp"
+            android:text="TextView" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/btn_login" />
 
     <TextView
-        android:id="@+id/nickName"
-        android:layout_width="250dp"
-        android:layout_height="25dp"
-        android:layout_marginBottom="87dp"
-        android:layout_marginTop="88dp"
-        android:textColor="@color/white"
-        android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="@+id/brand"
-        app:layout_constraintEnd_toEndOf="@+id/plateID"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/plateID"
-        app:layout_constraintTop_toBottomOf="@+id/passPic"
-        app:layout_constraintVertical_bias="0.0"
-        tools:layout_constraintBottom_creator="1"
-        tools:layout_constraintLeft_creator="1"
-        tools:layout_constraintRight_creator="1" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="15dp"
+        android:text="Tips : เมื่อถึงจุดหมายปลายทางแล้วผู้โดยสารทุกท่านโปรดกดปุ่ม 'finish trip' และโปรดให้คะแนนการเดินทาง เพื่อเป็นประโยชน์ต่อผู้โดยสารท่านต่อไป" />
 
-    <TextView
-        android:id="@+id/plateID"
-        android:layout_width="250dp"
-        android:layout_height="25dp"
-        android:text="TextView"
-        android:textColor="@color/white"
-        android:textSize="15sp"
-        app:layout_constraintBottom_toTopOf="@+id/color"
-        app:layout_constraintEnd_toEndOf="@+id/color"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/color"
-        app:layout_constraintTop_toBottomOf="@+id/nickName"
-        app:layout_constraintVertical_bias="0.0"
-        tools:layout_constraintBottom_creator="1"
-        tools:layout_constraintLeft_creator="1"
-        tools:layout_constraintRight_creator="1" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="85dp"
+        android:layout_gravity="center"
+        android:layout_weight="0.05"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:layout_marginTop="10dp">
 
-    <TextView
-        android:id="@+id/color"
-        android:layout_width="250dp"
-        android:layout_height="25dp"
-        android:text="TextView"
-        android:textColor="@color/white"
-        android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="@+id/brand"
-        app:layout_constraintEnd_toEndOf="@+id/brand"
-        app:layout_constraintStart_toStartOf="@+id/brand"
-        app:layout_constraintTop_toBottomOf="@+id/nickName"
-        tools:layout_constraintBottom_creator="1"
-        tools:layout_constraintLeft_creator="1"
-        tools:layout_constraintRight_creator="1" />
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/finishBtn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:clickable="true"
+            android:layout_marginLeft="5dp"
+            android:paddingTop="30dp"
+            app:fabSize="mini"
+            app:srcCompat="@mipmap/ic_accept"
+            tools:layout_constraintBottom_creator="1"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintTop_creator="1" />
 
-    <TextView
-        android:id="@+id/brand"
-        android:layout_width="250dp"
-        android:layout_height="25dp"
-        android:layout_marginBottom="199dp"
-        android:text="TextView"
-        android:textColor="@color/white"
-        android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/view10"
-        app:layout_constraintTop_toBottomOf="@+id/color"
-        tools:layout_constraintBottom_creator="1"
-        tools:layout_constraintLeft_creator="1"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintTop_creator="1" />
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/mapBtn"
+            android:layout_width="74dp"
+            android:layout_height="74dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:clickable="true"
+            android:padding="20dp"
+            app:fabSize="mini"
+            app:srcCompat="@mipmap/ic_maplocation"
+            tools:layout_constraintBottom_creator="1"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1" />
 
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/cancelBtn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:clickable="true"
+            android:layout_marginRight="5dp"
+            app:fabSize="mini"
+            app:srcCompat="@mipmap/ic_denined"
+            tools:layout_constraintBottom_creator="1"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1" />
 
-</android.support.constraint.ConstraintLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:text="finish trip"
+            android:textColorLink="@color/btn_logut_bg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintTop_creator="1" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="106dp"
+            android:text="Map"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:layout_constraintRight_creator="1"
+            tools:layout_constraintTop_creator="1" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="195dp"
+            android:text="Cancel"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:layout_constraintRight_creator="1"
+            tools:layout_constraintTop_creator="1" />
+
+    </RelativeLayout>
+
+</LinearLayout>
