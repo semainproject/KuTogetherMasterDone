@@ -27,10 +27,10 @@ public class editProfile extends AppCompatActivity {
     CheckBox Driver_box;
     EditText BikeID;
     EditText brand;
-    EditText color;
+    EditText color,nickInput;
     String nametx,lastnametx,studentIDtx;
 
-    String uid,change_name,change_lastname,change_id;
+    String uid,change_name,change_lastname,change_id,nickNameStr;
     private FirebaseAuth.AuthStateListener authListener;
     private FirebaseAuth auth;
     DatabaseReference infoDB;
@@ -53,6 +53,7 @@ public class editProfile extends AppCompatActivity {
         BikeID = (EditText) findViewById(R.id.BikeID);
         brand = (EditText) findViewById(R.id.brand);
         color = (EditText) findViewById(R.id.color);
+        nickInput = (EditText) findViewById(R.id.nickInput);
 
         final FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         uid = user.getUid();
@@ -60,13 +61,15 @@ public class editProfile extends AppCompatActivity {
         infoDB.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                InfoUser infoUser = dataSnapshot.getValue(InfoUser.class);
-                name.setHint(infoUser.getName());
-                lastname.setHint(infoUser.getLastName());
-                studentID.setHint(infoUser.getStudentID());
+                final InfoUser infoUser = dataSnapshot.getValue(InfoUser.class);
+                name.setText(infoUser.getName());
+                lastname.setText(infoUser.getLastName());
+                studentID.setText(infoUser.getStudentID());
                 change_name = infoUser.getName();
                 change_lastname = infoUser.getLastName();
                 change_id = infoUser.getStudentID();
+                nickInput.setText(infoUser.getNickname());
+                nickNameStr = infoUser.getNickname();
                 nametx = infoUser.getName();
                 lastnametx = infoUser.getLastName();
                 studentIDtx = infoUser.getStudentID();
@@ -102,6 +105,9 @@ public class editProfile extends AppCompatActivity {
                         if(studentID.getText().equals("") ){
                             infoDB.child("studentID").setValue(studentIDtx);
                         }
+                        if(nickInput.getText().equals("")){
+                            infoDB.child("nickname").setValue(nickNameStr);
+                        }
                         if(!name.getText().equals("") ){
                             infoDB.child("name").setValue(name.getText().toString());
                         }
@@ -110,6 +116,9 @@ public class editProfile extends AppCompatActivity {
                         }
                         if(!studentID.getText().equals("") ){
                             infoDB.child("studentID").setValue(studentID.getText().toString());
+                        }
+                        if(!nickInput.getText().equals("")){
+                            infoDB.child("nickname").setValue(nickInput.getText().toString());
                         }
                         if(male.isChecked()) {
                             infoDB.child("gender").setValue("Male");
@@ -127,6 +136,7 @@ public class editProfile extends AppCompatActivity {
                             infoDB.child("brand").setValue("");
                             infoDB.child("color").setValue("");
                         }
+                        finish();
                     }
 
 

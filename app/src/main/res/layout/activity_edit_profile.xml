@@ -1,165 +1,252 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="info.androidhive.firebase.editProfile">
+    android:orientation="vertical"
+    tools:context="info.androidhive.firebase.InfoActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="25dp">
 
-    <EditText
-        android:id="@+id/nameTx"
-        android:layout_width="0dp"
-        android:layout_height="42dp"
-        android:layout_marginBottom="29dp"
-        android:layout_marginTop="36dp"
-        android:ems="10"
-        android:hint="Name"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/lastnametx"
-        app:layout_constraintLeft_toLeftOf="@+id/lastnametx"
-        app:layout_constraintRight_toRightOf="@+id/Stu_id"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_constraintBottom_creator="1"
-        tools:layout_constraintLeft_creator="1"
+    <!--
+    <LinearLayout
+        android:layout_width="14dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="0dp"></LinearLayout>
+        app:layout_constraintRight_toLeftOf="parent"
+        tools:layout_constraintTop_creator="1"
         tools:layout_constraintRight_creator="1"
-        tools:layout_constraintTop_creator="1" />
-
-    <EditText
-        android:id="@+id/lastnametx"
-        android:layout_width="0dp"
-        android:layout_height="42dp"
-        android:layout_marginBottom="110dp"
-        android:layout_marginTop="107dp"
-        android:ems="10"
-        android:hint="lastname"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/male"
-        app:layout_constraintLeft_toLeftOf="@+id/Stu_id"
-        app:layout_constraintRight_toRightOf="@+id/Stu_id"
-        app:layout_constraintTop_toTopOf="parent"
         tools:layout_constraintBottom_creator="1"
-        tools:layout_constraintLeft_creator="1"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintTop_creator="1" />
-
-    <EditText
-        android:id="@+id/Stu_id"
-        android:layout_width="282dp"
-        android:layout_height="43dp"
-        android:layout_marginLeft="48dp"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:hint="Stu_id"
-        android:inputType="textPersonName"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lastnametx"
-        tools:layout_constraintLeft_creator="1"
-        tools:layout_constraintTop_creator="1" />
-
-    <CheckBox
-        android:id="@+id/male"
-        android:layout_width="101dp"
-        android:layout_height="49dp"
-        android:layout_marginRight="16dp"
-        android:text="male"
-        app:buttonTint="@color/colorPrimary"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toRightOf="@+id/Stu_id"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.453"
-        tools:layout_constraintBottom_creator="1"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintTop_creator="1" />
-
-    <CheckBox
-        android:id="@+id/female"
-        android:layout_width="94dp"
-        android:layout_height="46dp"
-        android:layout_marginLeft="40dp"
-        android:text="female"
-        app:buttonTint="@color/colorPrimary"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.451"
-        tools:layout_constraintBottom_creator="1"
+        android:layout_marginTop="274dp"
         tools:layout_constraintLeft_creator="1"
-        tools:layout_constraintTop_creator="1" />
+        android:layout_marginBottom="274dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"-->
 
-    <Button
-        android:id="@+id/Submit"
-        android:layout_width="92dp"
-        android:layout_height="50dp"
-        android:layout_marginRight="68dp"
-        android:layout_marginTop="216dp"
-        android:text="Submit"
-        app:layout_constraintRight_toRightOf="@+id/male"
-        app:layout_constraintTop_toBottomOf="@+id/male"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintTop_creator="1" />
 
-    <CheckBox
-        android:id="@+id/Passenger_box"
+    <RelativeLayout
+        android:id="@+id/r_cloud"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <ImageView
+            android:id="@+id/login_cloud"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_bg_shape" />
+
+        <ImageView
+            android:id="@+id/login_cloud"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_cloud" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_launcher_shadow" />
+
+        <TextView
+            android:id="@+id/TX"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView"
+            android:color="@color/btn_login"
+            android:fontFamily="Calibri"
+            android:text="Profile"
+            android:textAlignment="center"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="17dp"
-        android:text="Passenger"
-        app:buttonTint="@color/colorPrimary"
-        app:layout_constraintStart_toStartOf="@+id/female"
-        app:layout_constraintTop_toBottomOf="@+id/female" />
+        android:layout_gravity="center">
 
-    <CheckBox
-        android:id="@+id/Driver_box"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="39dp"
-        android:layout_marginTop="14dp"
-        android:text="Driver"
-        app:buttonTint="@color/colorPrimary"
-        app:layout_constraintEnd_toEndOf="@+id/male"
-        app:layout_constraintTop_toBottomOf="@+id/male" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
 
-    <EditText
-        android:id="@+id/BikeID"
-        android:layout_width="0dp"
-        android:layout_height="42dp"
-        android:layout_marginBottom="53dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="52dp"
-        android:ems="10"
-        android:hint="BikeID"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/color"
-        app:layout_constraintEnd_toEndOf="@+id/brand"
-        app:layout_constraintStart_toStartOf="@+id/female"
-        app:layout_constraintTop_toTopOf="@+id/Passenger_box" />
 
-    <EditText
-        android:id="@+id/brand"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginTop="3dp"
-        android:ems="10"
-        android:hint="brand"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/color"
-        app:layout_constraintEnd_toEndOf="@+id/color"
-        app:layout_constraintStart_toStartOf="@+id/color"
-        app:layout_constraintTop_toBottomOf="@+id/BikeID" />
+            <EditText
+                android:id="@+id/nameTx"
+                android:layout_width="@dimen/width_info"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="@dimen/maginR_info"
+                android:background="@drawable/round2"
+                android:hint="Name"
+                android:textSelectHandle="@color/colorPrimary"
+                android:inputType="textPersonName"
+                android:cursorVisible="true"
+                android:textCursorDrawable="@null"
+                android:padding="5dp" />
 
-    <EditText
-        android:id="@+id/color"
-        android:layout_width="267dp"
-        android:layout_height="44dp"
-        android:layout_marginBottom="11dp"
-        android:layout_marginStart="41dp"
-        android:ems="10"
-        android:hint="color"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/Submit"
-        app:layout_constraintStart_toStartOf="parent" />
+            <CheckBox
+                android:id="@+id/Driver_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_toRightOf="@id/nameTx"
+                android:buttonTint="@color/colorPrimary"
+                android:checked="false"
+                android:drawableTop="@drawable/ic_info_driver"
+                android:text="Driver"
+                android:textAlignment="center" />
 
-</android.support.constraint.ConstraintLayout>
+            <CheckBox
+                android:id="@+id/Passenger_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/Driver_box"
+                android:layout_below="@id/Driver_box"
+                android:buttonTint="@color/colorPrimary"
+                android:checked="false"
+                android:drawableTop="@drawable/ic_info_passenger"
+                android:text="Passenger"
+                android:textAlignment="center" />
+
+            <CheckBox
+                android:id="@+id/male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/Passenger_box"
+                android:layout_below="@id/Passenger_box"
+                android:layout_marginTop="10dp"
+                android:checked="true"
+                android:text="Male"
+                app:buttonTint="@color/colorPrimary" />
+
+            <CheckBox
+                android:id="@+id/female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/male"
+                android:layout_below="@id/male"
+                android:checked="false"
+                android:text="Female"
+                app:buttonTint="@color/colorPrimary" />
+
+
+            <EditText
+                android:id="@+id/lastnametx"
+                android:layout_width="@dimen/width_info"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nameTx"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="@dimen/maginL_info"
+                android:layout_marginStart="@dimen/maginR_info"
+                android:background="@drawable/round2"
+                android:ems="10"
+                android:hint="Lastname"
+                android:textCursorDrawable="@null"
+                android:cursorVisible="true"
+                android:inputType="textPersonName"
+                android:padding="5dp" />
+
+
+            <EditText
+                android:id="@+id/Stu_id"
+                android:layout_width="@dimen/width_info"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lastnametx"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="@dimen/maginL_info"
+                android:layout_marginStart="@dimen/maginR_info"
+                android:background="@drawable/round2"
+                android:ems="10"
+                android:hint="Student ID"
+                android:textCursorDrawable="@null"
+                android:cursorVisible="true"
+                android:inputType="textPersonName"
+                android:padding="5dp" />
+
+            <EditText
+                android:id="@+id/nickInput"
+                android:layout_width="@dimen/width_info"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Stu_id"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="@dimen/maginL_info"
+                android:layout_marginStart="@dimen/maginR_info"
+                android:background="@drawable/round2"
+                android:ems="10"
+                android:cursorVisible="true"
+                android:hint="Nickname"
+                android:textCursorDrawable="@null"
+                android:inputType="textPersonName"
+                android:padding="5dp" />
+
+            <EditText
+                android:id="@+id/BikeID"
+                android:layout_width="@dimen/width_info"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nickInput"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="@dimen/maginL_info"
+                android:layout_marginStart="@dimen/maginR_info"
+                android:background="@drawable/round2"
+                android:ems="10"
+                android:hint="Your Bike ID"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/brand"
+                android:layout_width="@dimen/width_info"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/BikeID"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="@dimen/maginL_info"
+                android:layout_marginStart="@dimen/maginR_info"
+                android:background="@drawable/round2"
+                android:ems="10"
+                android:hint="Your bike brand"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/color"
+                android:layout_width="@dimen/width_info"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/brand"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="@dimen/maginL_info"
+                android:layout_marginStart="@dimen/maginR_info"
+                android:background="@drawable/round2"
+                android:hint="Your Bike Color"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/Submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/brand"
+                android:layout_centerHorizontal="true"
+                android:paddingLeft="60dp"
+                android:paddingRight="60dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/button_login_style"
+                android:text="Submit"
+                android:textColor="@android:color/white" />
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

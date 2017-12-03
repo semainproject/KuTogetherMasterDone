@@ -34,10 +34,10 @@ public final class R {
     }
     public static final class id {
         public static final int hybrid = 0x7f070080;
-        public static final int none = 0x7f0700ba;
-        public static final int normal = 0x7f0700bb;
-        public static final int satellite = 0x7f0700e5;
-        public static final int terrain = 0x7f070118;
+        public static final int none = 0x7f0700bb;
+        public static final int normal = 0x7f0700bc;
+        public static final int satellite = 0x7f0700e6;
+        public static final int terrain = 0x7f070119;
     }
     public static final class integer {
         public static final int google_play_services_version = 0x7f080005;

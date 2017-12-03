@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:2:1-111:12
-INJECTED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:2:1-111:12
-INJECTED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:2:1-111:12
-INJECTED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:2:1-111:12
+ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:2:1-111:12
+INJECTED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:2:1-111:12
+INJECTED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:2:1-111:12
+INJECTED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:2:1-111:12
 MERGED from [com.android.support:design:23.4.0] C:\Users\Kittaporn\.gradle\caches\transforms-1\files-1.1\design-23.4.0.aar\47476c713e6982fc33a73df4e121bc79\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:firebase-auth:10.0.1] C:\Users\Kittaporn\.gradle\caches\transforms-1\files-1.1\firebase-auth-10.0.1.aar\08ff2b4ae9915d15944a4006726ceb8f\AndroidManifest.xml:16:1-21:12
 MERGED from [com.google.firebase:firebase-database:10.0.1] C:\Users\Kittaporn\.gradle\caches\transforms-1\files-1.1\firebase-database-10.0.1.aar\e7983fda99da476fe76b727a13d46b75\AndroidManifest.xml:2:1-4:12
@@ -34,25 +34,25 @@ MERGED from [com.android.support:cardview-v7:23.1.1] C:\Users\Kittaporn\.gradle\
 MERGED from [com.inthecheesefactory.thecheeselibrary:adjustable-imageview:1.0.0] C:\Users\Kittaporn\.gradle\caches\transforms-1\files-1.1\adjustable-imageview-1.0.0.aar\876d671feb9d1b078dde2ddf6862990c\AndroidManifest.xml:2:1-16:12
 MERGED from [com.makeramen:roundedimageview:2.3.0] C:\Users\Kittaporn\.gradle\caches\transforms-1\files-1.1\roundedimageview-2.3.0.aar\2f1b612224c430f90e4e34df04c963b3\AndroidManifest.xml:2:1-9:12
 MERGED from [pl.droidsonroids.gif:android-gif-drawable:1.2.3] C:\Users\Kittaporn\.gradle\caches\transforms-1\files-1.1\android-gif-drawable-1.2.3.aar\1287406e679cd1ff74af28633d09ce03\AndroidManifest.xml:2:1-11:12
-INJECTED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:2:1-111:12
-INJECTED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:2:1-111:12
-INJECTED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:2:1-111:12
+INJECTED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:2:1-111:12
+INJECTED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:2:1-111:12
+INJECTED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:2:1-111:12
 	package
-		ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:3:5-40
-		INJECTED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:3:5-40
+		INJECTED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:2:1-111:12
-		INJECTED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:2:1-111:12
+		INJECTED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:2:1-111:12
-		INJECTED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:2:1-111:12
+		INJECTED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:5:5-67
+ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:5:5-67
 MERGED from [com.akexorcist:googledirectionlibrary:1.0.5] C:\Users\Kittaporn\.gradle\caches\transforms-1\files-1.1\googledirectionlibrary-1.0.5.aar\d68d81034558864630e35a0fbf196f22\AndroidManifest.xml:11:5-67
 MERGED from [com.akexorcist:googledirectionlibrary:1.0.5] C:\Users\Kittaporn\.gradle\caches\transforms-1\files-1.1\googledirectionlibrary-1.0.5.aar\d68d81034558864630e35a0fbf196f22\AndroidManifest.xml:11:5-67
 MERGED from [com.google.android.gms:play-services-maps:10.0.1] C:\Users\Kittaporn\.gradle\caches\transforms-1\files-1.1\play-services-maps-10.0.1.aar\023654910fd6b6394dd88824081ed9a8\AndroidManifest.xml:20:5-66
@@ -64,33 +64,33 @@ MERGED from [com.google.firebase:firebase-analytics-impl:10.0.1] C:\Users\Kittap
 MERGED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\Kittaporn\.gradle\caches\transforms-1\files-1.1\firebase-iid-10.0.1.aar\9152804b1c0386b2085b061e2fd6e6d6\AndroidManifest.xml:20:5-66
 MERGED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\Kittaporn\.gradle\caches\transforms-1\files-1.1\firebase-iid-10.0.1.aar\9152804b1c0386b2085b061e2fd6e6d6\AndroidManifest.xml:20:5-66
 	android:name
-		ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:5:22-64
+		ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:5:22-64
 uses-permission#android.permission.GET_ACCOUNTS
-ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:8:5-71
+ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:8:5-71
 	android:name
-		ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:8:22-68
+		ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:8:22-68
 uses-permission#android.permission.READ_PROFILE
-ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:9:5-71
+ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:9:5-71
 	android:name
-		ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:9:22-68
+		ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:9:22-68
 uses-permission#android.permission.READ_CONTACTS
-ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:10:5-72
+ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:10:5-72
 	android:name
-		ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:10:22-69
+		ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:10:22-69
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:11:5-79
+ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:11:5-79
 	android:name
-		ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:11:22-76
+		ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:11:22-76
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:12:5-80
+ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:12:5-80
 	android:name
-		ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:12:22-77
+		ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:12:22-77
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:13:5-81
+ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:13:5-81
 	android:name
-		ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:13:22-78
+		ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:13:22-78
 application
-ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:20:5-109:19
+ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:20:5-109:19
 MERGED from [com.android.support:design:23.4.0] C:\Users\Kittaporn\.gradle\caches\transforms-1\files-1.1\design-23.4.0.aar\47476c713e6982fc33a73df4e121bc79\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design:23.4.0] C:\Users\Kittaporn\.gradle\caches\transforms-1\files-1.1\design-23.4.0.aar\47476c713e6982fc33a73df4e121bc79\AndroidManifest.xml:22:5-20
 MERGED from [com.google.firebase:firebase-auth:10.0.1] C:\Users\Kittaporn\.gradle\caches\transforms-1\files-1.1\firebase-auth-10.0.1.aar\08ff2b4ae9915d15944a4006726ceb8f\AndroidManifest.xml:19:5-20:19
@@ -134,155 +134,155 @@ MERGED from [com.android.support:cardview-v7:23.1.1] C:\Users\Kittaporn\.gradle\
 MERGED from [com.inthecheesefactory.thecheeselibrary:adjustable-imageview:1.0.0] C:\Users\Kittaporn\.gradle\caches\transforms-1\files-1.1\adjustable-imageview-1.0.0.aar\876d671feb9d1b078dde2ddf6862990c\AndroidManifest.xml:11:5-14:19
 MERGED from [com.inthecheesefactory.thecheeselibrary:adjustable-imageview:1.0.0] C:\Users\Kittaporn\.gradle\caches\transforms-1\files-1.1\adjustable-imageview-1.0.0.aar\876d671feb9d1b078dde2ddf6862990c\AndroidManifest.xml:11:5-14:19
 	android:supportsRtl
-		ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:24:9-35
+		ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:24:9-35
 	android:label
-		ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:23:9-41
+		ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:23:9-41
 	android:icon
-		ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:22:9-45
+		ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:22:9-45
 	android:allowBackup
-		ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:21:9-35
+		ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:21:9-35
 	android:theme
-		ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:25:9-40
+		ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:25:9-40
 activity#info.androidhive.firebase.LoginActivity
-ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:26:9-34:20
+ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:26:9-34:20
 	android:theme
-		ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:28:13-56
+		ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:28:13-56
 	android:name
-		ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:27:13-42
+		ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:27:13-42
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:29:13-33:29
+ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:29:13-33:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:30:17-69
+ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:30:17-69
 	android:name
-		ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:30:25-66
+		ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:30:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:32:17-77
+ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:32:17-77
 	android:name
-		ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:32:27-74
+		ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:32:27-74
 activity#info.androidhive.firebase.MainActivity
-ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:35:9-38:59
+ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:35:9-38:59
 	android:label
-		ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:37:13-59
+		ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:37:13-59
 	android:theme
-		ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:38:13-56
+		ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:38:13-56
 	android:name
-		ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:36:13-41
+		ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:36:13-41
 activity#info.androidhive.firebase.SignupActivity
-ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:39:9-42:59
+ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:39:9-42:59
 	android:label
-		ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:41:13-57
+		ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:41:13-57
 	android:theme
-		ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:42:13-56
+		ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:42:13-56
 	android:name
-		ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:40:13-43
+		ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:40:13-43
 activity#info.androidhive.firebase.ResetPasswordActivity
-ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:43:9-46:59
+ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:43:9-46:59
 	android:label
-		ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:45:13-66
+		ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:45:13-66
 	android:theme
-		ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:46:13-56
+		ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:46:13-56
 	android:name
-		ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:44:13-50
+		ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:44:13-50
 activity#info.androidhive.firebase.InfoActivity
-ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:47:9-50
+ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:47:9-50
 	android:name
-		ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:47:19-47
+		ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:47:19-47
 activity#info.androidhive.firebase.MypostActivity
-ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:48:9-52
+ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:48:9-52
 	android:name
-		ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:48:19-49
+		ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:48:19-49
 activity#info.androidhive.firebase.DestinationActivity
-ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:49:9-57:20
+ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:49:9-57:20
 	android:name
-		ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:49:19-54
+		ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:49:19-54
 activity#info.androidhive.firebase.NewBoard
-ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:58:9-61:47
+ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:58:9-61:47
 	android:label
-		ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:60:13-61
+		ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:60:13-61
 	android:theme
-		ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:61:13-44
+		ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:61:13-44
 	android:name
-		ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:59:13-37
+		ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:59:13-37
 meta-data#com.google.android.geo.API_KEY
-ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:71:9-73:55
+ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:71:9-73:55
 	android:value
-		ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:73:13-52
+		ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:73:13-52
 	android:name
-		ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:72:13-58
+		ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:72:13-58
 activity#info.androidhive.firebase.MapsActivityDes
-ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:75:9-77:63
+ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:75:9-77:63
 	android:label
-		ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:77:13-60
+		ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:77:13-60
 	android:name
-		ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:76:13-44
+		ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:76:13-44
 activity#info.androidhive.firebase.ConnectPassenger
-ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:78:9-54
+ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:78:9-54
 	android:name
-		ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:78:19-51
+		ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:78:19-51
 activity#com.theartofdev.edmodo.cropper.CropImageActivity
-ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:79:9-81:59
+ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:79:9-81:59
 	android:theme
-		ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:81:13-56
+		ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:81:13-56
 	android:name
-		ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:80:13-76
+		ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:80:13-76
 service#info.androidhive.firebase.MyService
-ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:83:9-86:39
+ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:83:9-86:39
 	android:enabled
-		ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:85:13-35
+		ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:85:13-35
 	android:exported
-		ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:86:13-36
+		ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:86:13-36
 	android:name
-		ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:84:13-38
+		ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:84:13-38
 activity#info.androidhive.firebase.ConnectedMap
-ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:88:9-90:68
+ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:88:9-90:68
 	android:label
-		ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:90:13-65
+		ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:90:13-65
 	android:name
-		ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:89:13-41
+		ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:89:13-41
 activity#info.androidhive.firebase.ServiceLocation
-ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:91:9-53
+ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:91:9-53
 	android:name
-		ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:91:19-50
+		ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:91:19-50
 service#info.androidhive.firebase.ServiceLocation
-ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:93:9-96:39
+ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:93:9-96:39
 	android:enabled
-		ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:95:13-35
+		ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:95:13-35
 	android:exported
-		ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:96:13-36
+		ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:96:13-36
 	android:name
-		ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:94:13-44
+		ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:94:13-44
 service#info.androidhive.firebase.DriverService
-ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:97:9-100:39
+ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:97:9-100:39
 	android:enabled
-		ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:99:13-35
+		ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:99:13-35
 	android:exported
-		ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:100:13-36
+		ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:100:13-36
 	android:name
-		ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:98:13-42
+		ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:98:13-42
 service#info.androidhive.firebase.GpsService
-ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:101:9-104:39
+ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:101:9-104:39
 	android:enabled
-		ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:103:13-35
+		ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:103:13-35
 	android:exported
-		ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:104:13-36
+		ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:104:13-36
 	android:name
-		ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:102:13-39
+		ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:102:13-39
 activity#info.androidhive.firebase.DriverConnected
-ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:106:9-53
+ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:106:9-53
 	android:name
-		ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:106:19-50
+		ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:106:19-50
 activity#info.androidhive.firebase.editProfile
-ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:107:9-49
+ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:107:9-49
 	android:name
-		ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:107:19-46
+		ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:107:19-46
 activity#info.androidhive.firebase.ChangeDriverStatus
-ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:108:9-65
+ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:108:9-65
 	android:name
-		ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml:108:19-53
+		ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml:108:19-53
 uses-sdk
-INJECTED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml
 MERGED from [com.android.support:design:23.4.0] C:\Users\Kittaporn\.gradle\caches\transforms-1\files-1.1\design-23.4.0.aar\47476c713e6982fc33a73df4e121bc79\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:design:23.4.0] C:\Users\Kittaporn\.gradle\caches\transforms-1\files-1.1\design-23.4.0.aar\47476c713e6982fc33a73df4e121bc79\AndroidManifest.xml:20:5-43
 MERGED from [com.google.firebase:firebase-auth:10.0.1] C:\Users\Kittaporn\.gradle\caches\transforms-1\files-1.1\firebase-auth-10.0.1.aar\08ff2b4ae9915d15944a4006726ceb8f\AndroidManifest.xml:17:5-42
@@ -343,18 +343,18 @@ MERGED from [com.makeramen:roundedimageview:2.3.0] C:\Users\Kittaporn\.gradle\ca
 MERGED from [com.makeramen:roundedimageview:2.3.0] C:\Users\Kittaporn\.gradle\caches\transforms-1\files-1.1\roundedimageview-2.3.0.aar\2f1b612224c430f90e4e34df04c963b3\AndroidManifest.xml:7:5-43
 MERGED from [pl.droidsonroids.gif:android-gif-drawable:1.2.3] C:\Users\Kittaporn\.gradle\caches\transforms-1\files-1.1\android-gif-drawable-1.2.3.aar\1287406e679cd1ff74af28633d09ce03\AndroidManifest.xml:7:5-9:41
 MERGED from [pl.droidsonroids.gif:android-gif-drawable:1.2.3] C:\Users\Kittaporn\.gradle\caches\transforms-1\files-1.1\android-gif-drawable-1.2.3.aar\1287406e679cd1ff74af28633d09ce03\AndroidManifest.xml:7:5-9:41
-INJECTED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml
 	tools:overrideLibrary
 		ADDED from [com.android.support:appcompat-v7:24.1.1] C:\Users\Kittaporn\.gradle\caches\transforms-1\files-1.1\appcompat-v7-24.1.1.aar\bc58db3e8feb6e7580bf86880c37f476\AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
-		INJECTED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Kittaporn\StudioProjects\KuTogetherMasterDone11292017\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Kittaporn\Desktop\KuTogetherMasterDone123\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.android.gms:play-services-maps:10.0.1] C:\Users\Kittaporn\.gradle\caches\transforms-1\files-1.1\play-services-maps-10.0.1.aar\023654910fd6b6394dd88824081ed9a8\AndroidManifest.xml:19:5-78
 MERGED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\Kittaporn\.gradle\caches\transforms-1\files-1.1\firebase-analytics-10.0.1.aar\7519907acab6dc1f99b4cd12aeb1b511\AndroidManifest.xml:21:5-78
